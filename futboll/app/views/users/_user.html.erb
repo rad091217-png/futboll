@@ -1,0 +1,11 @@
+<%= stylesheet_link_tag "users", media: 'all', 'data-turbolinks-track': 'reload' %>
+<li class="users">
+<section class="avatar">
+ <%= image_tag user.avatar.url if user.avatar.present?  %>
+  </section>
+  <%= link_to user.name, user %>
+  <% if current_user.admin? && !current_user?(user) %>
+    | <%= link_to "消去", user, method: :delete,
+                                  data: { confirm: "本当に消しますか?" } %>
+  <% end %>
+</li>

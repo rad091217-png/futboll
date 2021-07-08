@@ -1,0 +1,6 @@
+bin/
+tmp/
+.env
+log/
+db/
+public/uploads/

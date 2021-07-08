@@ -1,0 +1,2 @@
+module PremeraPostsHelper
+end

@@ -1,0 +1,52 @@
+@import "common.scss";
+div.profile {
+    text-align: center;
+    section.avatar img {
+        margin-top: 10px;
+        height: 110px;
+        width: 110px;
+        border-radius: 100%;
+    }
+    .user_name {
+        font-size: 20px;
+        :hover {
+            text-decoration: none;
+        }
+    }
+    p.introduction {
+        margin-top: 30px;
+        font-size: 20px;
+    }
+    .edit_profile {
+        margin-top: 20px;
+    }
+    .stars {
+        margin-top: 20px;
+    }
+    .follow_info {
+        overflow: hidden;
+        :hover {
+            color: rgb(193, 193, 241);
+            text-decoration: none;
+        }
+        .my_follower,
+        .follow {
+            margin-right: 10px;
+            list-style: none;
+            float: right;
+        }
+    }
+    .follow_botton {
+        margin-top: 15px;
+    }
+    p.message {
+        margin-top: 15px;
+        font-size: 15px;
+    }
+    .btn-primary {
+        margin-top: 15px;
+    }
+    .button {
+        border-bottom: solid #ffccff 1px;
+    }
+}

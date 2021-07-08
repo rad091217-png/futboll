@@ -1,0 +1,15 @@
+@import "common.scss";
+li.users{
+    font-size: 35px;
+    width: 15500px;
+    border-bottom: 1px black solid;
+    list-style: none;
+    padding: 5px;
+    section.avatar img{
+        margin-right: 5px;
+        float: left;
+        height: 53px;
+        width: 53px;
+        border-radius: 50%;
+    }
+}

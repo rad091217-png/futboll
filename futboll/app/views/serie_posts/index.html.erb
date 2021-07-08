@@ -1,0 +1,28 @@
+<%= stylesheet_link_tag "serie_index", media: 'all', 'data-turbolinks-track': 'reload' %>
+<h1>セリエA投稿一覧</h1>
+<h2 class="serie_post_page">投稿ページはこちらへ<span class="new"><%= link_to "投稿ページへ", "/serie_posts/new" %></h2>
+<div class="comments">
+    <div class="comment">
+        <% @serie_posts.each do |serie_post| %>
+    </div>
+    <div class="post">
+        <div class="title">
+            <p class="title">タイトル</p>
+            <section class="title"><%= serie_post.title %></section>
+        </div>
+        <div class="comments">
+            <p class="comments">コメント</p>
+            <section class="comments"><%= serie_post.text %></section>
+        </div>
+            <div class="image">
+                <section class="image"><%= image_tag serie_post.image.url if serie_post.image? %></section>
+                <div class="post_destroy">
+            <%= link_to("投稿削除", serie_post_path(serie_post), {method: :delete} ) %>
+            </div>
+                <p class="user_name">ユーザー名 <%= link_to(serie_post.user.name, user_path(serie_post.user_id)) %></p>
+            </div>
+        </div>
+     <% end %>
+    </div>
+</div>
+<%= will_paginate %>

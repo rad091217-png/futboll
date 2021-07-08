@@ -1,0 +1,2 @@
+module EredivisiePostHelper
+end

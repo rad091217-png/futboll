@@ -1,0 +1,35 @@
+@import "common.scss";
+p.message {
+    font-size: 18px;
+    background-color: black;
+    border-top: solid white 3px;
+    color: white;
+    text-align: center;
+}
+h4.participant {
+    margin-top: 40px;
+}
+a.participant {
+    margin-top: 20px;
+}
+h5.participant_detail {
+    border-bottom: solid #ffccff 1px;
+}
+
+.message_user_name {
+    margin-top: 50px;
+    border-top: solid black 1px;
+    border-bottom: solid black 1px;
+    background-color: rgb(247, 247, 248);
+    p.comment {
+    margin-bottom: 30px;
+    }
+}
+section.message {
+    margin-top: 280px;
+    margin-bottom: 20px;
+}
+
+.btn-primary{
+    height: 28px;
+}

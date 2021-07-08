@@ -1,0 +1,29 @@
+<%= stylesheet_link_tag "jupiler_index", media: 'all', 'data-turbolinks-track': 'reload' %>
+<h1>ジュピラーリーグ投稿一覧</h1>
+<h2 class="jupiler_post_page">投稿ページはこちらへ<span class="new"><%= link_to "投稿ページへ", "/jupiler_posts/new" %></h2>
+<div class="comments">
+    <div class="comment">
+        <% @jupiler_posts.each do |jupiler_post| %>
+    </div>
+    <div class="post">
+        <div class="title">
+            <p class="title">タイトル</p>
+            <section class="title"><%= jupiler_post.title %></section>
+        </div>
+        <div class="comments">
+            <p class="comments">コメント</p>
+            <section class="comments"><%= jupiler_post.text %></section>
+        </div>
+        <div class="image">
+            <section class="image">
+                <%= image_tag jupiler_post.image.url if jupiler_post.image? %>
+            </section>
+            <div class="post_destroy">
+                <%= link_to("投稿削除", jupiler_post_path(jupiler_post), {method: :delete} ) %>
+            </div>
+            <p class="user_name">ユーザー名 <%= link_to(jupiler_post.user.name, user_path(jupiler_post.user_id)) %></p>
+            <% end %>
+        </div>
+    </div>
+</div>
+<%= will_paginate %>

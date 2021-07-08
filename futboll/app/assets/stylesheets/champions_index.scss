@@ -1,0 +1,48 @@
+@import "common.scss";
+body {
+    .champions_post_page {
+        font-size: 20px;
+        .new {
+            margin-left: 15px;
+        }
+    }
+    div.post {
+        background-color: rgb(247, 247, 248);
+        div.title {
+            margin-top: 40px;
+            p.title {
+                border-top: double 1px black;
+                margin-top: 20px;
+                font-size: 20px;
+            }
+            section.title {
+                margin-top: 20px;
+                font-size: 15px;
+            }
+        }
+        div.comments {
+            margin-top: 25px;
+            p.comments {
+                margin-top: 20px;
+                font-size: 20px;
+            }
+            section.comments {
+                margin-top: 20px;
+                font-size: 15px;
+            }
+        }
+        div.post_destroy{
+            margin-top: 20px;
+        }
+        .image {
+            margin-top: 30px;
+            section.image img{
+                width: 250px;
+                height: 200px;
+            }
+        }
+        .user_name{
+            margin-top: 40px;
+        }
+    }
+}

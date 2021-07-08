@@ -1,0 +1,19 @@
+<%= stylesheet_link_tag "profiles_edit", media: "all", 'data-turbolinks-track': "reload" %>
+<h1 class="edit_profile"> プロフィール編集</h1>
+<div class="row">
+    <div class="col-md-6 col-md-offset-3">
+        <%= form_with model: @user, url: profile_path do |f| %>
+
+        <%= f.label :自己紹介, class: "introduction" %>
+        <%= f.text_area :introduction, class: 'form-control' %>
+
+        <%= f.label :パスワード, class: "login_password" %>
+        <%= f.text_field :password, class: 'form-control' %>
+        
+        <%= f.label :プロフィール画像, class: "profile_image" %>
+        <%= f.file_field :avatar, accept: 'image/*', onchange: 'previewFileWithId(preview)' %>
+        <%= f.hidden_field :avatar_cache %>
+        <%= f.submit "送信", class: "btn btn-primary"%>
+        <% end %>
+    </div>
+</div>

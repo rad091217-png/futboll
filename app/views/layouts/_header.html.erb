@@ -1,0 +1,20 @@
+<header>
+    <div class="header_title">
+        <%= link_to("ヨーロッパサッカー掲示板", "/", {class: "link"}) %>
+    </div>
+    <nav>
+        <ul>
+            <% if logged_in? %>
+            <li class="logout"><%= link_to "ログアウト", "/logout", {method: :delete, class: "link"} %></li>
+            <li class="inquiry"><%= link_to("要望、お問い合わせ", "/contacts/new", {class: "link"}) %></li>
+            <li class="edit"><%= link_to "メールアドレス、パスワードの変更", edit_user_path(current_user), {class: "link"} %></li>
+            <li class="users_index"><%= link_to "全てのユーザー", "/users", {class: "link"} %></li>
+            <li class="myprofile"><%= link_to "プロフィール", user_path(current_user), {class: "link"} %></li>
+            <li class="post"><%= link_to("投稿リーグ選択", "/column", {class: "link"}) %></li>
+            <% else %>
+            <li class="signup"><%= link_to("新規登録", "/signup", {class: "link"}) %></li>
+            <li class="login"><%= link_to("ログイン", "/login", {class: "link"}) %></li>
+            <% end %>
+        </ul>
+    </nav>
+</header>

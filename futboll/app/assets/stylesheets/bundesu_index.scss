@@ -1,0 +1,133 @@
+@import "common.scss";
+body {
+    .bundesu_post_page {
+        font-size: 20px;
+        .new {
+            margin-left: 15px;
+        }
+    }
+    div.post {
+        background-color: rgb(247, 247, 248);
+        div.title {
+            margin-top: 40px;
+            p.title {
+                border-top: double 1px black;
+                margin-top: 20px;
+                font-size: 20px;
+            }
+            section.title {
+                margin-top: 20px;
+                font-size: 15px;
+            }
+        }
+        div.comments {
+            margin-top: 20px;
+            p.comments {
+                margin-top: 20px;
+                font-size: 20px;
+            }
+            section.comments {
+                margin-top: 20px;
+                font-size: 15px;
+            }
+        }
+        .image {
+            margin-top: 30px;
+            section.image img{
+                width: 250px;
+                height: 200px;
+            }
+        }
+        .user_name{
+            margin-top: 40px;
+        }
+    }
+}
+    @media (max-width: 1000px) {
+        .bundesu_post_page {
+            font-size: 18px;
+            .new {
+                margin-left: 15px;
+            }
+        }
+        div.post {
+            background-color: rgb(247, 247, 248);
+            div.title {
+                margin-top: 80px;
+                p.title {
+                    border-top: double 1px black;
+                    margin-top: 20px;
+                    font-size: 20px;
+                }
+                section.title {
+                    margin-top: 20px;
+                    font-size: 15px;
+                }
+            }
+            div.comments {
+                margin-top: 20px;
+                p.comments {
+                    margin-top: 20px;
+                    font-size: 20px;
+                }
+                section.comments {
+                    margin-top: 20px;
+                    font-size: 15px;
+                }
+            }
+            .image {
+                margin-top: 30px;
+                section.image img{
+                    width: 250px;
+                    height: 200px;
+                }
+            }
+            .user_name{
+                margin-top: 40px;
+            }
+        }
+    @media (max-width: 670px){
+        .bundesu_post_page {
+            font-size: 14px;
+            .new {
+                margin-left: 15px;
+            }
+        }
+        div.post {
+            background-color: rgb(247, 247, 248);
+            div.title {
+                margin-top: 60px;
+                p.title {
+                    border-top: double 1px black;
+                    margin-top: 20px;
+                    font-size: 20px;
+                }
+                section.title {
+                    margin-top: 20px;
+                    font-size: 15px;
+                }
+            }
+            div.comments {
+                margin-top: 20px;
+                p.comments {
+                    margin-top: 20px;
+                    font-size: 20px;
+                }
+                section.comments {
+                    margin-top: 20px;
+                    font-size: 15px;
+                }
+            }
+            .image {
+                margin-top: 30px;
+                section.image img{
+                    width: 250px;
+                    height: 200px;
+                }
+            }
+            .user_name{
+                margin-top: 40px;
+            }
+        }
+    }
+}

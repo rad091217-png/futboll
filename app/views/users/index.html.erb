@@ -1,0 +1,10 @@
+<%= stylesheet_link_tag "users_index", media: "all", 'data-turbolinks-track': "reload" %>
+<h1 class="all_users">全てのユーザー</h1>
+<%= will_paginate %>
+<section class="users">
+    <% @users.each do |user| %>
+    <%= render user %>
+    <% end %>
+</section>
+<%= page_entries_info @items, :entry_name => '1つだけ見つかったときのエントリ名', :plural_name => '複数見つかったときのエントリ名' %>
+<section class="paginate"><%= will_paginate %></section>

@@ -1,0 +1,2 @@
+module ScotishPostsHelper
+end

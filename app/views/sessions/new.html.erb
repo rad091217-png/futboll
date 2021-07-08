@@ -1,0 +1,21 @@
+<%= stylesheet_link_tag 'sessions_new', media: 'all', 'data-turbolinks-track': 'reload' %>
+<h1 class="login">ログイン</h1>
+<div class="row">
+    <div class="col-md-6 col-md-offset-3">
+        <%= form_with(url: login_path, scope: :session, local: true) do |f| %>
+        <%= f.label :メールアドレス, class: "login_address" %>
+        <%= f.email_field :email, class: 'form-control' %>
+
+        <%= f.label :パスワード, class: "login_password" %>
+        <%= f.password_field :password, class: 'form-control' %>
+
+        <%= f.label :ログイン情報を保存, class: "checkbox-inline" do %>
+        <%= f.check_box :remember_me %>
+        <span　class="remember">ログイン情報を保存</span>
+        <% end %>
+        <%= f.submit "ログイン", class: "btn btn-primary" %>
+        <% end %>
+
+        <p class="yet">まだ登録が済んでない方はこちらへ <%= link_to "新規登録", "/signup" %></p>
+    </div>
+</div>

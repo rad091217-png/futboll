@@ -1,0 +1,2 @@
+module ChampionsPostsHelper
+end

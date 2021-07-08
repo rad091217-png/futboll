@@ -1,0 +1,27 @@
+<%= stylesheet_link_tag "users_edit", media: "all", 'data-turbolinks-track': "reload" %>
+
+<body>
+    <h1 class="signup">メールアドレス、パスワードの更新</h1>
+    <div class="row">
+        <div class="col-md-6 col-md-offset-3">
+            <div class="insert_information">
+                <%= form_with(model: @user, local: true) do |f| %>
+                <%= render "shared/error_messages" %>
+
+                <%= f.label :名前, class: "change_name" %>
+                <%= f.text_field :name, class: "form-control" %>
+
+                <%= f.label :メールアドレス, class: "change_address" %>
+                <%= f.email_field :email, class: "form-control" %>
+
+                <%= f.label :パスワード, class: "change_password" %>
+                <%= f.password_field :password, class: "form-control" %>
+
+                <%= f.label :password_confirmation, "入力したパスワードの確認", class: "change_password_confirmation" %>
+                <%= f.password_field :password_confirmation, class: "form-control" %>
+                <%= f.submit "変更の保存", class: "btn btn-primary" %>
+            </div>
+            <% end %>
+        </div>
+    </div>
+</body>

@@ -1,0 +1,47 @@
+<%= stylesheet_link_tag "users_show", media: 'all', 'data-turbolinks-track': 'reload' %>
+<div class="profile">
+<section class="avatar">
+    <%= image_tag @user.avatar.url if @user.avatar? %>
+</section>
+<h1 class="user_name">
+    <%= @user.name %>
+</h1>
+<section class="introduction">
+<p class="introduction">自己紹介</p>
+<% if @user.correct_user(current_user) %>
+    <%= current_user.introduction %>
+    <% else %>
+    <% end %>
+</section>
+<% if @user.correct_user(current_user) %>
+<p class="edit_profile"><%=link_to "プロフィール設定", edit_profile_path %></p>
+<% else %>
+<% end %>
+
+<div class="stats">
+    <%= render 'shared/stats' %>
+</div>
+ <div class="col-md-8">
+
+<p class="follow_botton"><%= render 'follow_form' if logged_in? %></p>
+
+<% @user.laliga_posts.each do |laliga_post| %>
+  <% end %>
+
+<% if @user.id == current_user.id %>
+
+<% else %>
+<% if @isRoom == true %>
+<div class="button">
+    <p class="message"><a href="/rooms/<%= @roomId %>">メッセージ</a>
+        <% else %>
+        <%= form_for @room do |f| %>
+        <%= fields_for @entry do |e| %>
+        <%= e.hidden_field :user_id, :value=> @user.id %>
+        <% end %>
+        <%= f.submit "メッセージ", class: "btn btn-primary" %></p>
+    <% end %>
+    <% end %>
+    <% end %>
+</div>
+</div>

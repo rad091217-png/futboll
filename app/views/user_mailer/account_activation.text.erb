@@ -1,0 +1,8 @@
+<p class="welcome">ヨーロッパサッカー掲示板にようこそ <%= @user.name %>さん。</p>
+
+<p class="provisional stage">
+   現在、仮登録の状態です。本登録をするには下のリンクのクリックをお願いします。
+</p>
+
+<p class="main registration"><%= link_to '本登録', {controller: 'account_activations', action: 'edit', token: @user.token, id: @user.id } %></p>
+

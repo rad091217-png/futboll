@@ -1,0 +1,236 @@
+@import "common.scss";
+.footer_fixed{
+    min-height: 100vh;
+    position: relative;
+    box-sizing: border-box;
+}
+header {
+    background-color: gray;
+    height: 55px;
+    overflow: hidden;
+    .link {
+        color: white;
+    }
+    .header_title {
+        float: left;
+        font-size: 25px;
+        padding-top: 8px;
+        :hover {
+            color: rgb(193, 193, 241);
+            text-decoration: none;
+        }
+    }
+    li {
+        color: white;
+        list-style: none;
+        float: right;
+        font-size: 17px;
+        padding-bottom: 10px;
+        padding-right: 30px;
+        :hover {
+            color: rgb(193, 193, 241);
+            text-decoration: none;
+        }
+    }
+}
+
+.footer_fixed{
+    min-height: 100vh;
+    position: relative;
+    padding-bottom: 60px;
+    box-sizing: border-box;
+}
+
+footer {
+    background-color: gray;
+    position: absolute;
+    bottom: 0;
+    width: 1535px;
+    height: 50px;
+    .link {
+        color: white;
+        text-decoration: none;
+    }
+    .footer_title {
+        padding-top: 14px;
+        font-size: 25px;
+        :hover {
+            color: rgb(193, 193, 241);
+            text-decoration: none;
+        }
+    }
+}
+
+div.flash.time-limit-success {
+    background-color: blanchedalmond;
+    height: 50px;
+    color: red;
+    font-size: 20px;
+}
+
+div.flash.time-limit-danger {
+    background-color: blanchedalmond;
+    font-size: 20px;
+    height: 50px;
+    color: red;
+}
+
+@media (max-width: 1000px) {
+    .footer_fixed{
+        min-height: 100vh;
+        position: relative;
+        box-sizing: border-box;
+    }
+    header {
+        background-color: gray;
+        height: 50px;
+        width: 1000px;
+        overflow: hidden;
+        .link {
+            color: white;
+        }
+        .header_title {
+            float: left;
+            font-size: 18px;
+            padding-top: 8px;
+            :hover {
+                color: rgb(193, 193, 241);
+                text-decoration: none;
+            }
+        }
+        li {
+            color: white;
+            list-style: none;
+            float: right;
+            font-size: 13px;
+            padding-bottom: 10px;
+            padding-right: 20px;
+            :hover {
+                color: rgb(193, 193, 241);
+                text-decoration: none;
+            }
+        }
+    }
+    
+    .footer_fixed{
+        min-height: 100vh;
+        position: relative;
+        padding-bottom: 60px;
+        box-sizing: border-box;
+    }
+    
+    footer {
+        background-color: gray;
+        position: absolute;
+        bottom: 0;
+        width: 1000px;
+        height: 50px;
+        .link {
+            color: white;
+            text-decoration: none;
+        }
+        .footer_title {
+            padding-top: 14px;
+            font-size: 18px;
+            :hover {
+                color: rgb(193, 193, 241);
+                text-decoration: none;
+            }
+        }
+    }
+    
+    div.flash.time-limit-success {
+        background-color: blanchedalmond;
+        height: 50px;
+        color: red;
+        font-size: 20px;
+    }
+    
+    div.flash.time-limit-danger {
+        background-color: blanchedalmond;
+        font-size: 20px;
+        height: 50px;
+        color: red;
+    }
+}
+
+@media (max-width: 670px) {
+    .footer_fixed{
+        min-height: 100vh;
+        position: relative;
+        box-sizing: border-box;
+    }
+    header {
+        background-color: gray;
+        height: 35px;
+        width: 670px;
+        overflow: hidden;
+        .link {
+            color: white;
+        }
+        .header_title {
+            float: left;
+            font-size: 13px;
+            padding-top: 8px;
+            :hover {
+                color: rgb(193, 193, 241);
+                text-decoration: none;
+            }
+        }
+        li {
+            color: white;
+            list-style: none;
+            float: right;
+            font-size: 8px;
+            padding-bottom: 10px;
+            padding-right: 15px;
+            :hover {
+                color: rgb(193, 193, 241);
+                text-decoration: none;
+            }
+        }
+    }
+    
+    .footer_fixed{
+        min-height: 100vh;
+        position: relative;
+        padding-bottom: 60px;
+        box-sizing: border-box;
+    }
+    
+    footer {
+        background-color: gray;
+        position: absolute;
+        bottom: 0;
+        width: 670px;
+        height: 35px;
+        .link {
+            color: white;
+            text-decoration: none;
+        }
+        .footer_title {
+            padding-top: 14px;
+            font-size: 15px;
+            :hover {
+                color: rgb(193, 193, 241);
+                text-decoration: none;
+            }
+        }
+    }
+    
+    div.flash.time-limit-success {
+        background-color: blanchedalmond;
+        height: 50px;
+        color: red;
+        font-size: 20px;
+    }
+    
+    div.flash.time-limit-danger {
+        background-color: blanchedalmond;
+        font-size: 20px;
+        height: 50px;
+        color: red;
+    }
+}
+
+

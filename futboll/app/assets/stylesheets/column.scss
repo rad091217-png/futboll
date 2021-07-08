@@ -1,0 +1,71 @@
+@import "common.scss";
+table {
+    width: 1535px;
+    font-size: 33.3px;
+    background-color: rgb(247, 247, 248);
+    float: left;
+    overflow: hidden;
+    border-collapse: collapse;
+    :hover {
+        color: orange;
+    }
+    .tbl {
+        text-decoration: none;
+    }
+}
+table.row th,
+table.row td {
+    float: left;
+}
+tr {
+    border-bottom: 1px rgb(171, 171, 187) solid;
+}
+
+@media (max-width: 1000px) {
+    table {
+        width: 1000px;
+        font-size: 46.4px;
+        background-color: rgb(247, 247, 248);
+        float: left;
+        overflow: hidden;
+        border-collapse: collapse;
+        :hover {
+            color: orange;
+        }
+        .tbl {
+            text-decoration: none;
+        }
+    }
+    table.row th,
+    table.row td {
+        float: left;
+    }
+    tr {
+        border-bottom: 1px rgb(171, 171, 187) solid;
+    }
+    @media (max-width: 670px) {
+        table {
+            width: 670px;
+            font-size: 25.8px;
+            background-color: rgb(247, 247, 248);
+            float: left;
+            overflow: hidden;
+            border-collapse: collapse;
+            :hover {
+                color: orange;
+            }
+            .tbl {
+                text-decoration: none;
+            }
+        }
+        table.row th,
+        table.row td {
+            float: left;
+        }
+        tr {
+            border-bottom: 1px rgb(171, 171, 187) solid;
+        }
+    }
+}
+
+

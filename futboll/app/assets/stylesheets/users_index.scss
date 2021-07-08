@@ -1,0 +1,13 @@
+@import "common.scss";
+.users {
+  width: 1500px;
+  list-style: none;
+  section.users {
+    padding: 5px;
+    border-bottom: 1px solid black;
+  }
+}
+.paginate{
+  text-align: left;
+  padding-bottom: 35px;
+}

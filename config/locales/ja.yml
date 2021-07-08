@@ -1,0 +1,14 @@
+ja:
+  activerecord:
+    #設定したいモデル名を指定
+    models:
+      user: ユーザー
+    #属性名を指定
+    
+    attributes:
+      #設定したいモデル名
+      user:
+        #カラム名と表示したい日本語
+        name: 名前
+        email: メールアドレス
+        password: パスワード

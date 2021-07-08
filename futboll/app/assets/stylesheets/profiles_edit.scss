@@ -1,0 +1,24 @@
+@import "common.scss";
+body {
+    background-image: url("soccer_image.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    .edit_profile {
+        text-align: center;
+        margin-top: 70px;
+    }
+    div.row {
+        margin-top: 45px;
+        height: 450px;
+    }
+    .login_password{
+        margin-top: 20px;
+    }
+    .profile_image{
+        margin-top: 20px;
+    }
+    .btn-primary {
+        margin-top: 30px;
+        margin-bottom: 20px;
+    }
+}

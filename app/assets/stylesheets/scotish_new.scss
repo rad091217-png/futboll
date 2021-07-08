@@ -1,0 +1,73 @@
+@import "common.scss";
+body {
+    background-image: url("scotish.png");
+    background-repeat: no-repeat;
+    background-size: 26%;
+    .posts {
+        margin-top: 30px;
+        text-align: center;
+    }
+    .row {
+        height: 550px;
+        .post_name {
+            margin-top: 30px;
+        }
+        .post_comment {
+            margin-top: 30px;
+        }
+        .post_image {
+            margin-top: 30px;
+        }
+        .btn-primary {
+            margin-top: 30px;
+        }
+    }
+    @media (max-width: 1000px) {
+        background-image: url("scotish.png");
+        background-repeat: no-repeat;
+        background-size: 45%;
+        .posts {
+            margin-top: 170px;
+            text-align: center;
+        }
+        .row {
+            height: 550px;
+            .post_name {
+                margin-top: 30px;
+            }
+            .post_comment {
+                margin-top: 30px;
+            }
+            .post_image {
+                margin-top: 30px;
+            }
+            .btn-primary {
+                margin-top: 30px;
+            }
+        }
+    }
+    @media (max-width: 670px) {
+        background-image: url("scotish.png");
+        background-repeat: no-repeat;
+        background-size: 50%;
+        .posts {
+            margin-top: 100px;
+            text-align: center;
+        }
+        .row {
+            height: 550px;
+            .post_name {
+                margin-top: 30px;
+            }
+            .post_comment {
+                margin-top: 30px;
+            }
+            .post_image {
+                margin-top: 30px;
+            }
+            .btn-primary {
+                margin-top: 30px;
+            }
+        }
+    }
+}

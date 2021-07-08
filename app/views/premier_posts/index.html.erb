@@ -1,0 +1,26 @@
+<%= stylesheet_link_tag "premier_index", media: 'all', 'data-turbolinks-track': 'reload' %>
+<h1>プレミアリーグ投稿一覧</h1>
+<h2 class="premier_post_page">投稿ページはこちらへ<span class="new"><%= link_to "投稿ページへ", "/premier_posts/new" %></h2>
+<div class="comments">
+    <div class="comment">
+        <% @premier_posts.each do |premier_post| %>
+    </div>
+    <div class="post">
+        <div class="title">
+            <p class="title">タイトル</p>
+            <section class="title"><%= premier_post.title %></section>
+        </div>
+        <div class="comments">
+            <p class="comments">コメント</p>
+            <section class="comments"><%= premier_post.text %></section>
+        </div>
+        <div class="image">
+            <section class="image"><%= image_tag premier_post.image.url if premier_post.image? %></section>
+            <div class="post_destroy">
+            <%= link_to("投稿削除", premier_post_path(premier_post), {method: :delete} ) %>
+            </div>
+            <p class="user_name">ユーザー名 <%= link_to(premier_post.user.name, user_path(premier_post.user_id)) %></p>
+            <% end %>
+        </div>
+    </div>
+</div>

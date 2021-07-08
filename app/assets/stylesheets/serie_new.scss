@@ -1,0 +1,73 @@
+@import "common.scss";
+body {
+    background-image: url("serie.png");
+    background-repeat: no-repeat;
+    background-size: 25%;
+    .posts {
+        margin-top: 30px;
+        text-align: center;
+    }
+    .row {
+        height: 550px;
+        .post_name {
+            margin-top: 30px;
+        }
+        .post_comment {
+            margin-top: 30px;
+        }
+        .post_image {
+            margin-top: 30px;
+        }
+        .btn-primary {
+            margin-top: 30px;
+        }
+    }
+    @media (max-width: 1000px) {
+        background-image: url("serie.png");
+        background-repeat: no-repeat;
+        background-size: 25%;
+        .posts {
+            margin-top: 150px;
+            text-align: center;
+        }
+        .row {
+            height: 550px;
+            .post_name {
+                margin-top: 30px;
+            }
+            .post_comment {
+                margin-top: 30px;
+            }
+            .post_image {
+                margin-top: 30px;
+            }
+            .btn-primary {
+                margin-top: 30px;
+            }
+        }
+    }
+    @media (max-width: 670px) {
+        background-image: url("serie.png");
+        background-repeat: no-repeat;
+        background-size: 28%;
+        .posts {
+            margin-top: 100px;
+            text-align: center;
+        }
+        .row {
+            height: 550px;
+            .post_name {
+                margin-top: 30px;
+            }
+            .post_comment {
+                margin-top: 30px;
+            }
+            .post_image {
+                margin-top: 30px;
+            }
+            .btn-primary {
+                margin-top: 30px;
+            }
+        }
+    }
+}

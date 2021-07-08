@@ -1,0 +1,2 @@
+module EuroPostsHelper
+end
