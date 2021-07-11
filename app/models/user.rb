@@ -35,7 +35,7 @@ class User < ApplicationRecord
                     uniqueness: true
   has_secure_password
   validates :password, presence: true, length: { minimum: 6 } # allow_nil: true
-  mount_uploader :avatar, ImageUploader
+  has_one_attached :image
 
   def laliga_posts
     return LaligaPost.where(user_id: self.id)

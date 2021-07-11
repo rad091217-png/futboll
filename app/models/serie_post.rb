@@ -1,7 +1,7 @@
 class SeriePost < ApplicationRecord
   validates :title, presence: true, length: { maximum: 20 }
   validates :text, presence: true
-  mount_uploader :image, ImageUploader
+  has_one_attached :image
   belongs_to :user
 
   def correct_user(current_user)
