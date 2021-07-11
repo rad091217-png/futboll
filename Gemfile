@@ -29,6 +29,7 @@ gem "pry-rails"
 gem "jquery-rails"
 gem "dotenv-rails"
 gem "fog-aws"
+gem "aws-sdk-s3", "1.46.0", require: false
 # Use Active Storage variant
 # gem 'image_processing', '~> 1.2'
 
