@@ -91,6 +91,15 @@ class UsersController < ApplicationController
     params.require(:user).permit(:name, :email, :password, :password_confirmation, :avatar, :avatar_cache)
   end
 
+  # ユーザーのログインを確認する
+  def logged_in_user
+    unless logged_in?
+      store_location
+      flash[:danger] = "ログインして下さい"
+      redirect_to login_url
+    end
+  end
+
   def correct_user
     @user = User.find(params[:id])
     redirect_to(root_url) unless current_user?(@user)
@@ -98,5 +107,14 @@ class UsersController < ApplicationController
 
   def admin_user
     redirect_to(root_url) unless current_user.admin?
+  end
+
+  # ユーザーのログインを確認する
+  def logged_in_user
+    unless logged_in?
+      store_location
+      flash.now[:danger] = "ログインして下さい"
+      redirect_to login_url
+    end
   end
 end

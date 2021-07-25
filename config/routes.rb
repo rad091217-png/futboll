@@ -35,7 +35,6 @@ Rails.application.routes.draw do
   end
   resource :profile, only: %i[show edit update]
   resources :users, only: [:index, :show]
-  resources :microposts, only: [:create, :destroy]
 
   if Rails.env.development?
     mount LetterOpenerWeb::Engine, at: "/letter_opener"
