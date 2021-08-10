@@ -1,0 +1,44 @@
+/* line 1, app/assets/stylesheets/sessions_new.scss */
+body {
+  background-image: url("soccer_image.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/* line 5, app/assets/stylesheets/sessions_new.scss */
+body .login {
+  margin-top: 70px;
+  text-align: center;
+}
+
+/* line 9, app/assets/stylesheets/sessions_new.scss */
+body .login_address {
+  margin-top: 30px;
+}
+
+/* line 12, app/assets/stylesheets/sessions_new.scss */
+body .login_password {
+  margin-top: 20px;
+}
+
+/* line 15, app/assets/stylesheets/sessions_new.scss */
+body .form-control {
+  margin-top: 5px;
+  margin-bottom: 20px;
+}
+
+/* line 19, app/assets/stylesheets/sessions_new.scss */
+body .remember {
+  margin-top: 50px;
+}
+
+/* line 22, app/assets/stylesheets/sessions_new.scss */
+body .btn-primary {
+  margin-top: 30px;
+  margin-right: 600px;
+}
+
+/* line 27, app/assets/stylesheets/sessions_new.scss */
+.yet {
+  margin-top: 30px;
+}
