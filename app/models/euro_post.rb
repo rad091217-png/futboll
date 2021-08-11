@@ -11,4 +11,12 @@ class EuroPost < ApplicationRecord
       redirect_back(fallback_location: root_path)
     end
   end
+
+  def user
+    return User.find_by(id: self.user_id)
+  end
+
+  def display_image
+    image.variant(resize_to_limit: [500, 500])
+  end
 end

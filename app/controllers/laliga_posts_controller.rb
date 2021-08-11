@@ -9,10 +9,13 @@ class LaligaPostsController < ApplicationController
   #投稿作成画面
   def show
     @laliga_post = current_user.laliga_posts.build()
+    @user = User.find_by(id: @laliga_post.user_id)
   end
 
   def new
-    @laliga_post = LaligaPost.new
+    @laliga_post = LaligaPost.new(
+      user_id: @current_user.id,
+    )
   end
 
   #投稿内容保存
