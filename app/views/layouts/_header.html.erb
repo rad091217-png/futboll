@@ -5,6 +5,7 @@
     <nav>
         <ul>
             <% if logged_in? %>
+            <li class="logout"><%= link_to "ログアウト", "/logout", {method: :delete, class: "link"} %></li>
             <li class="inquiry"><%= link_to("要望、お問い合わせ", "/contacts/new", {class: "link"}) %></li>
             <li class="edit"><%= link_to "メールアドレス、パスワードの変更", edit_user_path(current_user), {class: "link"} %></li>
             <li class="users_index"><%= link_to "全てのユーザー", "/users", {class: "link"} %></li>
