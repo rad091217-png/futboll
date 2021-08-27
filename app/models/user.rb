@@ -35,7 +35,7 @@ class User < ApplicationRecord
                     uniqueness: true
   has_secure_password
   validates :password, presence: true, length: { minimum: 6 } # allow_nil: true
-  has_one_attached :image
+  has_one_attached :avatar
 
   def laliga_posts
     return LaligaPost.where(user_id: self.id)
@@ -127,6 +127,10 @@ class User < ApplicationRecord
     end
   end
 
+  def display_image
+    avatar.variant(resize_to_limit: [500, 500])
+  end
+
   private
 
   # メールアドレスを小文字にする
@@ -147,9 +151,5 @@ class User < ApplicationRecord
       break if User.find_by(token: token).nil?
     end
     return token
-  end
-
-  def display_image
-    image.variant(resize_to_limit: [500, 500])
   end
 end

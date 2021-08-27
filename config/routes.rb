@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :comments
   root "home#top"
   get "contacts/new"
   post "contacts/create"
@@ -6,7 +7,7 @@ Rails.application.routes.draw do
   get "/signup", to: "users#signup"
   get "/login", to: "sessions#new"
   post "/login", to: "sessions#create"
-  delete "/logout", to: "sessions#destroy"
+  get "/logout", to: "sessions#destroy"
   resources :messages, :only => [:create]
   resources :rooms, :only => [:create, :show, :index]
   resources :users do

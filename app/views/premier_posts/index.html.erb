@@ -15,7 +15,7 @@
             <section class="comments"><%= premier_post.text %></section>
         </div>
         <div class="image">
-            <section class="image"><%= image_tag premier_post.image.url if premier_post.image? %></section>
+            <section class="image"><%= image_tag premier_post.display_image if premier_post.image.attached? %></section>
             <div class="post_destroy">
             <%= link_to("投稿削除", premier_post_path(premier_post), {method: :delete} ) %>
             </div>

@@ -15,7 +15,7 @@
             <section class="comments"><%= league_one_post.text %></section>
         </div>
             <div class="image">
-                <section class="image"><%= image_tag league_one_post.image.url if league_one_post.image? %></section>
+                <section class="image"><%= image_tag league_one_post.display_image if league_one_post.image.attached? %></section>
                 <div class="post_destroy">
             <%= link_to("投稿削除", league_one_post_path(league_one_post), {method: :delete} ) %>
             </div>

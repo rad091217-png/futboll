@@ -16,7 +16,7 @@
         </div>
         <div class="image">
             <section class="image">
-                <%= image_tag jupiler_post.image.url if jupiler_post.image? %>
+                <%= image_tag jupiler_post.display_image if jupiler_post.image.attached? %>
             </section>
             <div class="post_destroy">
                 <%= link_to("投稿削除", jupiler_post_path(jupiler_post), {method: :delete} ) %>

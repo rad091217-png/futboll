@@ -1,7 +1,7 @@
 <%= stylesheet_link_tag "users_show", media: 'all', 'data-turbolinks-track': 'reload' %>
 <div class="profile">
 <section class="avatar">
-    <%= image_tag @user.display_image if @user.image.attached? %>
+    <%= image_tag @user.display_image if @user.avatar.attached? %>
 </section>
 <h1 class="user_name">
     <%= @user.name %>

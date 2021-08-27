@@ -15,7 +15,7 @@
             <section class="comments"><%= serie_post.text %></section>
         </div>
             <div class="image">
-                <section class="image"><%= image_tag serie_post.image.url if serie_post.image? %></section>
+                <section class="image"><%= image_tag serie_post.display_image if serie_post.image.attached? %></section>
                 <div class="post_destroy">
             <%= link_to("投稿削除", serie_post_path(serie_post), {method: :delete} ) %>
             </div>

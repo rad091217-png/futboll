@@ -21,7 +21,6 @@ class LaligaPostsController < ApplicationController
   #投稿内容保存
   def create
     @laliga_post = current_user.laliga_posts.build(post_params)
-    @laliga_post.image.attach(params[:laliga_post][:image])
     if @laliga_post.save
       redirect_to laliga_posts_url
       flash[:success] = "投稿に成功しました"
