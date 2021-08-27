@@ -18,7 +18,7 @@
              <section class="image"><%= image_tag laliga_post.display_image if laliga_post.image.attached? %></section>
             <% if laliga_post.user_id == @current_user.id %>
             <div class="post_destroy">
-            <%= link_to("投稿削除", laliga_post_path(laliga_post), {method: :get} ) %>
+            <%= button_to("投稿削除", laliga_post_path(laliga_post), {method: :delete, class: "	btn-info"}) %>
             <% end %>
             </div>
             <p class="user_name">ユーザー名 <%= link_to(laliga_post.user.name, user_path(laliga_post.user_id)) %></p>

@@ -15,7 +15,7 @@ Rails.application.routes.draw do
       get :following, :followers
     end
   end
-  resources :laliga_posts, only: [:index, :create, :new, :destroy, :update, :edit]
+  resources :laliga_posts, only: [:index, :create, :new, :destroy, :update, :edit, :show]
   resources :bundesu_posts, only: [:index, :create, :new, :destroy, :update, :edit]
   resources :premier_posts, only: [:index, :create, :new, :destroy, :update, :edit]
   resources :serie_posts, only: [:index, :create, :new, :destroy, :update, :edit]
