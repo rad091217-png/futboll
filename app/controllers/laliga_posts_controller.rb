@@ -8,8 +8,9 @@ class LaligaPostsController < ApplicationController
 
   #投稿作成画面
   def show
-    @laliga_post = current_user.laliga_posts.build()
-    @user = User.find_by(id: @laliga_post.user_id)
+    @user = User.find(params[:id])
+    # @microposts = @user.microposts.paginate(page: params[:page])
+    @laliga_posts = @user.laliga_posts.paginate(page: params[:page])
   end
 
   def new

@@ -44,5 +44,7 @@
 </div>
 <div class="laliga_post">
   <% @user.laliga_posts.each do |laliga_post| %>
+    <%= link_to("編集","users/#{@laliga_post.id}/edit") %>
+  <%= link_to("投稿削除","users/#{@laliga_post.id}/destroy",{method:"post"}) %>
   <% end %>
 </div>
