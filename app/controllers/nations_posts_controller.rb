@@ -6,13 +6,16 @@ class NationsPostsController < ApplicationController
     @nations_posts = NationsPost.paginate(page: params[:page]).order(created_at: :desc)
   end
 
-  #投稿作成画面
   def show
-    @nations_post = current_user.nations_posts.build()
+    @user = User.find(params[:id])
+    # @microposts = @user.microposts.paginate(page: params[:page])
+    @nations_posts = @user.nations_posts.paginate(page: params[:page])
   end
 
   def new
-    @nations_post = NationsPost.new
+    @nations_post = NationsPost.new(
+      user_id: @current_user.id,
+    )
   end
 
   #投稿内容保存
@@ -31,7 +34,7 @@ class NationsPostsController < ApplicationController
     @nations_post = NationsPost.find(params[:id])
     @nations_post.destroy
     flash[:success] = "投稿を削除しました"
-    redirect_back(fallback_location: "nations_post/index")
+    redirect_back(fallback_location: "nations_post_path(nations_post)")
   end
 
   private
@@ -49,7 +52,7 @@ class NationsPostsController < ApplicationController
   end
 
   def correct_user
-    @user = User.find(params[:id])
+    @user = NationsPost.find(params[:id]).user
     redirect_to(root_url) unless current_user?(@user)
   end
 end

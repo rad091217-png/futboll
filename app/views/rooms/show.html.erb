@@ -3,14 +3,14 @@
 
 <h4 class="participant">参加者</h4>
 <% @entries.each do |e| %>
-  <h5 class="participant_detail"><a class="participant_detail" href="/users/<%= e.user.id %>"><%= e.user.email%></a></h5>
+  <h5 class="participant_detail"><a class="participant_detail" href="/users/<%= e.user.id %>"><%= e.user.name%></a></h5>
 <% end %>
 
 <section class="message_user_name">
 <% if @messages.present? %>
   <% @messages.each do |m| %>
     <p class="comment"><%= m.content %></p>
-     <br class="user_name" ><a class="user_name" href="/users/<%= m.user_id %>"><%= m.user.email %></a>
+     <br class="user_name" ><a class="user_name" href="/users/<%= m.user_id %>"><%= m.user.name %></a>
     </section>
   <% end %>
 <% else %>

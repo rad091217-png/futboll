@@ -18,8 +18,10 @@
             <section class="image">
                 <%= image_tag jupiler_post.display_image if jupiler_post.image.attached? %>
             </section>
+            <% if jupiler_post.user_id == @current_user.id %>
             <div class="post_destroy">
-                <%= link_to("投稿削除", jupiler_post_path(jupiler_post), {method: :delete} ) %>
+                 <%= button_to("投稿削除", jupiler_post_path(jupiler_post), {method: :delete, class: "btn-danger"}) %>
+            <% end %>
             </div>
             <p class="user_name">ユーザー名 <%= link_to(jupiler_post.user.name, user_path(jupiler_post.user_id)) %></p>
             <% end %>

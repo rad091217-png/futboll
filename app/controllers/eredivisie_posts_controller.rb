@@ -8,11 +8,15 @@ class EredivisiePostsController < ApplicationController
 
   #投稿作成画面
   def show
-    @eredivisie_post = current_user.eredivisie_posts.build()
+    @user = User.find(params[:id])
+    # @microposts = @user.microposts.paginate(page: params[:page])
+    @eredivisie_posts = @user.eredivisie_posts.paginate(page: params[:page])
   end
 
   def new
-    @eredivisie_post = EredivisiePost.new
+    @eredivisie_post = EredivisiePost.new(
+      user_id: @current_user.id,
+    )
   end
 
   #投稿内容保存
@@ -31,7 +35,7 @@ class EredivisiePostsController < ApplicationController
     @eredivisie_post = EredivisiePost.find(params[:id])
     @eredivisie_post.destroy
     flash[:success] = "投稿を削除しました"
-    redirect_back(fallback_location: "eredivisie_post/index")
+    redirect_back(fallback_location: "eredivisie_post_path(eredivisie_post)")
   end
 
   private
@@ -49,7 +53,7 @@ class EredivisiePostsController < ApplicationController
   end
 
   def correct_user
-    @user = User.find(params[:id])
+    @user = EredivisiePost.find(params[:id]).user
     redirect_to(root_url) unless current_user?(@user)
   end
 end

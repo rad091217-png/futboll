@@ -6,7 +6,6 @@ class LaligaPostsController < ApplicationController
     @laliga_posts = LaligaPost.paginate(page: params[:page]).order(created_at: :desc)
   end
 
-  #投稿作成画面
   def show
     @user = User.find(params[:id])
     # @microposts = @user.microposts.paginate(page: params[:page])

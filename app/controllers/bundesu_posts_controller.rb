@@ -8,11 +8,15 @@ class BundesuPostsController < ApplicationController
 
   #投稿作成画面
   def show
-    @bundesu_post = current_user.bundesu_posts.build()
+    @user = User.find(params[:id])
+    # @microposts = @user.microposts.paginate(page: params[:page])
+    @bundesu_posts = @user.bundesu_posts.paginate(page: params[:page])
   end
 
   def new
-    @bundesu_post = BundesuPost.new
+    @bundesu_post = BundesuPost.new(
+      user_id: @current_user.id,
+    )
   end
 
   #投稿内容保存
@@ -31,7 +35,7 @@ class BundesuPostsController < ApplicationController
     @bundesu_post = BundesuPost.find(params[:id])
     @bundesu_post.destroy
     flash[:success] = "投稿を削除しました"
-    redirect_back(fallback_location: "bundesu_post/index")
+    redirect_back(fallback_location: "bundesu_post_path(bundesu_post)")
   end
 
   private
@@ -49,7 +53,7 @@ class BundesuPostsController < ApplicationController
   end
 
   def correct_user
-    @user = User.find(params[:id])
+    @user = BundesuPost.find(params[:id]).user
     redirect_to(root_url) unless current_user?(@user)
   end
 end

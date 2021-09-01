@@ -16,8 +16,10 @@
         </div>
             <div class="image">
                 <section class="image"><%= image_tag serie_post.display_image if serie_post.image.attached? %></section>
+                 <% if serie_post.user_id == @current_user.id %>
                 <div class="post_destroy">
-            <%= link_to("投稿削除", serie_post_path(serie_post), {method: :delete} ) %>
+            <%= button_to("投稿削除", serie_post_path(serie_post), {method: :delete, class: "btn-danger"}) %>
+            <% end %>
             </div>
                 <p class="user_name">ユーザー名 <%= link_to(serie_post.user.name, user_path(serie_post.user_id)) %></p>
             </div>

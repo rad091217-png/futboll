@@ -23,7 +23,6 @@ div.profile {
     .stats {
         margin-top: 20px;
         border-bottom: solid #ffccff 1px;
-        
     }
     .follow_info {
         overflow: hidden;
@@ -44,11 +43,11 @@ div.profile {
     p.message {
         margin-top: 15px;
         font-size: 15px;
+        a.message{
+            color: white;
+        }
     }
     .btn-primary {
         margin-top: 15px;
-    }
-    .button {
-        border-bottom: solid #ffccff 1px;
     }
 }

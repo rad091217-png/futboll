@@ -8,11 +8,15 @@ class SeriePostsController < ApplicationController
 
   #投稿作成画面
   def show
-    @serie_post = current_user.serie_posts.build()
+    @user = User.find(params[:id])
+    # @microposts = @user.microposts.paginate(page: params[:page])
+    @serie_posts = @user.serie_posts.paginate(page: params[:page])
   end
 
   def new
-    @serie_post = SeriePost.new
+    @serie_post = SeriePost.new(
+      user_id: @current_user.id,
+    )
   end
 
   #投稿内容保存
@@ -31,7 +35,7 @@ class SeriePostsController < ApplicationController
     @serie_post = SeriePost.find(params[:id])
     @serie_post.destroy
     flash[:success] = "投稿を削除しました"
-    redirect_back(fallback_location: "serie_post/index")
+    redirect_back(fallback_location: "serie_post_path(serie_post)")
   end
 
   private
@@ -49,7 +53,7 @@ class SeriePostsController < ApplicationController
   end
 
   def correct_user
-    @user = User.find(params[:id])
+    @user = SeriePost.find(params[:id]).user
     redirect_to(root_url) unless current_user?(@user)
   end
 end

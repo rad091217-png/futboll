@@ -15,9 +15,11 @@
             <section class="comments"><%= scotish_post.text %></section>
         </div>
         <div class="image">
-            <section class="image"><%= image_tag scotish_post.image.url if scotish_post.image? %></section>
+            <section class="image"><%= image_tag scotish_post.display_image if scotish_post.image.attached? %></section>
+            <% if scotish_post.user_id == @current_user.id %>
             <div class="post_destroy">
-            <%= link_to("投稿削除", scotish_post_path(scotish_post), {method: :delete} ) %>
+             <%= button_to("投稿削除", scotish_post_path(scotish_post), {method: :delete, class: "btn-danger"}) %>
+            <% end %>
             </div>
             <p class="user_name">ユーザー名 <%= link_to(scotish_post.user.name, user_path(scotish_post.user_id)) %></p>
             <% end %>

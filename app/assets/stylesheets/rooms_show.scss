@@ -8,12 +8,18 @@ p.message {
 }
 h4.participant {
     margin-top: 40px;
+    text-align: center;
+    font-size: 15px;
 }
 a.participant {
     margin-top: 20px;
+    text-align: center;
+    font-size: 15px;
 }
 h5.participant_detail {
     border-bottom: solid #ffccff 1px;
+    font-size: 20px;
+    text-align: center;
 }
 
 .message_user_name {
@@ -23,6 +29,10 @@ h5.participant_detail {
     background-color: rgb(247, 247, 248);
     p.comment {
     margin-bottom: 30px;
+    font-size: 20px;
+    }
+    a.user_name{
+        font-size: 18px;
     }
 }
 section.message {

@@ -6,13 +6,16 @@ class ChampionsPostsController < ApplicationController
     @champions_posts = ChampionsPost.paginate(page: params[:page]).order(created_at: :desc)
   end
 
-  #投稿作成画面
   def show
-    @champions_post = current_user.champions_posts.build()
+    @user = User.find(params[:id])
+    # @microposts = @user.microposts.paginate(page: params[:page])
+    @champions_posts = @user.champions_posts.paginate(page: params[:page])
   end
 
   def new
-    @champions_post = ChampionsPost.new
+    @champions_post = ChampionsPost.new(
+      user_id: @current_user.id,
+    )
   end
 
   #投稿内容保存
@@ -31,7 +34,7 @@ class ChampionsPostsController < ApplicationController
     @champions_post = ChampionsPost.find(params[:id])
     @champions_post.destroy
     flash[:success] = "投稿を削除しました"
-    redirect_back(fallback_location: "champions_post/index")
+    redirect_back(fallback_location: "champions_post_path(champions_post)")
   end
 
   private
@@ -49,7 +52,7 @@ class ChampionsPostsController < ApplicationController
   end
 
   def correct_user
-    @user = User.find(params[:id])
+    @user = ChampionsPost.find(params[:id]).user
     redirect_to(root_url) unless current_user?(@user)
   end
 end

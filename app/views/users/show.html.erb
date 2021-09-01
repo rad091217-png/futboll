@@ -1,50 +1,47 @@
 <%= stylesheet_link_tag "users_show", media: 'all', 'data-turbolinks-track': 'reload' %>
 <div class="profile">
-<section class="avatar">
-    <%= image_tag @user.display_image if @user.avatar.attached? %>
-</section>
-<h1 class="user_name">
-    <%= @user.name %>
-</h1>
-<section class="introduction">
-<p class="introduction">自己紹介</p>
-<% if @user.correct_user(current_user) %>
-    <%= current_user.introduction %>
+  <section class="avatar">
+      <%= image_tag @user.display_image if @user.avatar.attached? %>
+  </section>
+  <h1 class="user_name">
+      <%= @user.name %>
+  </h1>
+  <section class="introduction">
+    <p class="introduction">自己紹介</p>
+    <% if @user.correct_user(current_user) %>
+        <%= current_user.introduction %>
     <% else %>
     <% end %>
-</section>
-<% if @user.correct_user(current_user) %>
-<p class="edit_profile"><%=link_to "プロフィール設定", edit_profile_path %></p>
-<% else %>
-<% end %>
+  </section>
+  <% if @user.correct_user(current_user) %>
+    <p class="edit_profile"><%=link_to "プロフィール設定", edit_profile_path %></p>
+  <% else %>
+  <% end %>
 
-<div class="stats">
-    <%= render 'shared/stats' %>
-</div>
+  <p class="follow_botton"><%= render 'follow_form' if logged_in? %></p>
 
+  <% if @user.id == current_user.id %>
 
-<p class="follow_botton"><%= render 'follow_form' if logged_in? %></p>
-
-<% if @user.id == current_user.id %>
-
-<% else %>
-<% if @isRoom == true %>
-<div class="button">
-    <p class="message"><a href="/rooms/<%= @roomId %>">メッセージ</a>
-        <% else %>
-        <%= form_for @room do |f| %>
+  <% else %>
+    <% if @isRoom == true %>
+      <div class="button">
+          <p class="message"><button class="btn btn-primary"><a class="message" href="/rooms/<%= @roomId %>">メッセージ</a></button>
+      </div>
+    <% else %>
+      <%= form_for @room do |f| %>
         <%= fields_for @entry do |e| %>
-        <%= e.hidden_field :user_id, :value=> @user.id %>
+          <%= e.hidden_field :user_id, :value=> @user.id %>
         <% end %>
-        <%= f.submit "メッセージ", class: "btn btn-primary" %></p>
+      <% end %>
     <% end %>
-    <% end %>
-    <% end %>
+  <% end %>
+    <div class="stats">
+      <%= render 'shared/stats' %>
+  </div>
 </div>
-</div>
+
 <div class="laliga_post">
   <% @user.laliga_posts.each do |laliga_post| %>
-    <%= link_to("編集","users/#{@laliga_post.id}/edit") %>
-  <%= link_to("投稿削除","users/#{@laliga_post.id}/destroy",{method:"post"}) %>
+  <%= render 'laliga_posts/laliga_index' %>
   <% end %>
 </div>

@@ -15,9 +15,11 @@
             <section class="comments"><%= champions_post.text %></section>
         </div>
         <div class="image">
-            <section class="image"><%= image_tag champions_post.image.url if champions_post.image? %></section>
+            <section class="image"><%= image_tag champions_post.display_image if champions_post.image.attached? %></section>
+            <% if champions_post.user_id == @current_user.id %>
             <div class="post_destroy">
-            <%= link_to("投稿削除", champions_post_path(champions_post), {method: :delete} ) %>
+            <%= button_to("投稿削除", champions_post_path(champions_post), {method: :delete, class: "btn-danger"}) %>
+             <% end %>
             </div>
             <p class="user_name">ユーザー名 <%= link_to(champions_post.user.name, user_path(champions_post.user_id)) %></p>
             <% end %>

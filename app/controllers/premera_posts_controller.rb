@@ -8,11 +8,15 @@ class PremeraPostsController < ApplicationController
 
   #投稿作成画面
   def show
-    @premera_post = current_user.premera_posts.build()
+    @user = User.find(params[:id])
+    # @microposts = @user.microposts.paginate(page: params[:page])
+    @premera_posts = @user.premera_posts.paginate(page: params[:page])
   end
 
   def new
-    @premera_post = PremeraPost.new
+    @premera_post = PremeraPost.new(
+      user_id: @current_user.id,
+    )
   end
 
   #投稿内容保存
@@ -31,7 +35,7 @@ class PremeraPostsController < ApplicationController
     @premera_post = PremeraPost.find(params[:id])
     @premera_post.destroy
     flash[:success] = "投稿を削除しました"
-    redirect_back(fallback_location: "premera_post/index")
+    redirect_back(fallback_location: "premera_post_path(premera_post)")
   end
 
   private
@@ -49,7 +53,7 @@ class PremeraPostsController < ApplicationController
   end
 
   def correct_user
-    @user = User.find(params[:id])
+    @user = PremeraPost.find(params[:id]).user
     redirect_to(root_url) unless current_user?(@user)
   end
 end

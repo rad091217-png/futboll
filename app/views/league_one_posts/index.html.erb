@@ -16,8 +16,10 @@
         </div>
             <div class="image">
                 <section class="image"><%= image_tag league_one_post.display_image if league_one_post.image.attached? %></section>
+                <% if league_one_post.user_id == @current_user.id %>
                 <div class="post_destroy">
-            <%= link_to("投稿削除", league_one_post_path(league_one_post), {method: :delete} ) %>
+              <%= button_to("投稿削除", league_one_post_path(league_one_post), {method: :delete, class: "btn-danger"}) %>
+            <% end %>
             </div>
                 <p class="user_name">ユーザー名 <%= link_to(league_one_post.user.name, user_path(league_one_post.user_id)) %></p>
                 <% end %>

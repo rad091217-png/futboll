@@ -6,13 +6,16 @@ class EuropePostsController < ApplicationController
     @europe_posts = EuropePost.paginate(page: params[:page]).order(created_at: :desc)
   end
 
-  #投稿作成画面
   def show
-    @europe_post = current_user.europe_posts.build()
+    @user = User.find(params[:id])
+    # @microposts = @user.microposts.paginate(page: params[:page])
+    @europe_posts = @user.europe_posts.paginate(page: params[:page])
   end
 
   def new
-    @europe_post = EuropePost.new
+    @europe_post = EuropePost.new(
+      user_id: @current_user.id,
+    )
   end
 
   #投稿内容保存
@@ -31,7 +34,7 @@ class EuropePostsController < ApplicationController
     @europe_post = EuropePost.find(params[:id])
     @europe_post.destroy
     flash[:success] = "投稿を削除しました"
-    redirect_back(fallback_location: "europe_post/index")
+    redirect_back(fallback_location: "europe_post_path(europe_post)")
   end
 
   private
@@ -49,7 +52,7 @@ class EuropePostsController < ApplicationController
   end
 
   def correct_user
-    @user = User.find(params[:id])
+    @user = EuropePost.find(params[:id]).user
     redirect_to(root_url) unless current_user?(@user)
   end
 end

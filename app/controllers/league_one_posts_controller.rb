@@ -8,11 +8,15 @@ class LeagueOnePostsController < ApplicationController
 
   #投稿作成画面
   def show
-    @league_one_post = current_user.league_one_posts.build()
+    @user = User.find(params[:id])
+    # @microposts = @user.microposts.paginate(page: params[:page])
+    @league_one_posts = @user.league_one_posts.paginate(page: params[:page])
   end
 
   def new
-    @league_one_post = LeagueOnePost.new
+    @league_one_post = LeagueOnePost.new(
+      user_id: @current_user.id,
+    )
   end
 
   #投稿内容保存
@@ -31,7 +35,7 @@ class LeagueOnePostsController < ApplicationController
     @league_one_posts = LeagueOnePost.find(params[:id])
     @league_one_posts.destroy
     flash[:success] = "投稿を削除しました"
-    redirect_back(fallback_location: "league_one_post/index")
+    redirect_back(fallback_location: "league_one_post_path(league_one_post)")
   end
 
   private
@@ -49,7 +53,7 @@ class LeagueOnePostsController < ApplicationController
   end
 
   def correct_user
-    @user = User.find(params[:id])
+    @user = LeagueOnePost.find(params[:id]).user
     redirect_to(root_url) unless current_user?(@user)
   end
 end
