@@ -1,9 +1,7 @@
 <%= stylesheet_link_tag "euro_index", media: 'all', 'data-turbolinks-track': 'reload' %>
-<h1>ユーロ投稿一覧</h1>
-<h2 class="euro_post_page">投稿ページはこちらへ<span class="new"><%= link_to "投稿ページへ", "/euro_posts/new" %></h2>
 <div class="comments">
     <div class="comment">
-        <% @euro_posts.each do |euro_post| %>
+        <% @user.euro_posts.each do |euro_post| %>
     </div>
     <div class="post">
         <div class="title">

@@ -1,9 +1,7 @@
 <%= stylesheet_link_tag "eredivisie_index", media: 'all', 'data-turbolinks-track': 'reload' %>
-<h1>エールディビジ投稿一覧</h1>
-<h2 class="eredivisie_post_page">投稿ページはこちらへ<span class="new"><%= link_to "投稿ページへ", "/eredivisie_posts/new" %></h2>
 <div class="comments">
 <div class="comment">
-        <% @eredivisie_posts.each do |eredivisie_post| %>
+        <% @user.eredivisie_posts.each do |eredivisie_post| %>
     </div>
     <div class="post">
         <div class="title">

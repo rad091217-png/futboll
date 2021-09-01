@@ -1,9 +1,7 @@
 <%= stylesheet_link_tag "jupiler_index", media: 'all', 'data-turbolinks-track': 'reload' %>
-<h1>ジュピラーリーグ投稿一覧</h1>
-<h2 class="jupiler_post_page">投稿ページはこちらへ<span class="new"><%= link_to "投稿ページへ", "/jupiler_posts/new" %></h2>
 <div class="comments">
     <div class="comment">
-        <% @jupiler_posts.each do |jupiler_post| %>
+        <% @user.jupiler_posts.each do |jupiler_post| %>
     </div>
     <div class="post">
         <div class="title">

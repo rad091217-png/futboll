@@ -1,9 +1,7 @@
 <%= stylesheet_link_tag "scotish_index", media: 'all', 'data-turbolinks-track': 'reload' %>
-<h1>スコティッシュプレミアリーグ投稿一覧</h1>
-<h2 class="scotish_post_page">投稿ページはこちらへ<span class="new"><%= link_to "投稿ページへ", "/scotish_posts/new" %></h2>
 <div class="comments">
     <div class="comment">
-        <% @scotish_posts.each do |scotish_post| %>
+        <% @user.scotish_posts.each do |scotish_post| %>
     </div>
     <div class="post">
         <div class="title">

@@ -1,9 +1,7 @@
 <%= stylesheet_link_tag "europe_index", media: 'all', 'data-turbolinks-track': 'reload' %>
-<h1>ヨーロッパリーグ投稿一覧</h1>
-<h2 class="europe_post_page">投稿ページはこちらへ<span class="new"><%= link_to "投稿ページへ", "/europe_posts/new" %></h2>
 <div class="comments">
     <div class="comment">
-        <% @europe_posts.each do |europe_post| %>
+        <% @user.europe_posts.each do |europe_post| %>
     </div>
     <div class="post">
         <div class="title">

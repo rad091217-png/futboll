@@ -1,22 +1,27 @@
+<%= stylesheet_link_tag "liga_index", media: 'all', 'data-turbolinks-track': 'reload' %>
+<div class="comments">
+    <div class="comment">
 <% @user.laliga_posts.each do |laliga_post| %>
-<div class="post">
-    <div class="title">
-        <p class="title">タイトル</p>
-        <section class="title"><%= laliga_post.title %></section>
     </div>
-    <div class="comments">
-        <p class="comments">コメント</p>
-        <section class="comments"><%= laliga_post.text %></section>
-    </div>
-    <div class="image">
-         <section class="image">
-        <% if laliga_post.user_id == @current_user.id %><%= image_tag laliga_post.display_image if laliga_post.image.attached? %>
-        </section>
-        <div class="post_destroy">
-        <%= button_to("投稿削除", laliga_post_path(laliga_post), {method: :delete, class: "btn-danger"}) %>
-        <% end %>
+    <div class="post">
+        <div class="title">
+            <p class="title">タイトル</p>
+            <section class="title"><%= laliga_post.title %></section>
         </div>
-        <p class="user_name">ユーザー名 <%= link_to(laliga_post.user.name, user_path(laliga_post.user_id)) %></p>
-        <% end %>
+        <div class="comments">
+            <p class="comments">コメント</p>
+            <section class="comments"><%= laliga_post.text %></section>
+        </div>
+        <div class="image">
+             <section class="image">
+            <% if laliga_post.user_id == @current_user.id %><%= image_tag laliga_post.display_image if laliga_post.image.attached? %>
+            </section>
+            <div class="post_destroy">
+            <%= button_to("投稿削除", laliga_post_path(laliga_post), {method: :delete, class: "btn-danger"}) %>
+            <% end %>
+            </div>
+            <p class="user_name">ユーザー名 <%= link_to(laliga_post.user.name, user_path(laliga_post.user_id)) %></p>
+            <% end %>
+        </div>
     </div>
 </div>

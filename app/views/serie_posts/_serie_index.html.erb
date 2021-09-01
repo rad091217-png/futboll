@@ -1,9 +1,7 @@
 <%= stylesheet_link_tag "serie_index", media: 'all', 'data-turbolinks-track': 'reload' %>
-<h1>セリエA投稿一覧</h1>
-<h2 class="serie_post_page">投稿ページはこちらへ<span class="new"><%= link_to "投稿ページへ", "/serie_posts/new" %></h2>
 <div class="comments">
     <div class="comment">
-        <% @serie_posts.each do |serie_post| %>
+        <% @user.serie_posts.each do |serie_post| %>
     </div>
     <div class="post">
         <div class="title">

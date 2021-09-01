@@ -22,7 +22,6 @@ div.profile {
     }
     .stats {
         margin-top: 20px;
-        border-bottom: solid #ffccff 1px;
     }
     .follow_info {
         overflow: hidden;
@@ -49,5 +48,8 @@ div.profile {
     }
     .btn-primary {
         margin-top: 15px;
+    }
+    div.my_post{
+        background-color: white
     }
 }

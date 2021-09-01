@@ -40,8 +40,44 @@
   </div>
 </div>
 
+<div class="my_post">
 <div class="laliga_post">
-  <% @user.laliga_posts.each do |laliga_post| %>
-  <%= render 'laliga_posts/laliga_index' %>
-  <% end %>
+  <%= render "laliga_posts/laliga_index" %>
+</div>
+<div class="bundesu_post">
+  <%= render "bundesu_posts/bundesu_index" %>
+</div>
+<div class="premier_post">
+  <%= render "premier_posts/premier_index" %>
+</div>
+<div class="serie_post">
+  <%= render "serie_posts/serie_index" %>
+</div>
+<div class="league_one_post">
+  <%= render "league_one_posts/league_one_index" %>
+</div>
+<div class="eredivisie_post">
+  <%= render "eredivisie_posts/eredivisie_index" %>
+</div>
+<div class="jupiler_post">
+  <%= render "jupiler_posts/jupiler_index" %>
+</div>
+<div class="premera_post">
+  <%= render "premera_posts/premera_index" %>
+</div>
+<div class="premera_post">
+  <%= render "scotish_posts/scotish_index" %>
+</div>
+<div class="champions_post">
+  <%= render "champions_posts/champions_index" %>
+</div>
+<div class="europe_post">
+  <%= render "europe_posts/europe_index" %>
+</div>
+<div class="euro_post">
+  <%= render "euro_posts/euro_index" %>
+</div>
+<div class="nations_post">
+  <%= render "nations_posts/nations_index" %>
+</div>
 </div>
