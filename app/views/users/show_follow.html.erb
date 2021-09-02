@@ -7,16 +7,15 @@
       <span><%= link_to "プロフィールへ", @user %></span>
     </section>
     <section class="stats">
-      <%= render 'shared/stats' %>
       <% if @users.any? %>
           <% @users.each do |user| %>
           <% end %>
         </div>
       <% end %>
     </section>
-  </aside>
   <div class="follow_info">
     <h3 class="title"><%= @title %></h3>
+  </aside>
   <% if @users.any? %>
       <section class="users_follow">
         <%= render @users %>

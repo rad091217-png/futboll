@@ -18,7 +18,11 @@
   <% else %>
   <% end %>
 
+  <div class="follow_botton">
   <p class="follow_botton"><%= render 'follow_form' if logged_in? %></p>
+</div>
+
+<div class="message">
 
   <% if @user.id == current_user.id %>
 
@@ -35,6 +39,7 @@
       <% end %>
     <% end %>
   <% end %>
+</div>
     <div class="stats">
       <%= render 'shared/stats' %>
   </div>

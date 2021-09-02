@@ -1,6 +1,4 @@
 <%= stylesheet_link_tag "league_one_index", media: 'all', 'data-turbolinks-track': 'reload' %>
-<h1>リーグアン投稿一覧</h1>
-<h2 class="league_one_post_page">投稿ページはこちらへ<span class="new"><%= link_to "投稿ページへ", "/league_one_posts/new" %></h2>
 <div class="comments">
     <div class="comment">
         <% @user.league_one_posts.each do |league_one_post| %>
