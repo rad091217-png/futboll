@@ -1,18 +1,27 @@
 @import "common.scss";
-h1.inquiry {
-    margin-top: 70px;
-    text-align: center;
-}
-.row {
-    margin-top: 45px;
-    .response {
-        margin-top: 15px;
+
+div.inquiry {
+    width: 100vw;
+    height: 100vh;
+    h1.inquiry {
+        margin-top: 70px;
+        text-align: center;
     }
-    .detail_contact {
-        margin-top: 30px;
-    }
-    .btn-primary {
-        margin-top: 30px;
-        margin-bottom: 20px;
+
+    .row {
+        margin-top: 45px;
+
+        .response {
+            margin-top: 15px;
+        }
+
+        .detail_contact {
+            margin-top: 30px;
+        }
+
+        .btn-primary {
+            margin-top: 30px;
+            margin-bottom: 20px;
+        }
     }
 }

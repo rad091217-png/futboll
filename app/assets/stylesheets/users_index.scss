@@ -1,4 +1,7 @@
 @import "common.scss";
+div.users{
+  width: 100vw;
+  height: 100vh;
 .users {
   width: 1500px;
   list-style: none;
@@ -10,4 +13,5 @@
 .paginate{
   text-align: left;
   padding-bottom: 35px;
+}
 }

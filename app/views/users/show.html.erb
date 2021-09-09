@@ -1,88 +1,91 @@
 <%= stylesheet_link_tag "users_show", media: 'all', 'data-turbolinks-track': 'reload' %>
-<div class="profile">
-  <section class="avatar">
+<div class="users">
+  <div class="profile">
+    <section class="avatar">
       <%= image_tag @user.display_image if @user.avatar.attached? %>
-  </section>
-  <h1 class="user_name">
+    </section>
+    <h1 class="user_name">
       <%= @user.name %>
-  </h1>
-  <section class="introduction">
-    <p class="introduction">自己紹介</p>
-    <% if @user.correct_user(current_user) %>
-        <%= current_user.introduction %>
-    <% else %>
-    <% end %>
-  </section>
-  <% if @user.correct_user(current_user) %>
-    <p class="edit_profile"><%=link_to "プロフィール設定", edit_profile_path %></p>
-  <% else %>
-  <% end %>
-
-  <div class="follow_botton">
-  <p class="follow_botton"><%= render 'follow_form' %></p>
-</div>
-
-<div class="message">
-
-  <% if @user.id == current_user.id %>
-
-  <% else %>
-    <% if @isRoom == true %>
-      <div class="button">
-          <p class="message"><button class="btn btn-primary"><a class="message" href="/rooms/<%= @roomId %>">メッセージ</a></button>
-      </div>
-    <% else %>
-      <%= form_for @room do |f| %>
-        <%= fields_for @entry do |e| %>
-          <%= e.hidden_field :user_id, :value=> @user.id %>
-        <% end %>
+    </h1>
+    <section class="introduction">
+      <p class="introduction">自己紹介</p>
+      <% if @user.correct_user(current_user) %>
+      <%= current_user.introduction %>
+      <% else %>
       <% end %>
+    </section>
+    <% if @user.correct_user(current_user) %>
+    <p class="edit_profile"><%=link_to "プロフィール設定", edit_profile_path %></p>
+    <% else %>
     <% end %>
-  <% end %>
-</div>
+
+    <div class="follow_botton">
+      <p class="follow_botton"><%= render 'follow_form' %></p>
+    </div>
+
+    <div class="message">
+
+      <% if @user.id == current_user.id %>
+
+      <% else %>
+      <% if @isRoom == true %>
+      <div class="button">
+        <p class="message"><button class="btn btn-primary"><a class="message"
+              href="/rooms/<%= @roomId %>">メッセージ</a></button>
+      </div>
+      <% else %>
+      <%= form_for @room do |f| %>
+      <%= fields_for @entry do |e| %>
+      <%= e.hidden_field :user_id, :value=> @user.id %>
+      <% end %>
+      <% end %>
+      <% end %>
+      <% end %>
+    </div>
     <div class="stats">
       <%= render 'shared/stats' %>
+    </div>
   </div>
-</div>
 
-<div class="my_post">
-<div class="laliga_post">
-  <%= render "laliga_posts/laliga_index" %>
-</div>
-<div class="bundesu_post">
+  <div class="my_post">
+    <div class="laliga_post">
+      <%= render "laliga_posts/laliga_index" %>
+    </div>
+    <!-- <div class="bundesu_post">
   <%= render "bundesu_posts/bundesu_index" %>
-</div>
-<div class="premier_post">
-  <%= render "premier_posts/premier_index" %>
-</div>
-<div class="serie_post">
-  <%= render "serie_posts/serie_index" %>
-</div>
-<div class="league_one_post">
-  <%= render "league_one_posts/league_one_index" %>
-</div>
-<div class="eredivisie_post">
-  <%= render "eredivisie_posts/eredivisie_index" %>
-</div>
-<div class="jupiler_post">
-  <%= render "jupiler_posts/jupiler_index" %>
-</div>
-<div class="premera_post">
-  <%= render "premera_posts/premera_index" %>
-</div>
-<div class="premera_post">
-  <%= render "scotish_posts/scotish_index" %>
-</div>
-<div class="champions_post">
-  <%= render "champions_posts/champions_index" %>
-</div>
-<div class="europe_post">
-  <%= render "europe_posts/europe_index" %>
-</div>
-<div class="euro_post">
-  <%= render "euro_posts/euro_index" %>
-</div>
-<div class="nations_post">
-  <%= render "nations_posts/nations_index" %>
-</div>
+</div> -->
+    <div class="premier_post">
+      <%= render "premier_posts/premier_index" %>
+    </div>
+    <div class="serie_post">
+      <%= render "serie_posts/serie_index" %>
+    </div>
+    <div class="league_one_post">
+      <%= render "league_one_posts/league_one_index" %>
+    </div>
+    <div class="eredivisie_post">
+      <%= render "eredivisie_posts/eredivisie_index" %>
+    </div>
+    <div class="jupiler_post">
+      <%= render "jupiler_posts/jupiler_index" %>
+    </div>
+    <div class="premera_post">
+      <%= render "premera_posts/premera_index" %>
+    </div>
+    <div class="premera_post">
+      <%= render "scotish_posts/scotish_index" %>
+    </div>
+    <div class="champions_post">
+      <%= render "champions_posts/champions_index" %>
+    </div>
+    <div class="europe_post">
+      <%= render "europe_posts/europe_index" %>
+    </div>
+    <div class="euro_post">
+      <%= render "euro_posts/euro_index" %>
+    </div>
+    <div class="nations_post">
+      <%= render "nations_posts/nations_index" %>
+    </div>
+  </div>
 </div>

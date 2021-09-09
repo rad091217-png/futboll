@@ -7,6 +7,8 @@ body{
     background-blend-mode:soft-light;
     background-size: 100%;
     .main{
+        width: 100vw;
+        height: 100vh;
         margin-left: 250px;
         margin-top: 200px;
         .welcome{
@@ -26,6 +28,8 @@ body{
         background-blend-mode:soft-light;
         background-size: 200%;
         .main{
+            width: 100vw;
+            height: 100vh;
             margin-left: 250px;
             margin-top: 200px;
             .welcome{
@@ -46,6 +50,8 @@ body{
             background-blend-mode:soft-light;
             background-size: 430%;
             .main{
+                width: 100vw;
+                height: 100vh;
                 margin-left: 130px;
                 margin-top: 200px;
                 .welcome{
@@ -63,6 +69,7 @@ body{
 
     }
 }
+
 
 
 

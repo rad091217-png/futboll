@@ -1,55 +1,75 @@
 @import "common.scss";
-div.profile {
-    text-align: center;
-    section.avatar img {
-        margin-top: 10px;
-        height: 110px;
-        width: 110px;
-        border-radius: 100%;
-    }
-    .user_name {
-        font-size: 20px;
-        :hover {
-            text-decoration: none;
+
+div.users {
+    width: 100vw;
+    height: 100vh;
+
+    div.profile {
+        text-align: center;
+
+        section.avatar img {
+            margin-top: 10px;
+            height: 110px;
+            width: 110px;
+            border-radius: 100%;
         }
-    }
-    p.introduction {
-        margin-top: 30px;
-        font-size: 20px;
-    }
-    .edit_profile {
-        margin-top: 20px;
-    }
-    .stats {
-        margin-top: 20px;
-    }
-    .follow_info {
-        overflow: hidden;
-        :hover {
-            color: rgb(193, 193, 241);
-            text-decoration: none;
+
+        .user_name {
+            font-size: 20px;
+
+            :hover {
+                text-decoration: none;
+            }
         }
-        .my_follower,
-        .follow {
-            margin-right: 10px;
-            list-style: none;
-            float: right;
+
+        p.introduction {
+            margin-top: 30px;
+            font-size: 20px;
         }
-    }
-    .follow_botton {
-        margin-top: 15px;
-    }
-    p.message {
-        margin-top: 15px;
-        font-size: 15px;
-        a.message{
-            color: white;
+
+        .edit_profile {
+            margin-top: 20px;
         }
-    }
-    .btn-primary {
-        margin-top: 15px;
-    }
-    div.my_post{
-        background-color: white
+
+        .stats {
+            margin-top: 20px;
+        }
+
+        .follow_info {
+            overflow: hidden;
+
+            :hover {
+                color: rgb(193, 193, 241);
+                text-decoration: none;
+            }
+
+            .my_follower,
+            .follow {
+                margin-right: 10px;
+                list-style: none;
+                float: right;
+            }
+        }
+
+        .follow_botton {
+            margin-top: 15px;
+        }
+
+        p.message {
+            margin-top: 15px;
+            font-size: 15px;
+
+            a.message {
+                color: white;
+            }
+        }
+
+        .btn-primary {
+            margin-top: 15px;
+        }
+
+        div.my_post {
+            background-color: white
+        }
     }
 }
