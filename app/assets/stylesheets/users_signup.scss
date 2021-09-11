@@ -4,102 +4,142 @@ body {
   background-image: url("soccer_image.png");
   background-size: cover;
   background-repeat: no-repeat;
-  .signup {
-    text-align: center;
 
-    margin-top: 70px;
+  div.signup {
+    width: 100vw;
+    height: 100vh;
+
+    .signup {
+      text-align: center;
+
+      margin-top: 70px;
+    }
+
+    .row {
+      height: 450px;
+
+      .signup_name {
+        margin-top: 20px;
+      }
+
+      .signup_address {
+        margin-top: 15px;
+      }
+
+      .signup_password {
+        margin-top: 15px;
+      }
+
+      .password_confirmation {
+        margin-top: 15px;
+      }
+
+      .btn-primary {
+        margin-top: 30px;
+        margin-bottom: 20px;
+      }
+    }
+
+    p.mail {
+      font-size: 20px;
+      text-align: center;
+      color: white;
+    }
   }
-  .row {
-    height: 450px;
-    .signup_name {
-      margin-top: 20px;
-    }
-    .signup_address {
-      margin-top: 15px;
-    }
-    .signup_password {
-      margin-top: 15px;
-    }
-    .password_confirmation {
-      margin-top: 15px;
-    }
-    .btn-primary {
-      margin-top: 30px;
-      margin-bottom: 20px;
-    }
-  }
-  p.mail{
-    font-size: 20px;
-    text-align: center;
-    color: white;
-  }
+
   @media (max-width: 1000px) {
     background-image: url("soccer_image.png");
     background-size: cover;
     background-repeat: no-repeat;
-    .signup {
-      text-align: center;
-  
-      margin-top: 70px;
-    }
-    .row {
-      height: 450px;
-      .signup_name {
+
+    div.signup {
+      width: 100vw;
+      height: 100vh;
+
+      .signup {
+        text-align: center;
+
+        margin-top: 70px;
+      }
+
+      .row {
+        height: 450px;
+
+        .signup_name {
+          margin-top: 20px;
+        }
+
+        .signup_address {
+          margin-top: 15px;
+        }
+
+        .signup_password {
+          margin-top: 15px;
+        }
+
+        .password_confirmation {
+          margin-top: 15px;
+        }
+
+        .btn-primary {
+          margin-top: 30px;
+          margin-bottom: 20px;
+        }
+      }
+
+      p.mail {
         margin-top: 20px;
+        font-size: 25px;
+        text-align: center;
+        color: white;
       }
-      .signup_address {
-        margin-top: 15px;
-      }
-      .signup_password {
-        margin-top: 15px;
-      }
-      .password_confirmation {
-        margin-top: 15px;
-      }
-      .btn-primary {
-        margin-top: 30px;
-        margin-bottom: 20px;
-      }
-    }
-    p.mail{
-      margin-top: 20px;
-      font-size: 25px;
-      text-align: center;
-      color: white;
     }
   }
+
   @media (max-width: 670px) {
     background-image: url("soccer_image.png");
     background-size: cover;
     background-repeat: no-repeat;
-    .signup {
-      text-align: center;
-      margin-top: 30px;
-    }
-    .row {
-      height: 420px;
-      .signup_name {
-        margin-top: 20px;
-      }
-      .signup_address {
-        margin-top: 15px;
-      }
-      .signup_password {
-        margin-top: 15px;
-      }
-      .password_confirmation {
-        margin-top: 15px;
-      }
-      .btn-primary {
+
+    div.signup {
+      width: 100vw;
+      height: 100vh;
+
+      .signup {
+        text-align: center;
         margin-top: 30px;
-        margin-bottom: 20px;
       }
-    }
-    p.mail{
-      font-size: 14px;
-      text-align: center;
-      color: white;
+
+      .row {
+        height: 420px;
+
+        .signup_name {
+          margin-top: 20px;
+        }
+
+        .signup_address {
+          margin-top: 15px;
+        }
+
+        .signup_password {
+          margin-top: 15px;
+        }
+
+        .password_confirmation {
+          margin-top: 15px;
+        }
+
+        .btn-primary {
+          margin-top: 30px;
+          margin-bottom: 20px;
+        }
+      }
+
+      p.mail {
+        font-size: 14px;
+        text-align: center;
+        color: white;
+      }
     }
   }
 }
-
