@@ -3,26 +3,26 @@
 <h2 class="scotish_post_page">投稿ページはこちらへ<span class="new"><%= link_to "投稿ページへ", "/scotish_posts/new" %></h2>
 <div class="comments">
     <div class="comment">
-        <% @scotish_posts.each do |scotish_post| %>
     </div>
+    <% @scotish_posts.each do |scotish_post| %>
     <div class="post">
         <div class="title">
-            <p class="title">タイトル</p>
+            <p class="title">スコティッシュタイトル</p>
             <section class="title"><%= scotish_post.title %></section>
         </div>
         <div class="comments">
-            <p class="comments">コメント</p>
+            <p class="comments">スコティッシュコメント</p>
             <section class="comments"><%= scotish_post.text %></section>
         </div>
         <div class="image">
             <section class="image"><%= image_tag scotish_post.display_image if scotish_post.image.attached? %></section>
             <% if scotish_post.user_id == @current_user.id %>
             <div class="post_destroy">
-             <%= button_to("投稿削除", scotish_post_path(scotish_post), {method: :delete, class: "btn-danger"}) %>
-            <% end %>
+                <%= button_to("投稿削除", scotish_post_path(scotish_post), {method: :delete, class: "btn-danger"}) %>
+                <% end %>
             </div>
             <p class="user_name">ユーザー名 <%= link_to(scotish_post.user.name, user_path(scotish_post.user_id)) %></p>
-            <% end %>
         </div>
     </div>
+    <% end %>
 </div>

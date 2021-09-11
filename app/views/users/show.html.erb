@@ -26,7 +26,6 @@
     <div class="message">
 
       <% if @user.id == current_user.id %>
-
       <% else %>
       <% if @isRoom == true %>
       <div class="button">
@@ -51,9 +50,9 @@
     <div class="laliga_post">
       <%= render "laliga_posts/laliga_index" %>
     </div>
-    <!-- <div class="bundesu_post">
-  <%= render "bundesu_posts/bundesu_index" %>
-</div> -->
+    <div class="bundesu_post">
+      <%= render "bundesu_posts/bundesu_index" %>
+    </div>
     <div class="premier_post">
       <%= render "premier_posts/premier_index" %>
     </div>

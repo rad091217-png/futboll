@@ -39,7 +39,6 @@ header {
 
 footer {
     background-color: gray;
-    position: absolute;
     bottom: 0;
     width: 1535px;
     height: 50px;
@@ -72,11 +71,6 @@ div.flash.time-limit-danger {
 }
 
 @media (max-width: 1000px) {
-    .footer_fixed{
-        // min-height: 100vh;
-        position: relative;
-        box-sizing: border-box;
-    }
     header {
         background-color: gray;
         height: 50px;
@@ -117,7 +111,6 @@ div.flash.time-limit-danger {
 
     footer {
         background-color: gray;
-        position: absolute;
         bottom: 0;
         width: 1000px;
         height: 50px;
@@ -151,11 +144,6 @@ div.flash.time-limit-danger {
 }
 
 @media (max-width: 670px) {
-    .footer_fixed{
-        // min-height: 100vh;
-        position: relative;
-        box-sizing: border-box;
-    }
     header {
         background-color: gray;
         height: 35px;
@@ -196,7 +184,6 @@ div.flash.time-limit-danger {
 
     footer {
         background-color: gray;
-        position: absolute;
         bottom: 0;
         width: 670px;
         height: 35px;

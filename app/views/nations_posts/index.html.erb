@@ -3,26 +3,26 @@
 <h2 class="nations_post_page">投稿ページはこちらへ<span class="new"><%= link_to "投稿ページへ", "/nations_posts/new" %></h2>
 <div class="comments">
     <div class="comment">
-        <% @nations_posts.each do |nations_post| %>
     </div>
+    <% @nations_posts.each do |nations_post| %>
     <div class="post">
         <div class="title">
-            <p class="title">タイトル</p>
+            <p class="title">ネーションズリーグタイトル</p>
             <section class="title"><%= nations_post.title %></section>
         </div>
         <div class="comments">
-            <p class="comments">コメント</p>
+            <p class="comments">ネーションズリーグコメント</p>
             <section class="comments"><%= nations_post.text %></section>
         </div>
         <div class="image">
             <section class="image"><%= image_tag nations_post.display_image if nations_post.image.attached? %></section>
             <% if nations_post.user_id == @current_user.id %>
             <div class="post_destroy">
-             <%= button_to("投稿削除", nations_post_path(nations_post), {method: :delete, class: "btn-danger"}) %>
-            <% end %>
+                <%= button_to("投稿削除", nations_post_path(nations_post), {method: :delete, class: "btn-danger"}) %>
+                <% end %>
             </div>
             <p class="user_name">ユーザー名 <%= link_to(nations_post.user.name, user_path(nations_post.user_id)) %></p>
-            <% end %>
         </div>
     </div>
+    <% end %>
 </div>

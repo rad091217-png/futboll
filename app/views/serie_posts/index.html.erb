@@ -3,15 +3,15 @@
 <h2 class="serie_post_page">投稿ページはこちらへ<span class="new"><%= link_to "投稿ページへ", "/serie_posts/new" %></h2>
 <div class="comments">
     <div class="comment">
-        <% @serie_posts.each do |serie_post| %>
     </div>
+    <% @serie_posts.each do |serie_post| %>
     <div class="post">
         <div class="title">
-            <p class="title">タイトル</p>
+            <p class="title">セリエタイトル</p>
             <section class="title"><%= serie_post.title %></section>
         </div>
         <div class="comments">
-            <p class="comments">コメント</p>
+            <p class="comments">セリエコメント</p>
             <section class="comments"><%= serie_post.text %></section>
         </div>
         <div class="image">
@@ -22,7 +22,7 @@
                 <% end %>
             </div>
             <p class="user_name">ユーザー名 <%= link_to(serie_post.user.name, user_path(serie_post.user_id)) %></p>
-            <% end %>
         </div>
     </div>
+    <% end %>
 </div>

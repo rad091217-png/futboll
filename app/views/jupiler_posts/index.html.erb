@@ -3,15 +3,15 @@
 <h2 class="jupiler_post_page">投稿ページはこちらへ<span class="new"><%= link_to "投稿ページへ", "/jupiler_posts/new" %></h2>
 <div class="comments">
     <div class="comment">
-        <% @jupiler_posts.each do |jupiler_post| %>
     </div>
+    <% @jupiler_posts.each do |jupiler_post| %>
     <div class="post">
         <div class="title">
-            <p class="title">タイトル</p>
+            <p class="title">ジュピラータイトル</p>
             <section class="title"><%= jupiler_post.title %></section>
         </div>
         <div class="comments">
-            <p class="comments">コメント</p>
+            <p class="comments">ジュピラーコメント</p>
             <section class="comments"><%= jupiler_post.text %></section>
         </div>
         <div class="image">
@@ -24,7 +24,7 @@
             <% end %>
             </div>
             <p class="user_name">ユーザー名 <%= link_to(jupiler_post.user.name, user_path(jupiler_post.user_id)) %></p>
-            <% end %>
         </div>
     </div>
+    <% end %>
 </div>

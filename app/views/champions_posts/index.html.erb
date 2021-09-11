@@ -3,15 +3,15 @@
 <h2 class="champions_post_page">投稿ページはこちらへ<span class="new"><%= link_to "投稿ページへ", "/champions_posts/new" %></h2>
 <div class="comments">
     <div class="comment">
-        <% @champions_posts.each do |champions_post| %>
     </div>
+    <% @champions_posts.each do |champions_post| %>
     <div class="post">
         <div class="title">
-            <p class="title">タイトル</p>
+            <p class="title">チャンピオンズリーグタイトル</p>
             <section class="title"><%= champions_post.title %></section>
         </div>
         <div class="comments">
-            <p class="comments">コメント</p>
+            <p class="comments">チャンピオンズリーグコメント</p>
             <section class="comments"><%= champions_post.text %></section>
         </div>
         <div class="image">
@@ -22,7 +22,7 @@
              <% end %>
             </div>
             <p class="user_name">ユーザー名 <%= link_to(champions_post.user.name, user_path(champions_post.user_id)) %></p>
-            <% end %>
         </div>
     </div>
+    <% end %>
 </div>

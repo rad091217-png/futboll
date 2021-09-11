@@ -3,26 +3,26 @@
 <h2 class="premier_post_page">投稿ページはこちらへ<span class="new"><%= link_to "投稿ページへ", "/premier_posts/new" %></h2>
 <div class="comments">
     <div class="comment">
-        <% @premier_posts.each do |premier_post| %>
     </div>
+    <% @premier_posts.each do |premier_post| %>
     <div class="post">
         <div class="title">
-            <p class="title">タイトル</p>
+            <p class="title">プレミアタイトル</p>
             <section class="title"><%= premier_post.title %></section>
         </div>
         <div class="comments">
-            <p class="comments">コメント</p>
+            <p class="comments">プレミアコメント</p>
             <section class="comments"><%= premier_post.text %></section>
         </div>
         <div class="image">
-        <section class="image"><%= image_tag premier_post.display_image if premier_post.image.attached? %></section>
-             <% if premier_post.user_id == @current_user.id %>
+            <section class="image"><%= image_tag premier_post.display_image if premier_post.image.attached? %></section>
+            <% if premier_post.user_id == @current_user.id %>
             <div class="post_destroy">
-            <%= button_to("投稿削除", premier_post_path(premier_post), {method: :delete, class: "btn-danger"}) %>
-            <% end %>
+                <%= button_to("投稿削除", premier_post_path(premier_post), {method: :delete, class: "btn-danger"}) %>
+                <% end %>
             </div>
             <p class="user_name">ユーザー名 <%= link_to(premier_post.user.name, user_path(premier_post.user_id)) %></p>
-            <% end %>
         </div>
     </div>
+    <% end %>
 </div>

@@ -2,14 +2,13 @@
 <div class="comments">
     <div class="comment">
         <% @user.champions_posts.each do |champions_post| %>
-    </div>
     <div class="post">
         <div class="title">
-            <p class="title">タイトル</p>
+            <p class="title">チャンピオンズリーグタイトル</p>
             <section class="title"><%= champions_post.title %></section>
         </div>
         <div class="comments">
-            <p class="comments">コメント</p>
+            <p class="comments">チャンピオンズリーグコメント</p>
             <section class="comments"><%= champions_post.text %></section>
         </div>
         <div class="image">
@@ -23,4 +22,5 @@
             <% end %>
         </div>
     </div>
+</div>
 </div>

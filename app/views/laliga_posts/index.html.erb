@@ -3,27 +3,27 @@
 <h2 class="laliga_post_page">投稿ページはこちらへ<span class="new"><%= link_to "投稿ページへ", "/laliga_posts/new" %></h2>
 <div class="comments">
     <div class="comment">
-        <% @laliga_posts.each do |laliga_post| %>
     </div>
+    <% @laliga_posts.each do |laliga_post| %>
     <div class="post">
         <div class="title">
-            <p class="title">タイトル</p>
+            <p class="title">リーガタイトル</p>
             <section class="title"><%= laliga_post.title %></section>
         </div>
         <div class="comments">
-            <p class="comments">コメント</p>
+            <p class="comments">リーガコメント</p>
             <section class="comments"><%= laliga_post.text %></section>
         </div>
         <div class="image">
-             <section class="image">
-            <% if laliga_post.user_id == @current_user.id %><%= image_tag laliga_post.display_image if laliga_post.image.attached? %>
+            <section class="image">
+                <% if laliga_post.user_id == @current_user.id %><%= image_tag laliga_post.display_image if laliga_post.image.attached? %>
             </section>
             <div class="post_destroy">
-            <%= button_to("投稿削除", laliga_post_path(laliga_post), {method: :delete, class: "btn-danger"}) %>
-            <% end %>
+                <%= button_to("投稿削除", laliga_post_path(laliga_post), {method: :delete, class: "btn-danger"}) %>
+                <% end %>
             </div>
             <p class="user_name">ユーザー名 <%= link_to(laliga_post.user.name, user_path(laliga_post.user_id)) %></p>
-            <% end %>
         </div>
     </div>
+    <% end %>
 </div>

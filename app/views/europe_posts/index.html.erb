@@ -3,26 +3,26 @@
 <h2 class="europe_post_page">投稿ページはこちらへ<span class="new"><%= link_to "投稿ページへ", "/europe_posts/new" %></h2>
 <div class="comments">
     <div class="comment">
-        <% @europe_posts.each do |europe_post| %>
     </div>
+    <% @europe_posts.each do |europe_post| %>
     <div class="post">
         <div class="title">
-            <p class="title">タイトル</p>
+            <p class="title">ヨーロッパリーグタイトル</p>
             <section class="title"><%= europe_post.title %></section>
         </div>
         <div class="comments">
-            <p class="comments">コメント</p>
+            <p class="comments">ヨーロッパリーグコメント</p>
             <section class="comments"><%= europe_post.text %></section>
         </div>
         <div class="image">
             <section class="image"><%= image_tag europe_post.display_image if europe_post.image.attached? %></section>
             <% if europe_post.user_id == @current_user.id %>
             <div class="post_destroy">
-            <%= button_to("投稿削除", europe_post_path(europe_post), {method: :delete, class: "btn-danger"}) %>
-             <% end %>
+                <%= button_to("投稿削除", europe_post_path(europe_post), {method: :delete, class: "btn-danger"}) %>
+                <% end %>
             </div>
             <p class="user_name">ユーザー名 <%= link_to(europe_post.user.name, user_path(europe_post.user_id)) %></p>
-            <% end %>
         </div>
     </div>
+    <% end %>
 </div>
