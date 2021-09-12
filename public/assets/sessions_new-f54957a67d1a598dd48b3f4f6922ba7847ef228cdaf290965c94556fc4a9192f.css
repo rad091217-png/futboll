@@ -1,0 +1,50 @@
+/* line 1, app/assets/stylesheets/sessions_new.scss */
+body {
+  background-image: url("soccer_image.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/* line 6, app/assets/stylesheets/sessions_new.scss */
+body div.login {
+  width: 100vw;
+  height: 100vh;
+}
+
+/* line 10, app/assets/stylesheets/sessions_new.scss */
+body div.login h1.login {
+  margin-top: 70px;
+  text-align: center;
+}
+
+/* line 15, app/assets/stylesheets/sessions_new.scss */
+body div.login .login_address {
+  margin-top: 30px;
+}
+
+/* line 19, app/assets/stylesheets/sessions_new.scss */
+body div.login .login_password {
+  margin-top: 20px;
+}
+
+/* line 23, app/assets/stylesheets/sessions_new.scss */
+body div.login .form-control {
+  margin-top: 5px;
+  margin-bottom: 20px;
+}
+
+/* line 28, app/assets/stylesheets/sessions_new.scss */
+body div.login .remember {
+  margin-top: 50px;
+}
+
+/* line 32, app/assets/stylesheets/sessions_new.scss */
+body div.login .btn-primary {
+  margin-top: 30px;
+  margin-right: 600px;
+}
+
+/* line 38, app/assets/stylesheets/sessions_new.scss */
+body .yet {
+  margin-top: 30px;
+}
