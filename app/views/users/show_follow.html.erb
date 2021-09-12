@@ -1,26 +1,28 @@
 <% provide(:title, @title) %>
 <%= stylesheet_link_tag "show_follow", media: "all", 'data-turbolinks-track': "reload" %>
-<div class="row">
-  <aside class="col-md-4">
-    <section class="user_info">
-      <h1><%= @user.name %></h1>
-      <span><%= link_to "プロフィールへ", @user %></span>
-    </section>
-    <section class="stats">
-      <% if @users.any? %>
-          <% @users.each do |user| %>
-          <% end %>
-        </div>
-      <% end %>
-    </section>
+<div class="show_follow">
+  <div class="row">
+    <aside class="col-md-4">
+      <section class="user_info">
+        <h1><%= @user.name %></h1>
+        <span><%= link_to "プロフィールへ", @user %></span>
+      </section>
+      <section class="stats">
+        <% if @users.any? %>
+        <% @users.each do |user| %>
+        <% end %>
+  </div>
+  <% end %>
+  </section>
   <div class="follow_info">
     <h3 class="title"><%= @title %></h3>
-  </aside>
-  <% if @users.any? %>
-      <section class="users_follow">
-        <%= render @users %>
-      </section>
-      <%= will_paginate %>
+    </aside>
+    <% if @users.any? %>
+    <section class="users_follow">
+      <%= render @users %>
+    </section>
+    <%= will_paginate %>
     <% end %>
   </div>
+</div>
 </div>
