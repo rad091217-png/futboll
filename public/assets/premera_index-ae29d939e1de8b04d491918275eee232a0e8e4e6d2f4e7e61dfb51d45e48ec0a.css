@@ -1,0 +1,205 @@
+/* line 2, app/assets/stylesheets/premera_index.scss */
+body .index_page {
+  width: 100vw;
+  height: 100vh;
+}
+
+/* line 5, app/assets/stylesheets/premera_index.scss */
+body .index_page .premera_post_page {
+  font-size: 20px;
+}
+
+/* line 7, app/assets/stylesheets/premera_index.scss */
+body .index_page .premera_post_page .new {
+  margin-left: 15px;
+}
+
+/* line 11, app/assets/stylesheets/premera_index.scss */
+body .index_page div.post {
+  background-color: #f7f7f8;
+}
+
+/* line 13, app/assets/stylesheets/premera_index.scss */
+body .index_page div.post div.title {
+  margin-top: 40px;
+}
+
+/* line 15, app/assets/stylesheets/premera_index.scss */
+body .index_page div.post div.title p.title {
+  border-top: double 1px black;
+  margin-top: 20px;
+  font-size: 20px;
+}
+
+/* line 20, app/assets/stylesheets/premera_index.scss */
+body .index_page div.post div.title section.title {
+  margin-top: 20px;
+  font-size: 15px;
+}
+
+/* line 25, app/assets/stylesheets/premera_index.scss */
+body .index_page div.post div.comments {
+  margin-top: 25px;
+}
+
+/* line 27, app/assets/stylesheets/premera_index.scss */
+body .index_page div.post div.comments p.comments {
+  margin-top: 20px;
+  font-size: 20px;
+}
+
+/* line 31, app/assets/stylesheets/premera_index.scss */
+body .index_page div.post div.comments section.comments {
+  margin-top: 20px;
+  font-size: 15px;
+}
+
+/* line 36, app/assets/stylesheets/premera_index.scss */
+body .index_page div.post div.post_destroy {
+  margin-top: 20px;
+}
+
+/* line 39, app/assets/stylesheets/premera_index.scss */
+body .index_page div.post .image {
+  margin-top: 30px;
+}
+
+/* line 41, app/assets/stylesheets/premera_index.scss */
+body .index_page div.post .image section.image img {
+  width: 250px;
+  height: 200px;
+}
+
+/* line 46, app/assets/stylesheets/premera_index.scss */
+body .index_page div.post .user_name {
+  margin-top: 40px;
+}
+
+@media (max-width: 1000px) {
+  /* line 52, app/assets/stylesheets/premera_index.scss */
+  body .index_page {
+    width: 100vw;
+    height: 100vh;
+  }
+  /* line 56, app/assets/stylesheets/premera_index.scss */
+  body .index_page .premera_post_page {
+    font-size: 18px;
+  }
+  /* line 59, app/assets/stylesheets/premera_index.scss */
+  body .index_page .premera_post_page .new {
+    margin-left: 15px;
+  }
+  /* line 64, app/assets/stylesheets/premera_index.scss */
+  body .index_page div.post {
+    background-color: #f7f7f8;
+  }
+  /* line 67, app/assets/stylesheets/premera_index.scss */
+  body .index_page div.post div.title {
+    margin-top: 80px;
+  }
+  /* line 70, app/assets/stylesheets/premera_index.scss */
+  body .index_page div.post div.title p.title {
+    border-top: double 1px black;
+    margin-top: 20px;
+    font-size: 20px;
+  }
+  /* line 76, app/assets/stylesheets/premera_index.scss */
+  body .index_page div.post div.title section.title {
+    margin-top: 20px;
+    font-size: 15px;
+  }
+  /* line 82, app/assets/stylesheets/premera_index.scss */
+  body .index_page div.post div.comments {
+    margin-top: 20px;
+  }
+  /* line 85, app/assets/stylesheets/premera_index.scss */
+  body .index_page div.post div.comments p.comments {
+    margin-top: 20px;
+    font-size: 20px;
+  }
+  /* line 90, app/assets/stylesheets/premera_index.scss */
+  body .index_page div.post div.comments section.comments {
+    margin-top: 20px;
+    font-size: 15px;
+  }
+  /* line 96, app/assets/stylesheets/premera_index.scss */
+  body .index_page div.post div.post_destroy {
+    margin-top: 20px;
+  }
+  /* line 100, app/assets/stylesheets/premera_index.scss */
+  body .index_page div.post .image {
+    margin-top: 30px;
+  }
+  /* line 103, app/assets/stylesheets/premera_index.scss */
+  body .index_page div.post .image section.image img {
+    width: 250px;
+    height: 200px;
+  }
+  /* line 109, app/assets/stylesheets/premera_index.scss */
+  body .index_page div.post .user_name {
+    margin-top: 40px;
+  }
+}
+
+@media (max-width: 1000px) and (max-width: 670px) {
+  /* line 116, app/assets/stylesheets/premera_index.scss */
+  body .index_page {
+    width: 100vw;
+    height: 100vh;
+  }
+  /* line 120, app/assets/stylesheets/premera_index.scss */
+  body .index_page .premera_post_page {
+    font-size: 14px;
+  }
+  /* line 123, app/assets/stylesheets/premera_index.scss */
+  body .index_page .premera_post_page .new {
+    margin-left: 15px;
+  }
+  /* line 128, app/assets/stylesheets/premera_index.scss */
+  body .index_page div.post {
+    background-color: #f7f7f8;
+    width: 670px;
+  }
+  /* line 132, app/assets/stylesheets/premera_index.scss */
+  body .index_page div.post div.title {
+    margin-top: 60px;
+  }
+  /* line 135, app/assets/stylesheets/premera_index.scss */
+  body .index_page div.post div.title p.title {
+    border-top: double 1px black;
+    margin-top: 20px;
+    font-size: 20px;
+  }
+  /* line 141, app/assets/stylesheets/premera_index.scss */
+  body .index_page div.post div.title section.title {
+    margin-top: 20px;
+    font-size: 15px;
+  }
+  /* line 147, app/assets/stylesheets/premera_index.scss */
+  body .index_page div.post div.comments {
+    margin-top: 20px;
+  }
+  /* line 150, app/assets/stylesheets/premera_index.scss */
+  body .index_page div.post div.comments p.comments {
+    margin-top: 20px;
+    font-size: 20px;
+  }
+  /* line 155, app/assets/stylesheets/premera_index.scss */
+  body .index_page div.post div.comments section.comments {
+    margin-top: 20px;
+    font-size: 15px;
+  }
+  /* line 161, app/assets/stylesheets/premera_index.scss */
+  body .index_page div.post .image {
+    margin-top: 30px;
+  }
+  /* line 164, app/assets/stylesheets/premera_index.scss */
+  body .index_page div.post .image section.image img {
+    width: 250px;
+    height: 200px;
+  }
+  /* line 170, app/assets/stylesheets/premera_index.scss */
+  body .index_page div.post .user_name {
+    margin-top: 40px;
+  }
+}
