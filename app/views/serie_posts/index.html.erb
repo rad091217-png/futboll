@@ -1,28 +1,29 @@
 <%= stylesheet_link_tag "serie_index", media: 'all', 'data-turbolinks-track': 'reload' %>
 <h1>セリエA投稿一覧</h1>
 <h2 class="serie_post_page">投稿ページはこちらへ<span class="new"><%= link_to "投稿ページへ", "/serie_posts/new" %></h2>
-<div class="comments">
-    <div class="comment">
-    </div>
-    <% @serie_posts.each do |serie_post| %>
-    <div class="post">
-        <div class="title">
-            <p class="title">セリエタイトル</p>
-            <section class="title"><%= serie_post.title %></section>
+    <div class="comments">
+        <div class="comment">
         </div>
-        <div class="comments">
-            <p class="comments">セリエコメント</p>
-            <section class="comments"><%= serie_post.text %></section>
-        </div>
-        <div class="image">
-            <section class="image"><%= image_tag serie_post.display_image if serie_post.image.attached? %></section>
-            <% if serie_post.user_id == @current_user.id %>
-            <div class="post_destroy">
-                <%= button_to("投稿削除", serie_post_path(serie_post), {method: :delete, class: "btn-danger"}) %>
-                <% end %>
+        <% @serie_posts.each do |serie_post| %>
+        <div class="post">
+            <div class="title">
+                <p class="title">セリエタイトル</p>
+                <section class="title"><%= serie_post.title %></section>
             </div>
-            <p class="user_name">ユーザー名 <%= link_to(serie_post.user.name, user_path(serie_post.user_id)) %></p>
+            <div class="comments">
+                <p class="comments">セリエコメント</p>
+                <section class="comments"><%= serie_post.text %></section>
+            </div>
+            <div class="image">
+                <section class="image">
+                    <% if serie_post.user_id == @current_user.id %><%= image_tag serie_post.display_image if serie_post.image.attached? %>
+                </section>
+                <div class="post_destroy">
+                    <%= button_to("投稿削除", serie_post_path(serie_post), {method: :delete, class: "btn-danger"}) %>
+                    <% end %>
+                </div>
+                <p class="user_name">ユーザー名 <%= link_to(serie_post.user.name, user_path(serie_post.user_id)) %></p>
+            </div>
         </div>
+        <% end %>
     </div>
-    <% end %>
-</div>

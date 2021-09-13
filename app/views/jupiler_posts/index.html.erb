@@ -1,30 +1,29 @@
 <%= stylesheet_link_tag "jupiler_index", media: 'all', 'data-turbolinks-track': 'reload' %>
 <h1>ジュピラーリーグ投稿一覧</h1>
 <h2 class="jupiler_post_page">投稿ページはこちらへ<span class="new"><%= link_to "投稿ページへ", "/jupiler_posts/new" %></h2>
-<div class="comments">
-    <div class="comment">
-    </div>
-    <% @jupiler_posts.each do |jupiler_post| %>
-    <div class="post">
-        <div class="title">
-            <p class="title">ジュピラータイトル</p>
-            <section class="title"><%= jupiler_post.title %></section>
+    <div class="comments">
+        <div class="comment">
         </div>
-        <div class="comments">
-            <p class="comments">ジュピラーコメント</p>
-            <section class="comments"><%= jupiler_post.text %></section>
-        </div>
-        <div class="image">
-            <section class="image">
-                <%= image_tag jupiler_post.display_image if jupiler_post.image.attached? %>
-            </section>
-            <% if jupiler_post.user_id == @current_user.id %>
-            <div class="post_destroy">
-                 <%= button_to("投稿削除", jupiler_post_path(jupiler_post), {method: :delete, class: "btn-danger"}) %>
-            <% end %>
+        <% @jupiler_posts.each do |jupiler_post| %>
+        <div class="post">
+            <div class="title">
+                <p class="title">リーガタイトル</p>
+                <section class="title"><%= jupiler_post.title %></section>
             </div>
-            <p class="user_name">ユーザー名 <%= link_to(jupiler_post.user.name, user_path(jupiler_post.user_id)) %></p>
+            <div class="comments">
+                <p class="comments">リーガコメント</p>
+                <section class="comments"><%= jupiler_post.text %></section>
+            </div>
+            <div class="image">
+                <section class="image">
+                    <% if jupiler_post.user_id == @current_user.id %><%= image_tag jupiler_post.display_image if jupiler_post.image.attached? %>
+                </section>
+                <div class="post_destroy">
+                    <%= button_to("投稿削除", jupiler_post_path(jupiler_post), {method: :delete, class: "btn-danger"}) %>
+                    <% end %>
+                </div>
+                <p class="user_name">ユーザー名 <%= link_to(jupiler_post.user.name, user_path(jupiler_post.user_id)) %></p>
+            </div>
         </div>
+        <% end %>
     </div>
-    <% end %>
-</div>

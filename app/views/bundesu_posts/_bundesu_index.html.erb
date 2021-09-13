@@ -5,22 +5,23 @@
     </div>
     <div class="post">
         <div class="title">
-            <p class="title">ブンデスタイトル</p>
+            <p class="title">リーガタイトル</p>
             <section class="title"><%= bundesu_post.title %></section>
         </div>
         <div class="comments">
-            <p class="comments">ブンデスコメント</p>
+            <p class="comments">リーガコメント</p>
             <section class="comments"><%= bundesu_post.text %></section>
         </div>
         <div class="image">
-            <section class="image"><%= image_tag bundesu_post.display_image if bundesu_post.image.attached? %></section>
-             <% if bundesu_post.user_id == @current_user.id %>
+            <section class="image">
+                <% if bundesu_post.user_id == @current_user.id %><%= image_tag bundesu_post.display_image if bundesu_post.image.attached? %>
+            </section>
             <div class="post_destroy">
-            <%= button_to("投稿削除", bundesu_post_path(bundesu_post), {method: :delete, class: "btn-danger"}) %>
-            <% end %>
+                <%= button_to("投稿削除", bundesu_post_path(bundesu_post), {method: :delete, class: "btn-danger"}) %>
+                <% end %>
             </div>
             <p class="user_name">ユーザー名 <%= link_to(bundesu_post.user.name, user_path(bundesu_post.user_id)) %></p>
-            <% end %>
         </div>
     </div>
+    <% end %>
 </div>

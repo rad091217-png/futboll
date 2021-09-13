@@ -1,11 +1,6 @@
 @import "common.scss";
 body {
-    .index_page{
-
-        width: 100vw;
-        height: 100vh;
-
-    .league_one_page {
+    .league_one_post_page {
         font-size: 20px;
         .new {
             margin-left: 15px;
@@ -51,13 +46,10 @@ body {
         }
     }
 }
-}
 @media (max-width: 1000px) {
     .index_page {
-        width: 100vw;
-        height: 100vh;
 
-        .league_one_page  {
+        .league_one_post_page  {
             font-size: 18px;
 
             .new {
@@ -118,10 +110,8 @@ body {
 
     @media (max-width: 670px) {
         .index_page {
-            width: 100vw;
-            height: 100vh;
 
-            .league_one_page {
+            .league_one_post_page{
                 font-size: 14px;
 
                 .new {

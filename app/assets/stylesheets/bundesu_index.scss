@@ -1,10 +1,5 @@
 @import "common.scss";
 body {
-    .index_page{
-
-        width: 100vw;
-        height: 100vh;
-
     .bundesu_post_page {
         font-size: 20px;
         .new {
@@ -51,11 +46,8 @@ body {
         }
     }
 }
-}
 @media (max-width: 1000px) {
     .index_page {
-        width: 100vw;
-        height: 100vh;
 
         .bundesu_post_page  {
             font-size: 18px;
@@ -118,10 +110,8 @@ body {
 
     @media (max-width: 670px) {
         .index_page {
-            width: 100vw;
-            height: 100vh;
 
-            .bundesu_post_page {
+            .bundesu_post_page{
                 font-size: 14px;
 
                 .new {
