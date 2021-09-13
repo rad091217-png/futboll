@@ -1,28 +1,31 @@
 <%= stylesheet_link_tag "bundesu_index", media: 'all', 'data-turbolinks-track': 'reload' %>
-<h1>ブンデスリーガ投稿一覧</h1>
-<h2 class="bundesu_post_page">投稿ページはこちらへ<span class="new"><%= link_to "投稿ページへ", "/bundesu_posts/new" %></h2>
-<div class="comments">
-    <div class="comment">
-    </div>
-    <% @bundesu_posts.each do |bundesu_post| %>
-    <div class="post">
-        <div class="title">
-            <p class="title">ブンデスタイトル</p>
-            <section class="title"><%= bundesu_post.title %></section>
+<div class="index_page">
+    <h1>ブンデスリーガ投稿一覧</h1>
+    <h2 class="bundesu_post_page">投稿ページはこちらへ<span class="new"><%= link_to "投稿ページへ", "/bundesu_posts/new" %></h2>
+    <div class="comments">
+        <div class="comment">
         </div>
-        <div class="comments">
-            <p class="comments">ブンデスコメント</p>
-            <section class="comments"><%= bundesu_post.text %></section>
-        </div>
-        <div class="image">
-            <section class="image"><%= image_tag bundesu_post.display_image if bundesu_post.image.attached? %></section>
-            <% if bundesu_post.user_id == @current_user.id %>
-            <div class="post_destroy">
-                <%= button_to("投稿削除", bundesu_post_path(bundesu_post), {method: :delete, class: "btn-danger"}) %>
-                <% end %>
+        <% @bundesu_posts.each do |bundesu_post| %>
+        <div class="post">
+            <div class="title">
+                <p class="title">ブンデスタイトル</p>
+                <section class="title"><%= bundesu_post.title %></section>
             </div>
-            <p class="user_name">ユーザー名 <%= link_to(bundesu_post.user.name, user_path(bundesu_post.user_id)) %></p>
+            <div class="comments">
+                <p class="comments">ブンデスコメント</p>
+                <section class="comments"><%= bundesu_post.text %></section>
+            </div>
+            <div class="image">
+                <section class="image"><%= image_tag bundesu_post.display_image if bundesu_post.image.attached? %>
+                </section>
+                <% if bundesu_post.user_id == @current_user.id %>
+                <div class="post_destroy">
+                    <%= button_to("投稿削除", bundesu_post_path(bundesu_post), {method: :delete, class: "btn-danger"}) %>
+                    <% end %>
+                </div>
+                <p class="user_name">ユーザー名 <%= link_to(bundesu_post.user.name, user_path(bundesu_post.user_id)) %></p>
+            </div>
         </div>
+        <% end %>
     </div>
-    <% end %>
 </div>

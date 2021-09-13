@@ -1,17 +1,63 @@
 @import "common.scss";
-div.users{
+
+div.users {
   width: 100vw;
   height: 100vh;
-.users {
-  width: 1500px;
-  list-style: none;
-  section.users {
-    padding: 5px;
-    border-bottom: 1px solid black;
+
+  .users {
+    width: 1500px;
+    list-style: none;
+
+    section.users {
+      padding: 5px;
+      border-bottom: 1px solid black;
+    }
+  }
+
+  .paginate {
+    text-align: left;
+    padding-bottom: 35px;
   }
 }
-.paginate{
-  text-align: left;
-  padding-bottom: 35px;
-}
+@media (max-width: 1000px) {
+  div.users {
+    width: 100vw;
+    height: 100vh;
+  
+    .users {
+      width: 1000px;
+      list-style: none;
+  
+      section.users {
+        padding: 5px;
+        border-bottom: 1px solid black;
+      }
+    }
+  
+    .paginate {
+      text-align: left;
+      padding-bottom: 35px;
+    }
+  }
+  @media (max-width: 670px) {
+    div.users {
+      width: 100vw;
+      height: 100vh;
+    
+      .users {
+        width: 1000px;
+        list-style: none;
+    
+        section.users {
+          padding: 5px;
+          border-bottom: 1px solid black;
+        }
+      }
+    
+      .paginate {
+        text-align: left;
+        padding-bottom: 35px;
+      }
+    }
+  }
 }
