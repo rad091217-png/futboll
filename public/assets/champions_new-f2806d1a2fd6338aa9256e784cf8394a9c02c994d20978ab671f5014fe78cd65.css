@@ -1,0 +1,115 @@
+/* line 1, app/assets/stylesheets/champions_new.scss */
+body {
+  background-image: url("champions.png");
+  background-repeat: no-repeat;
+  background-size: 25%;
+}
+
+/* line 10, app/assets/stylesheets/champions_new.scss */
+body .post_page .posts {
+  margin-top: 30px;
+  text-align: center;
+}
+
+/* line 15, app/assets/stylesheets/champions_new.scss */
+body .post_page .row {
+  height: 550px;
+}
+
+/* line 18, app/assets/stylesheets/champions_new.scss */
+body .post_page .row .post_name {
+  margin-top: 30px;
+}
+
+/* line 22, app/assets/stylesheets/champions_new.scss */
+body .post_page .row .post_comment {
+  margin-top: 30px;
+}
+
+/* line 26, app/assets/stylesheets/champions_new.scss */
+body .post_page .row .post_image {
+  margin-top: 30px;
+}
+
+/* line 30, app/assets/stylesheets/champions_new.scss */
+body .post_page .row .btn-primary {
+  margin-top: 30px;
+}
+
+@media (max-width: 1000px) {
+  /* line 1, app/assets/stylesheets/champions_new.scss */
+  body {
+    background-image: url("champions.png");
+    background-repeat: no-repeat;
+    background-size: 40%;
+  }
+  /* line 41, app/assets/stylesheets/champions_new.scss */
+  body .post_page {
+    width: 100vw;
+    height: 100vh;
+  }
+  /* line 45, app/assets/stylesheets/champions_new.scss */
+  body .post_page .posts {
+    margin-top: 150px;
+    text-align: center;
+  }
+  /* line 50, app/assets/stylesheets/champions_new.scss */
+  body .post_page .row {
+    height: 550px;
+  }
+  /* line 53, app/assets/stylesheets/champions_new.scss */
+  body .post_page .row .post_name {
+    margin-top: 30px;
+  }
+  /* line 57, app/assets/stylesheets/champions_new.scss */
+  body .post_page .row .post_comment {
+    margin-top: 30px;
+  }
+  /* line 61, app/assets/stylesheets/champions_new.scss */
+  body .post_page .row .post_image {
+    margin-top: 30px;
+  }
+  /* line 65, app/assets/stylesheets/champions_new.scss */
+  body .post_page .row .btn-primary {
+    margin-top: 30px;
+  }
+}
+
+@media (max-width: 670px) {
+  /* line 1, app/assets/stylesheets/champions_new.scss */
+  body {
+    background-image: url("champions.png");
+    background-repeat: no-repeat;
+    background-size: 45%;
+  }
+  /* line 77, app/assets/stylesheets/champions_new.scss */
+  body .post_page {
+    width: 100vw;
+    height: 100vh;
+  }
+  /* line 81, app/assets/stylesheets/champions_new.scss */
+  body .post_page .posts {
+    margin-top: 100px;
+    text-align: center;
+  }
+  /* line 86, app/assets/stylesheets/champions_new.scss */
+  body .post_page .row {
+    height: 550px;
+  }
+  /* line 89, app/assets/stylesheets/champions_new.scss */
+  body .post_page .row .post_name {
+    margin-top: 30px;
+  }
+  /* line 93, app/assets/stylesheets/champions_new.scss */
+  body .post_page .row .post_comment {
+    margin-top: 30px;
+  }
+  /* line 97, app/assets/stylesheets/champions_new.scss */
+  body .post_page .row .post_image {
+    margin-top: 30px;
+  }
+  /* line 101, app/assets/stylesheets/champions_new.scss */
+  body .post_page .row .btn-primary {
+    margin-top: 30px;
+  }
+}
