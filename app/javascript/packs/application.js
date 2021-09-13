@@ -7,26 +7,35 @@ require("@rails/ujs").start()
 require("turbolinks").start()
 require("@rails/activestorage").start()
 require("channels")
+require_tree .
 require("jquery")
 import "bootstrap"
 
 
-$(function () {
+window.onload = (function () {
   setTimeout("$('.time-limit-success').fadeOut('slow')", 5000)
 })
 
-$(function () {
+window.onload = (function () {
   setTimeout("$('.time-limit-danger').fadeOut('slow')", 5000)
 })
-$(function () {
-  //フッターを最下部に固定
-  var $footer = $('#footer');
-  if (window.innerHeight > $footer.offset().top + $footer.outerHeight()) {
-    $footer.attr({
-      'style': 'position:fixed; top:' + (window.innerHeight - $footer.outerHeight()) + 'px;'
-    });
+/*--------------------------------------------------------------------------*
+ *  
+ *  footerFixed.js
+ *  
+ *  MIT-style license. 
+ *  
+ *  2007 Kazuma Nishihata [to-R]
+ *  http://blog.webcreativepark.net
+ *  
+ *--------------------------------------------------------------------------*/
+
+window.onload = (function(){
+  var $ftr = $('#footer');
+  if( window.innerHeight > $ftr.offset().top + $ftr.outerHeight() ){
+    $ftr.attr({'style': 'position:fixed; top:' + (window.innerHeight - $ftr.outerHeight()) + 'px;' });
   }
-})
+});
 // Uncomment to copy all static images under ../images to the output folder and reference
 // them with the image_pack_tag helper in views (e.g <%= image_pack_tag 'rails.png' %>)
 // or the `imagePath` JavaScript helper below.
