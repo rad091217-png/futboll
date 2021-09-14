@@ -1,3 +1,4 @@
+@import "common.scss";
 body {
     background-image: url("soccer_image.png");
     background-size: cover;
@@ -37,5 +38,87 @@ body {
 
     .yet {
         margin-top: 30px;
+    }
+    @media (max-width: 1000px) {
+        background-image: url("soccer_image.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+    
+        div.login {
+            width: 100vw;
+            height: 100vh;
+    
+            h1.login {
+                margin-top: 70px;
+                text-align: center;
+            }
+    
+            .login_address {
+                margin-top: 30px;
+            }
+    
+            .login_password {
+                margin-top: 20px;
+            }
+    
+            .form-control {
+                margin-top: 5px;
+                margin-bottom: 20px;
+            }
+    
+            .remember {
+                margin-top: 50px;
+            }
+    
+            .btn-primary {
+                margin-top: 30px;
+                margin-right: 600px;
+            }
+        }
+    
+        .yet {
+            margin-top: 30px;
+        }
+    }
+    @media (max-width: 670px) {
+        background-image: url("soccer_image.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+    
+        div.login {
+            width: 100vw;
+            height: 100vh;
+    
+            h1.login {
+                margin-top: 70px;
+                text-align: center;
+            }
+    
+            .login_address {
+                margin-top: 30px;
+            }
+    
+            .login_password {
+                margin-top: 20px;
+            }
+    
+            .form-control {
+                margin-top: 5px;
+                margin-bottom: 20px;
+            }
+    
+            .remember {
+                margin-top: 50px;
+            }
+    
+            .btn-primary {
+                margin-top: 30px;
+                margin-right: 600px;
+            }
+        }
+    
+        .yet {
+            margin-top: 30px;
+        }
     }
 }

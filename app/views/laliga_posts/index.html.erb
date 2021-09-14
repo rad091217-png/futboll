@@ -3,8 +3,8 @@
 <h2 class="laliga_post_page">投稿ページはこちらへ<span class="new"><%= link_to "投稿ページへ", "/laliga_posts/new" %></h2>
 <div class="comments">
     <div class="comment">
+        <% @laliga_posts.each do |laliga_post| %>
     </div>
-    <% @laliga_posts.each do |laliga_post| %>
     <div class="post">
         <div class="title">
             <p class="title">リーガタイトル</p>
