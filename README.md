@@ -1,24 +1,82 @@
-# README
+各ヨーロッパのリーグの事を話し合える掲示板です。　掲示板としてではなくプロフィール設定やDM機能、フィードバックを頂けるようお問い合わせ機能等もあります。
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+ログインして頂く時のアカウント（サイトを見て頂ける時のアカウント）はこちらで用意させて頂きました。もしよければお使いください。
 
-Things you may want to cover:
+メールアドレス kosue3559@gmail.com
 
-* Ruby version
+パスワード　　 chelsea
 
-* System dependencies
 
-* Configuration
+「サイトの機能」
 
-* Database creation
+・文字投稿機能
 
-* Database initialization
+・画像投稿機能(imagemagick 6.9.12-Q8, minimagick, image_processing, 1.9.3)
 
-* How to run the test suite
+・投稿削除機能自分の投稿したものを自分のプロフィールページで見れる機能
 
-* Services (job queues, cache servers, search engines, etc.)
+・投稿されているものから投稿した人のプロフィールページに飛ぶ機能
 
-* Deployment instructions
+・プロフィール設定機能(自己紹介文設定機能、トプ画設定機能)
 
-* ...
+・DM機能(相互フォローでDM開放)
+
+・お問い合わせ機能
+
+・メイラー機能(mailgun)
+
+・フォロー機能
+
+・フォロー解除機能
+
+・フォローユーザー閲覧機能
+
+・メールアドレス、パスワード変更機能
+
+・ページネーション機能(will_paginate, 3.1.8)
+
+・全てのユーザー閲覧機能
+
+・ログイン機能
+
+・ログアウト機能
+
+
+「使用した技術」
+
+・Ruby 2.7.2
+
+・Ruby On Rails 6.0.3.7
+
+・jQuery 1.7.2
+
+・Ajax
+
+・HTML
+
+・CSS
+
+・sqlite3 3.12.1
+
+・postgleSQL 12.6
+
+・imagemagick 6.9.12-Q8
+
+・minimagick
+
+・image_processing, 1.9.3
+
+・activestorage
+
+・minitest 5.11.3
+
+・Docker 20.10.8
+
+・heroku　7.59.0 win32-x64 node-v12.21.0
+
+
+
+
+
+
+
