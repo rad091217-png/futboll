@@ -2,8 +2,6 @@
 
 body {
     div.users {
-        width: 100vw;
-        height: 100vh;
 
         div.profile {
             text-align: center;
@@ -77,8 +75,6 @@ body {
 
     @media (max-width: 1000px) {
         div.users {
-            width: 100vw;
-            height: 100vh;
 
             div.profile {
                 text-align: center;
@@ -154,8 +150,6 @@ body {
 
         @media (max-width: 670px) {
             div.users {
-                width: 100vw;
-                height: 100vh;
 
                 div.profile {
                     text-align: center;
