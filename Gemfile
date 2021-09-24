@@ -17,7 +17,6 @@ gem "webpacker", "~> 4.0"
 gem "turbolinks", "~> 5"
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem "jbuilder", "~> 2.7"
-gem "bootstrap-sass", "3.4.1"
 gem "bcrypt", "3.1.13"
 gem "rails-i18n"
 gem "font-awesome-sass"
@@ -26,7 +25,6 @@ gem "bootstrap-will_paginate", "1.0.0"
 gem "mini_magick"
 gem "image_processing", "1.9.3"
 gem "pry-rails"
-gem "jquery-rails"
 gem "dotenv-rails"
 # Use Active Storage variant
 # gem 'image_processing', '~> 1.2'
