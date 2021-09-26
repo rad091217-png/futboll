@@ -56,6 +56,8 @@
 
 ・CSS
 
+・bootstrap
+
 ・sqlite3 3.12.1
 
 ・postgleSQL 12.6
