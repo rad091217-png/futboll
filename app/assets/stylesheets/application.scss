@@ -1,4 +1,8 @@
-@import '~bootstrap/scss/bootstrap';
+/
+*= require bootstrap/dist/css/bootstrap 
+*= require_tree .
+*= require_self
+/
 header {
     background-color: gray;
     height: 55px;
@@ -36,7 +40,9 @@ header {
     box-sizing: border-box;
     
 }
-
+require bootstrap/dist/css/bootstrap
+require_tree
+require_self
 footer {
     background-color: gray;
     //position: absolute

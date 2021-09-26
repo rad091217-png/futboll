@@ -9,9 +9,7 @@ require("@rails/activestorage").start()
 require("channels")
 require("jquery")
 require("popper")
-require_tree  
-import 'bootstrap';
-import '../stylesheets/application';
+require("bootstrap")
 
 
 function flashSuccess() {
