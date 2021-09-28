@@ -7,17 +7,18 @@ require("@rails/ujs").start()
 require("turbolinks").start()
 require("@rails/activestorage").start()
 require("channels")
-require("jquery")
-require("bootstrap")
+require_tree .
+window.$ = window.jQuery = require('jquery')
+import "bootstrap"
 
 
-function flashSuccess() {
+window.onload = (function () {
   setTimeout("$('.time-limit-success').fadeOut('slow')", 5000)
-};
+})
 
-function flashDanger() {
+window.onload = (function () {
   setTimeout("$('.time-limit-danger').fadeOut('slow')", 5000)
-};
+})
 /*--------------------------------------------------------------------------*
  *  
  *  footerFixed.js
@@ -29,12 +30,12 @@ function flashDanger() {
  *  
  *--------------------------------------------------------------------------*/
 
-function footerFixed(){
+window.onload = (function(){
   var $ftr = $('#footer');
   if( window.innerHeight > $ftr.offset().top + $ftr.outerHeight() ){
     $ftr.attr({'style': 'position:fixed; top:' + (window.innerHeight - $ftr.outerHeight()) + 'px;' });
   }
-};
+});
 // Uncomment to copy all static images under ../images to the output folder and reference
 // them with the image_pack_tag helper in views (e.g <%= image_pack_tag 'rails.png' %>)
 // or the `imagePath` JavaScript helper below.
