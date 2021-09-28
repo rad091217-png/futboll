@@ -1,0 +1,140 @@
+/* line 2, app/assets/stylesheets/sessions_new.scss */
+body {
+  background-image: url("soccer_image.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/* line 7, app/assets/stylesheets/sessions_new.scss */
+body div.login {
+  width: 100vw;
+  height: 100vh;
+}
+
+/* line 11, app/assets/stylesheets/sessions_new.scss */
+body div.login h1.login {
+  margin-top: 70px;
+  text-align: center;
+}
+
+/* line 16, app/assets/stylesheets/sessions_new.scss */
+body div.login .login_address {
+  margin-top: 30px;
+}
+
+/* line 20, app/assets/stylesheets/sessions_new.scss */
+body div.login .login_password {
+  margin-top: 20px;
+}
+
+/* line 24, app/assets/stylesheets/sessions_new.scss */
+body div.login .form-control {
+  margin-top: 5px;
+  margin-bottom: 20px;
+}
+
+/* line 29, app/assets/stylesheets/sessions_new.scss */
+body div.login .remember {
+  margin-top: 50px;
+}
+
+/* line 33, app/assets/stylesheets/sessions_new.scss */
+body div.login .btn-primary {
+  margin-top: 30px;
+  margin-right: 600px;
+}
+
+/* line 39, app/assets/stylesheets/sessions_new.scss */
+body .yet {
+  margin-top: 30px;
+}
+
+@media (max-width: 1000px) {
+  /* line 2, app/assets/stylesheets/sessions_new.scss */
+  body {
+    background-image: url("soccer_image.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  /* line 47, app/assets/stylesheets/sessions_new.scss */
+  body div.login {
+    width: 100vw;
+    height: 100vh;
+  }
+  /* line 51, app/assets/stylesheets/sessions_new.scss */
+  body div.login h1.login {
+    margin-top: 70px;
+    text-align: center;
+  }
+  /* line 56, app/assets/stylesheets/sessions_new.scss */
+  body div.login .login_address {
+    margin-top: 30px;
+  }
+  /* line 60, app/assets/stylesheets/sessions_new.scss */
+  body div.login .login_password {
+    margin-top: 20px;
+  }
+  /* line 64, app/assets/stylesheets/sessions_new.scss */
+  body div.login .form-control {
+    margin-top: 5px;
+    margin-bottom: 20px;
+  }
+  /* line 69, app/assets/stylesheets/sessions_new.scss */
+  body div.login .remember {
+    margin-top: 50px;
+  }
+  /* line 73, app/assets/stylesheets/sessions_new.scss */
+  body div.login .btn-primary {
+    margin-top: 30px;
+    margin-right: 600px;
+  }
+  /* line 79, app/assets/stylesheets/sessions_new.scss */
+  body .yet {
+    margin-top: 30px;
+  }
+}
+
+@media (max-width: 670px) {
+  /* line 2, app/assets/stylesheets/sessions_new.scss */
+  body {
+    background-image: url("soccer_image.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  /* line 88, app/assets/stylesheets/sessions_new.scss */
+  body div.login {
+    width: 100vw;
+    height: 100vh;
+  }
+  /* line 92, app/assets/stylesheets/sessions_new.scss */
+  body div.login h1.login {
+    margin-top: 70px;
+    text-align: center;
+  }
+  /* line 97, app/assets/stylesheets/sessions_new.scss */
+  body div.login .login_address {
+    margin-top: 30px;
+  }
+  /* line 101, app/assets/stylesheets/sessions_new.scss */
+  body div.login .login_password {
+    margin-top: 20px;
+  }
+  /* line 105, app/assets/stylesheets/sessions_new.scss */
+  body div.login .form-control {
+    margin-top: 5px;
+    margin-bottom: 20px;
+  }
+  /* line 110, app/assets/stylesheets/sessions_new.scss */
+  body div.login .remember {
+    margin-top: 50px;
+  }
+  /* line 114, app/assets/stylesheets/sessions_new.scss */
+  body div.login .btn-primary {
+    margin-top: 30px;
+    margin-right: 600px;
+  }
+  /* line 120, app/assets/stylesheets/sessions_new.scss */
+  body .yet {
+    margin-top: 30px;
+  }
+}

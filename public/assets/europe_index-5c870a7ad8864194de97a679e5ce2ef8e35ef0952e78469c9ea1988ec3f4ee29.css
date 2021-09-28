@@ -1,0 +1,190 @@
+/* line 3, app/assets/stylesheets/europe_index.scss */
+body .europe_post_page {
+  font-size: 20px;
+}
+
+/* line 5, app/assets/stylesheets/europe_index.scss */
+body .europe_post_page .new {
+  margin-left: 15px;
+}
+
+/* line 9, app/assets/stylesheets/europe_index.scss */
+body div.post {
+  background-color: #f7f7f8;
+}
+
+/* line 11, app/assets/stylesheets/europe_index.scss */
+body div.post div.title {
+  margin-top: 40px;
+}
+
+/* line 13, app/assets/stylesheets/europe_index.scss */
+body div.post div.title p.title {
+  border-top: double 1px black;
+  margin-top: 20px;
+  font-size: 20px;
+}
+
+/* line 18, app/assets/stylesheets/europe_index.scss */
+body div.post div.title section.title {
+  margin-top: 20px;
+  font-size: 15px;
+}
+
+/* line 23, app/assets/stylesheets/europe_index.scss */
+body div.post div.comments {
+  margin-top: 25px;
+}
+
+/* line 25, app/assets/stylesheets/europe_index.scss */
+body div.post div.comments p.comments {
+  margin-top: 20px;
+  font-size: 20px;
+}
+
+/* line 29, app/assets/stylesheets/europe_index.scss */
+body div.post div.comments section.comments {
+  margin-top: 20px;
+  font-size: 15px;
+}
+
+/* line 34, app/assets/stylesheets/europe_index.scss */
+body div.post div.post_destroy {
+  margin-top: 20px;
+}
+
+/* line 37, app/assets/stylesheets/europe_index.scss */
+body div.post .image {
+  margin-top: 30px;
+}
+
+/* line 39, app/assets/stylesheets/europe_index.scss */
+body div.post .image section.image img {
+  width: 250px;
+  height: 200px;
+}
+
+/* line 44, app/assets/stylesheets/europe_index.scss */
+body div.post .user_name {
+  margin-top: 40px;
+}
+
+@media (max-width: 1000px) {
+  /* line 52, app/assets/stylesheets/europe_index.scss */
+  .index_page .europe_post_page {
+    font-size: 18px;
+  }
+  /* line 55, app/assets/stylesheets/europe_index.scss */
+  .index_page .europe_post_page .new {
+    margin-left: 15px;
+  }
+  /* line 60, app/assets/stylesheets/europe_index.scss */
+  .index_page div.post {
+    background-color: #f7f7f8;
+    width: 1000px;
+  }
+  /* line 64, app/assets/stylesheets/europe_index.scss */
+  .index_page div.post div.title {
+    margin-top: 80px;
+  }
+  /* line 67, app/assets/stylesheets/europe_index.scss */
+  .index_page div.post div.title p.title {
+    border-top: double 1px black;
+    margin-top: 20px;
+    font-size: 20px;
+  }
+  /* line 73, app/assets/stylesheets/europe_index.scss */
+  .index_page div.post div.title section.title {
+    margin-top: 20px;
+    font-size: 15px;
+  }
+  /* line 79, app/assets/stylesheets/europe_index.scss */
+  .index_page div.post div.comments {
+    margin-top: 20px;
+  }
+  /* line 82, app/assets/stylesheets/europe_index.scss */
+  .index_page div.post div.comments p.comments {
+    margin-top: 20px;
+    font-size: 20px;
+  }
+  /* line 87, app/assets/stylesheets/europe_index.scss */
+  .index_page div.post div.comments section.comments {
+    margin-top: 20px;
+    font-size: 15px;
+  }
+  /* line 93, app/assets/stylesheets/europe_index.scss */
+  .index_page div.post div.post_destroy {
+    margin-top: 20px;
+  }
+  /* line 97, app/assets/stylesheets/europe_index.scss */
+  .index_page div.post .image {
+    margin-top: 30px;
+  }
+  /* line 100, app/assets/stylesheets/europe_index.scss */
+  .index_page div.post .image section.image img {
+    width: 250px;
+    height: 200px;
+  }
+  /* line 106, app/assets/stylesheets/europe_index.scss */
+  .index_page div.post .user_name {
+    margin-top: 40px;
+  }
+}
+
+@media (max-width: 1000px) and (max-width: 670px) {
+  /* line 115, app/assets/stylesheets/europe_index.scss */
+  .index_page .europe_post_page {
+    font-size: 14px;
+  }
+  /* line 118, app/assets/stylesheets/europe_index.scss */
+  .index_page .europe_post_page .new {
+    margin-left: 15px;
+  }
+  /* line 123, app/assets/stylesheets/europe_index.scss */
+  .index_page div.post {
+    background-color: #f7f7f8;
+    width: 670px;
+  }
+  /* line 127, app/assets/stylesheets/europe_index.scss */
+  .index_page div.post div.title {
+    margin-top: 60px;
+  }
+  /* line 130, app/assets/stylesheets/europe_index.scss */
+  .index_page div.post div.title p.title {
+    border-top: double 1px black;
+    margin-top: 20px;
+    font-size: 20px;
+  }
+  /* line 136, app/assets/stylesheets/europe_index.scss */
+  .index_page div.post div.title section.title {
+    margin-top: 20px;
+    font-size: 15px;
+  }
+  /* line 142, app/assets/stylesheets/europe_index.scss */
+  .index_page div.post div.comments {
+    margin-top: 20px;
+  }
+  /* line 145, app/assets/stylesheets/europe_index.scss */
+  .index_page div.post div.comments p.comments {
+    margin-top: 20px;
+    font-size: 20px;
+  }
+  /* line 150, app/assets/stylesheets/europe_index.scss */
+  .index_page div.post div.comments section.comments {
+    margin-top: 20px;
+    font-size: 15px;
+  }
+  /* line 156, app/assets/stylesheets/europe_index.scss */
+  .index_page div.post .image {
+    margin-top: 30px;
+  }
+  /* line 159, app/assets/stylesheets/europe_index.scss */
+  .index_page div.post .image section.image img {
+    width: 250px;
+    height: 200px;
+  }
+  /* line 165, app/assets/stylesheets/europe_index.scss */
+  .index_page div.post .user_name {
+    margin-top: 40px;
+  }
+}

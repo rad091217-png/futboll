@@ -1,0 +1,19 @@
+/* line 2, app/assets/stylesheets/account_activations.scss */
+.provisional registration {
+  font-size: 35px;
+}
+
+/* line 5, app/assets/stylesheets/account_activations.scss */
+.welcome {
+  margin-top: 30px;
+}
+
+/* line 8, app/assets/stylesheets/account_activations.scss */
+.provisional stage {
+  margin-top: 30px;
+}
+
+/* line 11, app/assets/stylesheets/account_activations.scss */
+.main registration {
+  margin-top: 50px;
+}

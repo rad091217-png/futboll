@@ -1,0 +1,32 @@
+/* line 3, app/assets/stylesheets/contact_new.scss */
+div.inquiry {
+  width: 100vw;
+  height: 100vh;
+}
+
+/* line 6, app/assets/stylesheets/contact_new.scss */
+div.inquiry h1.inquiry {
+  margin-top: 70px;
+  text-align: center;
+}
+
+/* line 11, app/assets/stylesheets/contact_new.scss */
+div.inquiry .row {
+  margin-top: 45px;
+}
+
+/* line 14, app/assets/stylesheets/contact_new.scss */
+div.inquiry .row .response {
+  margin-top: 15px;
+}
+
+/* line 18, app/assets/stylesheets/contact_new.scss */
+div.inquiry .row .detail_contact {
+  margin-top: 30px;
+}
+
+/* line 22, app/assets/stylesheets/contact_new.scss */
+div.inquiry .row .btn-primary {
+  margin-top: 30px;
+  margin-bottom: 20px;
+}

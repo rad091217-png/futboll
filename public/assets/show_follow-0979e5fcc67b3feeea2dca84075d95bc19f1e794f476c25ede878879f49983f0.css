@@ -1,0 +1,15 @@
+/* line 3, app/assets/stylesheets/show_follow.scss */
+div.show_follow {
+  width: 100vw;
+  height: 100vh;
+}
+
+/* line 7, app/assets/stylesheets/show_follow.scss */
+div.show_follow .my_profile {
+  margin-top: 15px;
+}
+
+/* line 11, app/assets/stylesheets/show_follow.scss */
+div.show_follow .stats {
+  margin-top: 10px;
+}

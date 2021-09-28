@@ -1,0 +1,34 @@
+/* line 2, app/assets/stylesheets/profiles_edit.scss */
+body {
+  background-image: url("soccer_image.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/* line 6, app/assets/stylesheets/profiles_edit.scss */
+body .edit_profile {
+  text-align: center;
+  margin-top: 70px;
+}
+
+/* line 10, app/assets/stylesheets/profiles_edit.scss */
+body div.row {
+  margin-top: 45px;
+  height: 450px;
+}
+
+/* line 14, app/assets/stylesheets/profiles_edit.scss */
+body .login_password {
+  margin-top: 20px;
+}
+
+/* line 17, app/assets/stylesheets/profiles_edit.scss */
+body .profile_image {
+  margin-top: 20px;
+}
+
+/* line 20, app/assets/stylesheets/profiles_edit.scss */
+body .btn-primary {
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
