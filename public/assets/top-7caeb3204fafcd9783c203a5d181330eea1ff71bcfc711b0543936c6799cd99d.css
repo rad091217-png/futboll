@@ -1,0 +1,87 @@
+/* line 3, app/assets/stylesheets/top.scss */
+body {
+  background-image: url("top.png");
+  background-repeat: no-repeat;
+  background-color: rgba(255, 255, 255, 0.3);
+  background-blend-mode: soft-light;
+  background-size: 100%;
+}
+
+/* line 9, app/assets/stylesheets/top.scss */
+body .main {
+  width: 100vw;
+  height: 100vh;
+  margin-left: 250px;
+  margin-top: 200px;
+}
+
+/* line 14, app/assets/stylesheets/top.scss */
+body .main .welcome {
+  font-size: 40px;
+  color: white;
+}
+
+/* line 18, app/assets/stylesheets/top.scss */
+body .main .myfavorite {
+  margin-top: 30px;
+  font-size: 20px;
+  color: white;
+}
+
+@media (max-width: 1000px) {
+  /* line 3, app/assets/stylesheets/top.scss */
+  body {
+    background-image: url("top.png");
+    background-repeat: no-repeat;
+    background-color: rgba(255, 255, 255, 0.3);
+    background-blend-mode: soft-light;
+    background-size: 300%;
+  }
+  /* line 30, app/assets/stylesheets/top.scss */
+  body .main {
+    width: 100vw;
+    height: 100vh;
+    margin-left: 250px;
+    margin-top: 200px;
+  }
+  /* line 35, app/assets/stylesheets/top.scss */
+  body .main .welcome {
+    font-size: 40px;
+    color: white;
+  }
+  /* line 39, app/assets/stylesheets/top.scss */
+  body .main .myfavorite {
+    margin-top: 30px;
+    font-size: 20px;
+    color: white;
+  }
+}
+
+@media (max-width: 1000px) and (max-width: 670px) {
+  /* line 3, app/assets/stylesheets/top.scss */
+  body {
+    background-image: url("top.png");
+    background-repeat: no-repeat;
+    background-color: rgba(255, 255, 255, 0.3);
+    background-blend-mode: soft-light;
+    background-size: 430%;
+  }
+  /* line 52, app/assets/stylesheets/top.scss */
+  body .main {
+    width: 100vw;
+    height: 100vh;
+    margin-left: 130px;
+    margin-top: 200px;
+  }
+  /* line 57, app/assets/stylesheets/top.scss */
+  body .main .welcome {
+    font-size: 40px;
+    color: white;
+  }
+  /* line 61, app/assets/stylesheets/top.scss */
+  body .main .myfavorite {
+    margin-top: 30px;
+    font-size: 20px;
+    color: white;
+  }
+}

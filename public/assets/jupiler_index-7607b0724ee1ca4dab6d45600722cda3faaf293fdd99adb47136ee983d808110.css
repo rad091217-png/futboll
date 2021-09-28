@@ -1,0 +1,190 @@
+/* line 3, app/assets/stylesheets/jupiler_index.scss */
+body .jupiler_post_page {
+  font-size: 20px;
+}
+
+/* line 5, app/assets/stylesheets/jupiler_index.scss */
+body .jupiler_post_page .new {
+  margin-left: 15px;
+}
+
+/* line 9, app/assets/stylesheets/jupiler_index.scss */
+body div.post {
+  background-color: #f7f7f8;
+}
+
+/* line 12, app/assets/stylesheets/jupiler_index.scss */
+body div.post div.title {
+  margin-top: 40px;
+}
+
+/* line 14, app/assets/stylesheets/jupiler_index.scss */
+body div.post div.title p.title {
+  border-top: double 1px black;
+  margin-top: 20px;
+  font-size: 20px;
+}
+
+/* line 19, app/assets/stylesheets/jupiler_index.scss */
+body div.post div.title section.title {
+  margin-top: 20px;
+  font-size: 15px;
+}
+
+/* line 24, app/assets/stylesheets/jupiler_index.scss */
+body div.post div.comments {
+  margin-top: 25px;
+}
+
+/* line 26, app/assets/stylesheets/jupiler_index.scss */
+body div.post div.comments p.comments {
+  margin-top: 20px;
+  font-size: 20px;
+}
+
+/* line 30, app/assets/stylesheets/jupiler_index.scss */
+body div.post div.comments section.comments {
+  margin-top: 20px;
+  font-size: 15px;
+}
+
+/* line 35, app/assets/stylesheets/jupiler_index.scss */
+body div.post div.post_destroy {
+  margin-top: 20px;
+}
+
+/* line 38, app/assets/stylesheets/jupiler_index.scss */
+body div.post .image {
+  margin-top: 30px;
+}
+
+/* line 40, app/assets/stylesheets/jupiler_index.scss */
+body div.post .image section.image img {
+  width: 250px;
+  height: 200px;
+}
+
+/* line 45, app/assets/stylesheets/jupiler_index.scss */
+body div.post .user_name {
+  margin-top: 40px;
+}
+
+@media (max-width: 1000px) {
+  /* line 53, app/assets/stylesheets/jupiler_index.scss */
+  .index_page .jupiler_post_page {
+    font-size: 18px;
+  }
+  /* line 56, app/assets/stylesheets/jupiler_index.scss */
+  .index_page .jupiler_post_page .new {
+    margin-left: 15px;
+  }
+  /* line 61, app/assets/stylesheets/jupiler_index.scss */
+  .index_page div.post {
+    background-color: #f7f7f8;
+    width: 1000px;
+  }
+  /* line 65, app/assets/stylesheets/jupiler_index.scss */
+  .index_page div.post div.title {
+    margin-top: 80px;
+  }
+  /* line 68, app/assets/stylesheets/jupiler_index.scss */
+  .index_page div.post div.title p.title {
+    border-top: double 1px black;
+    margin-top: 20px;
+    font-size: 20px;
+  }
+  /* line 74, app/assets/stylesheets/jupiler_index.scss */
+  .index_page div.post div.title section.title {
+    margin-top: 20px;
+    font-size: 15px;
+  }
+  /* line 80, app/assets/stylesheets/jupiler_index.scss */
+  .index_page div.post div.comments {
+    margin-top: 20px;
+  }
+  /* line 83, app/assets/stylesheets/jupiler_index.scss */
+  .index_page div.post div.comments p.comments {
+    margin-top: 20px;
+    font-size: 20px;
+  }
+  /* line 88, app/assets/stylesheets/jupiler_index.scss */
+  .index_page div.post div.comments section.comments {
+    margin-top: 20px;
+    font-size: 15px;
+  }
+  /* line 94, app/assets/stylesheets/jupiler_index.scss */
+  .index_page div.post div.post_destroy {
+    margin-top: 20px;
+  }
+  /* line 98, app/assets/stylesheets/jupiler_index.scss */
+  .index_page div.post .image {
+    margin-top: 30px;
+  }
+  /* line 101, app/assets/stylesheets/jupiler_index.scss */
+  .index_page div.post .image section.image img {
+    width: 250px;
+    height: 200px;
+  }
+  /* line 107, app/assets/stylesheets/jupiler_index.scss */
+  .index_page div.post .user_name {
+    margin-top: 40px;
+  }
+}
+
+@media (max-width: 1000px) and (max-width: 670px) {
+  /* line 116, app/assets/stylesheets/jupiler_index.scss */
+  .index_page .jupiler_post_page {
+    font-size: 14px;
+  }
+  /* line 119, app/assets/stylesheets/jupiler_index.scss */
+  .index_page .jupiler_post_page .new {
+    margin-left: 15px;
+  }
+  /* line 124, app/assets/stylesheets/jupiler_index.scss */
+  .index_page div.post {
+    background-color: #f7f7f8;
+    width: 670px;
+  }
+  /* line 128, app/assets/stylesheets/jupiler_index.scss */
+  .index_page div.post div.title {
+    margin-top: 60px;
+  }
+  /* line 131, app/assets/stylesheets/jupiler_index.scss */
+  .index_page div.post div.title p.title {
+    border-top: double 1px black;
+    margin-top: 20px;
+    font-size: 20px;
+  }
+  /* line 137, app/assets/stylesheets/jupiler_index.scss */
+  .index_page div.post div.title section.title {
+    margin-top: 20px;
+    font-size: 15px;
+  }
+  /* line 143, app/assets/stylesheets/jupiler_index.scss */
+  .index_page div.post div.comments {
+    margin-top: 20px;
+  }
+  /* line 146, app/assets/stylesheets/jupiler_index.scss */
+  .index_page div.post div.comments p.comments {
+    margin-top: 20px;
+    font-size: 20px;
+  }
+  /* line 151, app/assets/stylesheets/jupiler_index.scss */
+  .index_page div.post div.comments section.comments {
+    margin-top: 20px;
+    font-size: 15px;
+  }
+  /* line 157, app/assets/stylesheets/jupiler_index.scss */
+  .index_page div.post .image {
+    margin-top: 30px;
+  }
+  /* line 160, app/assets/stylesheets/jupiler_index.scss */
+  .index_page div.post .image section.image img {
+    width: 250px;
+    height: 200px;
+  }
+  /* line 166, app/assets/stylesheets/jupiler_index.scss */
+  .index_page div.post .user_name {
+    margin-top: 40px;
+  }
+}

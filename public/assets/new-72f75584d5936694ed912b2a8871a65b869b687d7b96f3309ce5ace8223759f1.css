@@ -1,0 +1,32 @@
+/* line 2, app/assets/stylesheets/new.scss */
+.posts {
+  text-align: center;
+  margin-top: 30px;
+}
+
+/* line 7, app/assets/stylesheets/new.scss */
+.row {
+  margin-top: 15px;
+  height: 525px;
+  margin-left: 1px;
+}
+
+/* line 12, app/assets/stylesheets/new.scss */
+.row .form-control {
+  margin-bottom: 25px;
+}
+
+/* line 15, app/assets/stylesheets/new.scss */
+.row .post_image {
+  margin-bottom: 15px;
+}
+
+/* line 18, app/assets/stylesheets/new.scss */
+.row .box {
+  margin-top: 15px;
+}
+
+/* line 21, app/assets/stylesheets/new.scss */
+.row .btn-primary {
+  margin-top: 10px;
+}

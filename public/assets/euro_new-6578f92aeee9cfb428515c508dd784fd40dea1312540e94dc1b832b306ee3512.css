@@ -1,0 +1,105 @@
+/* line 2, app/assets/stylesheets/euro_new.scss */
+body {
+  background-image: url("euro.png");
+  background-repeat: no-repeat;
+  background-size: 25%;
+}
+
+/* line 6, app/assets/stylesheets/euro_new.scss */
+body .posts {
+  margin-top: 30px;
+  text-align: center;
+}
+
+/* line 10, app/assets/stylesheets/euro_new.scss */
+body .row {
+  height: 550px;
+}
+
+/* line 12, app/assets/stylesheets/euro_new.scss */
+body .row .post_name {
+  margin-top: 30px;
+}
+
+/* line 15, app/assets/stylesheets/euro_new.scss */
+body .row .post_comment {
+  margin-top: 30px;
+}
+
+/* line 18, app/assets/stylesheets/euro_new.scss */
+body .row .post_image {
+  margin-top: 30px;
+}
+
+/* line 21, app/assets/stylesheets/euro_new.scss */
+body .row .btn-primary {
+  margin-top: 30px;
+}
+
+@media (max-width: 1000px) {
+  /* line 2, app/assets/stylesheets/euro_new.scss */
+  body {
+    background-image: url("euro.png");
+    background-repeat: no-repeat;
+    background-size: 40%;
+  }
+  /* line 29, app/assets/stylesheets/euro_new.scss */
+  body .posts {
+    margin-top: 150px;
+    text-align: center;
+  }
+  /* line 33, app/assets/stylesheets/euro_new.scss */
+  body .row {
+    height: 550px;
+  }
+  /* line 35, app/assets/stylesheets/euro_new.scss */
+  body .row .post_name {
+    margin-top: 30px;
+  }
+  /* line 38, app/assets/stylesheets/euro_new.scss */
+  body .row .post_comment {
+    margin-top: 30px;
+  }
+  /* line 41, app/assets/stylesheets/euro_new.scss */
+  body .row .post_image {
+    margin-top: 30px;
+  }
+  /* line 44, app/assets/stylesheets/euro_new.scss */
+  body .row .btn-primary {
+    margin-top: 30px;
+  }
+}
+
+@media (max-width: 670px) {
+  /* line 2, app/assets/stylesheets/euro_new.scss */
+  body {
+    background-image: url("euro.png");
+    background-repeat: no-repeat;
+    background-size: 45%;
+  }
+  /* line 53, app/assets/stylesheets/euro_new.scss */
+  body .posts {
+    margin-top: 100px;
+    text-align: center;
+  }
+  /* line 57, app/assets/stylesheets/euro_new.scss */
+  body .row {
+    height: 550px;
+  }
+  /* line 59, app/assets/stylesheets/euro_new.scss */
+  body .row .post_name {
+    margin-top: 30px;
+  }
+  /* line 62, app/assets/stylesheets/euro_new.scss */
+  body .row .post_comment {
+    margin-top: 30px;
+  }
+  /* line 65, app/assets/stylesheets/euro_new.scss */
+  body .row .post_image {
+    margin-top: 30px;
+  }
+  /* line 68, app/assets/stylesheets/euro_new.scss */
+  body .row .btn-primary {
+    margin-top: 30px;
+  }
+}

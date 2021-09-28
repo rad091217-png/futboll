@@ -7,9 +7,15 @@ require("@rails/ujs").start()
 require("turbolinks").start()
 require("@rails/activestorage").start()
 require("channels")
+<<<<<<< HEAD
 require_tree .
 window.$ = window.jQuery = require('jquery')
 import "bootstrap"
+=======
+require("jquery")
+require("popper")
+require("bootstrap")
+>>>>>>> 1cdd56c7d019e001a6482d06f9b611ce2f89f890
 
 
 window.onload = (function () {
