@@ -1,5 +1,6 @@
-
-
+body{
+  min-height: 100vh;
+  position: relative;
 div.users {
   width: 100vw;
   height: 100vh;
@@ -21,7 +22,6 @@ div.users {
 }
 @media (max-width: 1000px) {
   div.users {
-    width: 100vw;
     height: 100vh;
     width: 1000px;
     .users {
@@ -39,9 +39,9 @@ div.users {
       padding-bottom: 35px;
     }
   }
+}
   @media (max-width: 670px) {
     div.users {
-      width: 100vw;
       height: 100vh;
       width: 670px;
     

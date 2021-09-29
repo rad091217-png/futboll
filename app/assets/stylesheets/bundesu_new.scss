@@ -4,7 +4,8 @@ body {
     background-image: url("bundesu.png");
     background-repeat: no-repeat;
     background-size: 25%;
-
+    min-height: 100vh;
+    position: relative;
     .post_page {
         width: 100vw;
         height: 100vh;

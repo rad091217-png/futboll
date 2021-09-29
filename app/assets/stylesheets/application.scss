@@ -33,14 +33,14 @@ header {
 .footer_fixed{
     //min-height: 100vh;
     //position: relative;
-    padding-bottom: 60px;
-    box-sizing: border-box;
+   //padding-bottom: 60px;
+    //box-sizing: border-box;
     
 }
 footer {
     background-color: gray;
-    //position: absolute
-    //bottom: 0;
+    position: absolute;
+    bottom: 0; 
     width: 1535px;
     height: 50px;
     .link {

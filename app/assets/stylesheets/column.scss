@@ -1,8 +1,4 @@
-
-
 div.table {
-    width: 100vw;
-    height: 100vh;
     table {
         width: 1535px;
         font-size: 40px;
@@ -10,6 +6,8 @@ div.table {
         float: left;
         overflow: hidden;
         border-collapse: collapse;
+        min-height: 100vh;
+        position: relative;
 
         :hover {
             color: orange;

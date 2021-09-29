@@ -4,6 +4,8 @@ body {
   background-image: url("soccer_image.png");
   background-size: cover;
   background-repeat: no-repeat;
+  min-height: 100vh;
+  position: relative;
 
   div.signup {
     width: 100vw;

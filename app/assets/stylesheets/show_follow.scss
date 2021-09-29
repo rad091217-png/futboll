@@ -1,14 +1,17 @@
+body {
+    min-height: 100vh;
+    position: relative;
 
+    div.show_follow {
+        width: 100vw;
+        height: 100vh;
 
-div.show_follow {
-    width: 100vw;
-    height: 100vh;
+        .my_profile {
+            margin-top: 15px;
+        }
 
-    .my_profile {
-        margin-top: 15px;
-    }
-
-    .stats {
-        margin-top: 10px;
+        .stats {
+            margin-top: 10px;
+        }
     }
 }
