@@ -24,8 +24,8 @@ gem "font-awesome-sass"
 gem "will_paginate", "3.1.8"
 gem "bootstrap-will_paginate", "1.0.0"
 gem "mini_magick"
-gem "image_processing", "1.9.3"
 gem "pry-rails"
+gem "jquery-rails"
 gem "dotenv-rails"
 # Use Active Storage variant
 # gem 'image_processing', '~> 1.2'
