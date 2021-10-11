@@ -26,7 +26,7 @@ div.table {
         border-bottom: 1px rgb(171, 171, 187) solid;
     }
 
-    @media (min-width: 768px) {
+    @media (max-width: 1000px) {
         table {
             width: 100%;
             font-size: 54px;
@@ -54,7 +54,7 @@ div.table {
             border-bottom: 1px rgb(171, 171, 187) solid;
         }
 
-        @media (max-width: 479px) {
+        @media (max-width: 670px) {
             table {
                 width: 100%;
                 font-size: 35px;
