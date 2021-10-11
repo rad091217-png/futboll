@@ -1,5 +1,6 @@
 body {
-
+    min-height: 100vh;
+    position: relative;
     .bundesu_post_page {
         font-size: 20px;
 
@@ -10,8 +11,6 @@ body {
 
     div.post {
         background-color: rgb(247, 247, 248);
-        min-height: 100vh;
-        position: relative;
 
         div.title {
             margin-top: 40px;
