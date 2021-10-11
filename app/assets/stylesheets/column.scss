@@ -26,12 +26,11 @@ div.table {
         border-bottom: 1px rgb(171, 171, 187) solid;
     }
 
-    @media (max-width: 1000px) {
+    @media (min-width: 768px) {
         table {
             width: 100%;
             font-size: 54px;
             background-color: rgb(247, 247, 248);
-            float: left;
             overflow: hidden;
             border-collapse: collapse;
             min-height: 100vh;
@@ -55,12 +54,11 @@ div.table {
             border-bottom: 1px rgb(171, 171, 187) solid;
         }
 
-        @media (max-width: 670px) {
+        @media (max-width: 479px) {
             table {
                 width: 100%;
                 font-size: 35px;
                 background-color: rgb(247, 247, 248);
-                float: left;
                 overflow: hidden;
                 border-collapse: collapse;
                 min-height: 100vh;
