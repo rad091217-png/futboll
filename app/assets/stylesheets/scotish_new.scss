@@ -28,6 +28,8 @@ body {
         background-image: url("scotish.png");
         background-repeat: no-repeat;
         background-size: 45%;
+        min-height: 100vh;
+        position: relative;
         .posts {
             margin-top: 170px;
             text-align: center;
@@ -52,6 +54,8 @@ body {
         background-image: url("scotish.png");
         background-repeat: no-repeat;
         background-size: 50%;
+        min-height: 100vh;
+        position: relative;
         .posts {
             margin-top: 100px;
             text-align: center;

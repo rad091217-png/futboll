@@ -1,12 +1,9 @@
-body{
+body {
   min-height: 100vh;
   position: relative;
-div.users {
-  width: 100vw;
-  height: 100vh;
 
   .users {
-    width: 1500px;
+    width: 100%;
     list-style: none;
 
     section.users {
@@ -20,45 +17,38 @@ div.users {
     padding-bottom: 35px;
   }
 }
+
 @media (max-width: 1000px) {
-  div.users {
-    height: 100vh;
-    width: 1000px;
-    .users {
-      width: 1000px;
-      list-style: none;
-  
-      section.users {
-        padding: 5px;
-        border-bottom: 1px solid black;
-      }
-    }
-  
-    .paginate {
-      text-align: left;
-      padding-bottom: 35px;
+  .users {
+    width: 100%;
+    list-style: none;
+
+    section.users {
+      padding: 5px;
+      border-bottom: 1px solid black;
     }
   }
+
+  .paginate {
+    text-align: left;
+    padding-bottom: 35px;
+  }
 }
-  @media (max-width: 670px) {
-    div.users {
-      height: 100vh;
-      width: 670px;
-    
-      .users {
-        width: 670px;
-        list-style: none;
-    
-        section.users {
-          padding: 5px;
-          border-bottom: 1px solid black;
-        }
-      }
-    
-      .paginate {
-        text-align: left;
-        padding-bottom: 35px;
-      }
+}
+
+@media (max-width: 670px) {
+  .users {
+    width: 100%;
+    list-style: none;
+
+    section.users {
+      padding: 5px;
+      border-bottom: 1px solid black;
     }
+  }
+
+  .paginate {
+    text-align: left;
+    padding-bottom: 35px;
   }
 }

@@ -1,9 +1,8 @@
 div.table {
     table {
-        width: 1535px;
-        font-size: 40px;
+        width: 100%;
+        font-size: 42px;
         background-color: rgb(247, 247, 248);
-        float: left;
         overflow: hidden;
         border-collapse: collapse;
         min-height: 100vh;
@@ -29,12 +28,14 @@ div.table {
 
     @media (max-width: 1000px) {
         table {
-            width: 1000px;
+            width: 100%;
             font-size: 54px;
             background-color: rgb(247, 247, 248);
             float: left;
             overflow: hidden;
             border-collapse: collapse;
+            min-height: 100vh;
+            position: relative;
 
             :hover {
                 color: orange;
@@ -56,12 +57,14 @@ div.table {
 
         @media (max-width: 670px) {
             table {
-                width: 670px;
+                width: 100%;
                 font-size: 35px;
                 background-color: rgb(247, 247, 248);
                 float: left;
                 overflow: hidden;
                 border-collapse: collapse;
+                min-height: 100vh;
+                position: relative;
 
                 :hover {
                     color: orange;

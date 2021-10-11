@@ -1,5 +1,3 @@
-
-
 body {
   background-image: url("soccer_image.png");
   background-size: cover;
@@ -7,141 +5,130 @@ body {
   min-height: 100vh;
   position: relative;
 
-  div.signup {
-    width: 100vw;
-    height: 100vh;
+  .signup {
+    text-align: center;
 
-    .signup {
-      text-align: center;
+    margin-top: 70px;
+  }
 
-      margin-top: 70px;
+  .row {
+    height: 450px;
+
+    .signup_name {
+      margin-top: 20px;
     }
 
-    .row {
-      height: 450px;
-
-      .signup_name {
-        margin-top: 20px;
-      }
-
-      .signup_address {
-        margin-top: 15px;
-      }
-
-      .signup_password {
-        margin-top: 15px;
-      }
-
-      .password_confirmation {
-        margin-top: 15px;
-      }
-
-      .btn-primary {
-        margin-top: 30px;
-        margin-bottom: 20px;
-      }
+    .signup_address {
+      margin-top: 15px;
     }
 
-    p.mail {
-      font-size: 20px;
-      text-align: center;
-      color: white;
+    .signup_password {
+      margin-top: 15px;
+    }
+
+    .password_confirmation {
+      margin-top: 15px;
+    }
+
+    .btn-primary {
+      margin-top: 30px;
+      margin-bottom: 20px;
     }
   }
 
-  @media (max-width: 1000px) {
-    background-image: url("soccer_image.png");
-    background-size: cover;
-    background-repeat: no-repeat;
+  p.mail {
+    font-size: 20px;
+    text-align: center;
+    color: white;
+  }
+}
 
-    div.signup {
-      width: 100vw;
-      height: 100vh;
+@media (max-width: 1000px) {
+  background-image: url("soccer_image.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  position: relative;
 
-      .signup {
-        text-align: center;
+  .signup {
+    text-align: center;
 
-        margin-top: 70px;
-      }
+    margin-top: 70px;
+  }
 
-      .row {
-        height: 450px;
+  .row {
+    height: 450px;
 
-        .signup_name {
-          margin-top: 20px;
-        }
+    .signup_name {
+      margin-top: 20px;
+    }
 
-        .signup_address {
-          margin-top: 15px;
-        }
+    .signup_address {
+      margin-top: 15px;
+    }
 
-        .signup_password {
-          margin-top: 15px;
-        }
+    .signup_password {
+      margin-top: 15px;
+    }
 
-        .password_confirmation {
-          margin-top: 15px;
-        }
+    .password_confirmation {
+      margin-top: 15px;
+    }
 
-        .btn-primary {
-          margin-top: 30px;
-          margin-bottom: 20px;
-        }
-      }
-
-      p.mail {
-        margin-top: 20px;
-        font-size: 25px;
-        text-align: center;
-        color: white;
-      }
+    .btn-primary {
+      margin-top: 30px;
+      margin-bottom: 20px;
     }
   }
 
-  @media (max-width: 670px) {
-    background-image: url("soccer_image.png");
-    background-size: cover;
-    background-repeat: no-repeat;
+  p.mail {
+    margin-top: 20px;
+    font-size: 25px;
+    text-align: center;
+    color: white;
+  }
+}
+}
 
-    div.signup {
-      width: 100vw;
-      height: 100vh;
+@media (max-width: 670px) {
+  background-image: url("soccer_image.png");
+  background-size: cover;
+  background-repeat: no-repeat;
 
-      .signup {
-        text-align: center;
-        margin-top: 30px;
-      }
+  .signup {
+    text-align: center;
+    margin-top: 30px;
+  }
 
-      .row {
-        height: 420px;
+  .row {
+    height: 420px;
 
-        .signup_name {
-          margin-top: 20px;
-        }
+    .signup_name {
+      margin-top: 20px;
+    }
 
-        .signup_address {
-          margin-top: 15px;
-        }
+    .signup_address {
+      margin-top: 15px;
+    }
 
-        .signup_password {
-          margin-top: 15px;
-        }
+    .signup_password {
+      margin-top: 15px;
+    }
 
-        .password_confirmation {
-          margin-top: 15px;
-        }
+    .password_confirmation {
+      margin-top: 15px;
+    }
 
-        .btn-primary {
-          margin-top: 30px;
-          margin-bottom: 20px;
-        }
-      }
-
-      p.mail {
-        font-size: 14px;
-        text-align: center;
-        color: white;
-      }
+    .btn-primary {
+      margin-top: 30px;
+      margin-bottom: 20px;
     }
   }
+
+  p.mail {
+    font-size: 14px;
+    text-align: center;
+    color: white;
+  }
+
 }
