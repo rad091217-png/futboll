@@ -1,0 +1,188 @@
+/* line 3, app/assets/stylesheets/nations_index.scss */
+body .nations_post_page {
+  font-size: 20px;
+}
+
+/* line 5, app/assets/stylesheets/nations_index.scss */
+body .nations_post_page .new {
+  margin-left: 15px;
+}
+
+/* line 9, app/assets/stylesheets/nations_index.scss */
+body div.post {
+  background-color: #f7f7f8;
+}
+
+/* line 11, app/assets/stylesheets/nations_index.scss */
+body div.post div.title {
+  margin-top: 40px;
+}
+
+/* line 13, app/assets/stylesheets/nations_index.scss */
+body div.post div.title p.title {
+  border-top: double 1px black;
+  margin-top: 20px;
+  font-size: 20px;
+}
+
+/* line 18, app/assets/stylesheets/nations_index.scss */
+body div.post div.title section.title {
+  margin-top: 20px;
+  font-size: 15px;
+}
+
+/* line 23, app/assets/stylesheets/nations_index.scss */
+body div.post div.comments {
+  margin-top: 25px;
+}
+
+/* line 25, app/assets/stylesheets/nations_index.scss */
+body div.post div.comments p.comments {
+  margin-top: 20px;
+  font-size: 20px;
+}
+
+/* line 29, app/assets/stylesheets/nations_index.scss */
+body div.post div.comments section.comments {
+  margin-top: 20px;
+  font-size: 15px;
+}
+
+/* line 34, app/assets/stylesheets/nations_index.scss */
+body div.post div.post_destroy {
+  margin-top: 20px;
+}
+
+/* line 37, app/assets/stylesheets/nations_index.scss */
+body div.post .image {
+  margin-top: 30px;
+}
+
+/* line 39, app/assets/stylesheets/nations_index.scss */
+body div.post .image section.image img {
+  width: 250px;
+  height: 200px;
+}
+
+/* line 44, app/assets/stylesheets/nations_index.scss */
+body div.post .user_name {
+  margin-top: 40px;
+}
+
+@media (max-width: 1000px) {
+  /* line 52, app/assets/stylesheets/nations_index.scss */
+  .index_page .nations_post_page {
+    font-size: 18px;
+  }
+  /* line 55, app/assets/stylesheets/nations_index.scss */
+  .index_page .nations_post_page .new {
+    margin-left: 15px;
+  }
+  /* line 60, app/assets/stylesheets/nations_index.scss */
+  .index_page div.post {
+    background-color: #f7f7f8;
+  }
+  /* line 63, app/assets/stylesheets/nations_index.scss */
+  .index_page div.post div.title {
+    margin-top: 80px;
+  }
+  /* line 66, app/assets/stylesheets/nations_index.scss */
+  .index_page div.post div.title p.title {
+    border-top: double 1px black;
+    margin-top: 20px;
+    font-size: 20px;
+  }
+  /* line 72, app/assets/stylesheets/nations_index.scss */
+  .index_page div.post div.title section.title {
+    margin-top: 20px;
+    font-size: 15px;
+  }
+  /* line 78, app/assets/stylesheets/nations_index.scss */
+  .index_page div.post div.comments {
+    margin-top: 20px;
+  }
+  /* line 81, app/assets/stylesheets/nations_index.scss */
+  .index_page div.post div.comments p.comments {
+    margin-top: 20px;
+    font-size: 20px;
+  }
+  /* line 86, app/assets/stylesheets/nations_index.scss */
+  .index_page div.post div.comments section.comments {
+    margin-top: 20px;
+    font-size: 15px;
+  }
+  /* line 92, app/assets/stylesheets/nations_index.scss */
+  .index_page div.post div.post_destroy {
+    margin-top: 20px;
+  }
+  /* line 96, app/assets/stylesheets/nations_index.scss */
+  .index_page div.post .image {
+    margin-top: 30px;
+  }
+  /* line 99, app/assets/stylesheets/nations_index.scss */
+  .index_page div.post .image section.image img {
+    width: 250px;
+    height: 200px;
+  }
+  /* line 105, app/assets/stylesheets/nations_index.scss */
+  .index_page div.post .user_name {
+    margin-top: 40px;
+  }
+}
+
+@media (max-width: 1000px) and (max-width: 670px) {
+  /* line 114, app/assets/stylesheets/nations_index.scss */
+  .index_page .nations_post_page {
+    font-size: 14px;
+  }
+  /* line 117, app/assets/stylesheets/nations_index.scss */
+  .index_page .nations_post_page .new {
+    margin-left: 15px;
+  }
+  /* line 122, app/assets/stylesheets/nations_index.scss */
+  .index_page div.post {
+    background-color: #f7f7f8;
+  }
+  /* line 125, app/assets/stylesheets/nations_index.scss */
+  .index_page div.post div.title {
+    margin-top: 60px;
+  }
+  /* line 128, app/assets/stylesheets/nations_index.scss */
+  .index_page div.post div.title p.title {
+    border-top: double 1px black;
+    margin-top: 20px;
+    font-size: 20px;
+  }
+  /* line 134, app/assets/stylesheets/nations_index.scss */
+  .index_page div.post div.title section.title {
+    margin-top: 20px;
+    font-size: 15px;
+  }
+  /* line 140, app/assets/stylesheets/nations_index.scss */
+  .index_page div.post div.comments {
+    margin-top: 20px;
+  }
+  /* line 143, app/assets/stylesheets/nations_index.scss */
+  .index_page div.post div.comments p.comments {
+    margin-top: 20px;
+    font-size: 20px;
+  }
+  /* line 148, app/assets/stylesheets/nations_index.scss */
+  .index_page div.post div.comments section.comments {
+    margin-top: 20px;
+    font-size: 15px;
+  }
+  /* line 154, app/assets/stylesheets/nations_index.scss */
+  .index_page div.post .image {
+    margin-top: 30px;
+  }
+  /* line 157, app/assets/stylesheets/nations_index.scss */
+  .index_page div.post .image section.image img {
+    width: 250px;
+    height: 200px;
+  }
+  /* line 163, app/assets/stylesheets/nations_index.scss */
+  .index_page div.post .user_name {
+    margin-top: 40px;
+  }
+}

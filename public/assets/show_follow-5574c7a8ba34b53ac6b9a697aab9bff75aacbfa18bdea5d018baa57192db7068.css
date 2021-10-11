@@ -1,0 +1,21 @@
+/* line 1, app/assets/stylesheets/show_follow.scss */
+body {
+  min-height: 100vh;
+  position: relative;
+}
+
+/* line 5, app/assets/stylesheets/show_follow.scss */
+body div.show_follow {
+  width: 100vw;
+  height: 100vh;
+}
+
+/* line 9, app/assets/stylesheets/show_follow.scss */
+body div.show_follow .my_profile {
+  margin-top: 15px;
+}
+
+/* line 13, app/assets/stylesheets/show_follow.scss */
+body div.show_follow .stats {
+  margin-top: 10px;
+}

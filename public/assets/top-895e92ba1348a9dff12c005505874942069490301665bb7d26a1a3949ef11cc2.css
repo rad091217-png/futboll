@@ -1,0 +1,89 @@
+/* line 3, app/assets/stylesheets/top.scss */
+body {
+  background-image: url("top.png");
+  background-repeat: no-repeat;
+  background-color: rgba(255, 255, 255, 0.3);
+  background-blend-mode: soft-light;
+  background-size: 100%;
+  min-height: 100vh;
+  position: relative;
+}
+
+/* line 11, app/assets/stylesheets/top.scss */
+body .main {
+  width: 100vw;
+  height: 100vh;
+  margin-left: 250px;
+  margin-top: 200px;
+}
+
+/* line 16, app/assets/stylesheets/top.scss */
+body .main .welcome {
+  font-size: 40px;
+  color: white;
+}
+
+/* line 20, app/assets/stylesheets/top.scss */
+body .main .myfavorite {
+  margin-top: 30px;
+  font-size: 20px;
+  color: white;
+}
+
+@media (max-width: 1000px) {
+  /* line 3, app/assets/stylesheets/top.scss */
+  body {
+    background-image: url("top.png");
+    background-repeat: no-repeat;
+    background-color: rgba(255, 255, 255, 0.3);
+    background-blend-mode: soft-light;
+    background-size: 300%;
+  }
+  /* line 32, app/assets/stylesheets/top.scss */
+  body .main {
+    width: 100vw;
+    height: 100vh;
+    margin-left: 250px;
+    margin-top: 200px;
+  }
+  /* line 37, app/assets/stylesheets/top.scss */
+  body .main .welcome {
+    font-size: 40px;
+    color: white;
+  }
+  /* line 41, app/assets/stylesheets/top.scss */
+  body .main .myfavorite {
+    margin-top: 30px;
+    font-size: 20px;
+    color: white;
+  }
+}
+
+@media (max-width: 1000px) and (max-width: 670px) {
+  /* line 3, app/assets/stylesheets/top.scss */
+  body {
+    background-image: url("top.png");
+    background-repeat: no-repeat;
+    background-color: rgba(255, 255, 255, 0.3);
+    background-blend-mode: soft-light;
+    background-size: 430%;
+  }
+  /* line 54, app/assets/stylesheets/top.scss */
+  body .main {
+    width: 100vw;
+    height: 100vh;
+    margin-left: 130px;
+    margin-top: 200px;
+  }
+  /* line 59, app/assets/stylesheets/top.scss */
+  body .main .welcome {
+    font-size: 40px;
+    color: white;
+  }
+  /* line 63, app/assets/stylesheets/top.scss */
+  body .main .myfavorite {
+    margin-top: 30px;
+    font-size: 20px;
+    color: white;
+  }
+}

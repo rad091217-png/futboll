@@ -1,0 +1,117 @@
+/* line 1, app/assets/stylesheets/champions_new.scss */
+body {
+  background-image: url("champions.png");
+  background-repeat: no-repeat;
+  background-size: 25%;
+  min-height: 100vh;
+  position: relative;
+}
+
+/* line 12, app/assets/stylesheets/champions_new.scss */
+body .post_page .posts {
+  margin-top: 30px;
+  text-align: center;
+}
+
+/* line 17, app/assets/stylesheets/champions_new.scss */
+body .post_page .row {
+  height: 550px;
+}
+
+/* line 20, app/assets/stylesheets/champions_new.scss */
+body .post_page .row .post_name {
+  margin-top: 30px;
+}
+
+/* line 24, app/assets/stylesheets/champions_new.scss */
+body .post_page .row .post_comment {
+  margin-top: 30px;
+}
+
+/* line 28, app/assets/stylesheets/champions_new.scss */
+body .post_page .row .post_image {
+  margin-top: 30px;
+}
+
+/* line 32, app/assets/stylesheets/champions_new.scss */
+body .post_page .row .btn-primary {
+  margin-top: 30px;
+}
+
+@media (max-width: 1000px) {
+  /* line 1, app/assets/stylesheets/champions_new.scss */
+  body {
+    background-image: url("champions.png");
+    background-repeat: no-repeat;
+    background-size: 40%;
+  }
+  /* line 43, app/assets/stylesheets/champions_new.scss */
+  body .post_page {
+    width: 100vw;
+    height: 100vh;
+  }
+  /* line 47, app/assets/stylesheets/champions_new.scss */
+  body .post_page .posts {
+    margin-top: 150px;
+    text-align: center;
+  }
+  /* line 52, app/assets/stylesheets/champions_new.scss */
+  body .post_page .row {
+    height: 550px;
+  }
+  /* line 55, app/assets/stylesheets/champions_new.scss */
+  body .post_page .row .post_name {
+    margin-top: 30px;
+  }
+  /* line 59, app/assets/stylesheets/champions_new.scss */
+  body .post_page .row .post_comment {
+    margin-top: 30px;
+  }
+  /* line 63, app/assets/stylesheets/champions_new.scss */
+  body .post_page .row .post_image {
+    margin-top: 30px;
+  }
+  /* line 67, app/assets/stylesheets/champions_new.scss */
+  body .post_page .row .btn-primary {
+    margin-top: 30px;
+  }
+}
+
+@media (max-width: 670px) {
+  /* line 1, app/assets/stylesheets/champions_new.scss */
+  body {
+    background-image: url("champions.png");
+    background-repeat: no-repeat;
+    background-size: 45%;
+  }
+  /* line 79, app/assets/stylesheets/champions_new.scss */
+  body .post_page {
+    width: 100vw;
+    height: 100vh;
+  }
+  /* line 83, app/assets/stylesheets/champions_new.scss */
+  body .post_page .posts {
+    margin-top: 100px;
+    text-align: center;
+  }
+  /* line 88, app/assets/stylesheets/champions_new.scss */
+  body .post_page .row {
+    height: 550px;
+  }
+  /* line 91, app/assets/stylesheets/champions_new.scss */
+  body .post_page .row .post_name {
+    margin-top: 30px;
+  }
+  /* line 95, app/assets/stylesheets/champions_new.scss */
+  body .post_page .row .post_comment {
+    margin-top: 30px;
+  }
+  /* line 99, app/assets/stylesheets/champions_new.scss */
+  body .post_page .row .post_image {
+    margin-top: 30px;
+  }
+  /* line 103, app/assets/stylesheets/champions_new.scss */
+  body .post_page .row .btn-primary {
+    margin-top: 30px;
+  }
+}

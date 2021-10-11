@@ -1,0 +1,192 @@
+/* line 3, app/assets/stylesheets/bundesu_index.scss */
+body .bundesu_post_page {
+  font-size: 20px;
+}
+
+/* line 6, app/assets/stylesheets/bundesu_index.scss */
+body .bundesu_post_page .new {
+  margin-left: 15px;
+}
+
+/* line 11, app/assets/stylesheets/bundesu_index.scss */
+body div.post {
+  background-color: #f7f7f8;
+  min-height: 100vh;
+  position: relative;
+}
+
+/* line 16, app/assets/stylesheets/bundesu_index.scss */
+body div.post div.title {
+  margin-top: 40px;
+}
+
+/* line 19, app/assets/stylesheets/bundesu_index.scss */
+body div.post div.title p.title {
+  border-top: double 1px black;
+  margin-top: 20px;
+  font-size: 20px;
+}
+
+/* line 25, app/assets/stylesheets/bundesu_index.scss */
+body div.post div.title section.title {
+  margin-top: 20px;
+  font-size: 15px;
+}
+
+/* line 31, app/assets/stylesheets/bundesu_index.scss */
+body div.post div.comments {
+  margin-top: 25px;
+}
+
+/* line 34, app/assets/stylesheets/bundesu_index.scss */
+body div.post div.comments p.comments {
+  margin-top: 20px;
+  font-size: 20px;
+}
+
+/* line 39, app/assets/stylesheets/bundesu_index.scss */
+body div.post div.comments section.comments {
+  margin-top: 20px;
+  font-size: 15px;
+}
+
+/* line 45, app/assets/stylesheets/bundesu_index.scss */
+body div.post div.post_destroy {
+  margin-top: 20px;
+}
+
+/* line 49, app/assets/stylesheets/bundesu_index.scss */
+body div.post .image {
+  margin-top: 30px;
+}
+
+/* line 52, app/assets/stylesheets/bundesu_index.scss */
+body div.post .image section.image img {
+  width: 250px;
+  height: 200px;
+}
+
+/* line 58, app/assets/stylesheets/bundesu_index.scss */
+body div.post .user_name {
+  margin-top: 40px;
+}
+
+@media (max-width: 1000px) {
+  /* line 65, app/assets/stylesheets/bundesu_index.scss */
+  .bundesu_post_page {
+    font-size: 18px;
+  }
+  /* line 68, app/assets/stylesheets/bundesu_index.scss */
+  .bundesu_post_page .new {
+    margin-left: 15px;
+  }
+  /* line 73, app/assets/stylesheets/bundesu_index.scss */
+  div.post {
+    background-color: #f7f7f8;
+    width: 1000px;
+  }
+  /* line 77, app/assets/stylesheets/bundesu_index.scss */
+  div.post div.title {
+    margin-top: 80px;
+  }
+  /* line 80, app/assets/stylesheets/bundesu_index.scss */
+  div.post div.title p.title {
+    border-top: double 1px black;
+    margin-top: 20px;
+    font-size: 20px;
+  }
+  /* line 86, app/assets/stylesheets/bundesu_index.scss */
+  div.post div.title section.title {
+    margin-top: 20px;
+    font-size: 15px;
+  }
+  /* line 92, app/assets/stylesheets/bundesu_index.scss */
+  div.post div.comments {
+    margin-top: 20px;
+  }
+  /* line 95, app/assets/stylesheets/bundesu_index.scss */
+  div.post div.comments p.comments {
+    margin-top: 20px;
+    font-size: 20px;
+  }
+  /* line 100, app/assets/stylesheets/bundesu_index.scss */
+  div.post div.comments section.comments {
+    margin-top: 20px;
+    font-size: 15px;
+  }
+  /* line 106, app/assets/stylesheets/bundesu_index.scss */
+  div.post div.post_destroy {
+    margin-top: 20px;
+  }
+  /* line 110, app/assets/stylesheets/bundesu_index.scss */
+  div.post .image {
+    margin-top: 30px;
+  }
+  /* line 113, app/assets/stylesheets/bundesu_index.scss */
+  div.post .image section.image img {
+    width: 250px;
+    height: 200px;
+  }
+  /* line 119, app/assets/stylesheets/bundesu_index.scss */
+  div.post .user_name {
+    margin-top: 40px;
+  }
+}
+
+@media (max-width: 670px) {
+  /* line 127, app/assets/stylesheets/bundesu_index.scss */
+  .bundesu_post_page {
+    font-size: 14px;
+  }
+  /* line 130, app/assets/stylesheets/bundesu_index.scss */
+  .bundesu_post_page .new {
+    margin-left: 15px;
+  }
+  /* line 135, app/assets/stylesheets/bundesu_index.scss */
+  div.post {
+    background-color: #f7f7f8;
+    width: 670px;
+  }
+  /* line 139, app/assets/stylesheets/bundesu_index.scss */
+  div.post div.title {
+    margin-top: 60px;
+  }
+  /* line 142, app/assets/stylesheets/bundesu_index.scss */
+  div.post div.title p.title {
+    border-top: double 1px black;
+    margin-top: 20px;
+    font-size: 20px;
+  }
+  /* line 148, app/assets/stylesheets/bundesu_index.scss */
+  div.post div.title section.title {
+    margin-top: 20px;
+    font-size: 15px;
+  }
+  /* line 154, app/assets/stylesheets/bundesu_index.scss */
+  div.post div.comments {
+    margin-top: 20px;
+  }
+  /* line 157, app/assets/stylesheets/bundesu_index.scss */
+  div.post div.comments p.comments {
+    margin-top: 20px;
+    font-size: 20px;
+  }
+  /* line 162, app/assets/stylesheets/bundesu_index.scss */
+  div.post div.comments section.comments {
+    margin-top: 20px;
+    font-size: 15px;
+  }
+  /* line 168, app/assets/stylesheets/bundesu_index.scss */
+  div.post .image {
+    margin-top: 30px;
+  }
+  /* line 171, app/assets/stylesheets/bundesu_index.scss */
+  div.post .image section.image img {
+    width: 250px;
+    height: 200px;
+  }
+  /* line 177, app/assets/stylesheets/bundesu_index.scss */
+  div.post .user_name {
+    margin-top: 40px;
+  }
+}

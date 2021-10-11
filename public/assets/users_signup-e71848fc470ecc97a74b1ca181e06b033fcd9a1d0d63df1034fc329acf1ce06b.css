@@ -1,0 +1,139 @@
+/* line 1, app/assets/stylesheets/users_signup.scss */
+body {
+  background-image: url("soccer_image.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  position: relative;
+}
+
+/* line 8, app/assets/stylesheets/users_signup.scss */
+body .signup {
+  text-align: center;
+  margin-top: 70px;
+}
+
+/* line 14, app/assets/stylesheets/users_signup.scss */
+body .row {
+  height: 450px;
+}
+
+/* line 17, app/assets/stylesheets/users_signup.scss */
+body .row .signup_name {
+  margin-top: 20px;
+}
+
+/* line 21, app/assets/stylesheets/users_signup.scss */
+body .row .signup_address {
+  margin-top: 15px;
+}
+
+/* line 25, app/assets/stylesheets/users_signup.scss */
+body .row .signup_password {
+  margin-top: 15px;
+}
+
+/* line 29, app/assets/stylesheets/users_signup.scss */
+body .row .password_confirmation {
+  margin-top: 15px;
+}
+
+/* line 33, app/assets/stylesheets/users_signup.scss */
+body .row .btn-primary {
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+/* line 39, app/assets/stylesheets/users_signup.scss */
+body p.mail {
+  font-size: 20px;
+  text-align: center;
+  color: white;
+}
+
+@media (max-width: 1000px) {
+  background-image: url("soccer_image.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  position: relative;
+  /* line 53, app/assets/stylesheets/users_signup.scss */
+  .signup {
+    text-align: center;
+    margin-top: 70px;
+  }
+  /* line 59, app/assets/stylesheets/users_signup.scss */
+  .row {
+    height: 450px;
+  }
+  /* line 62, app/assets/stylesheets/users_signup.scss */
+  .row .signup_name {
+    margin-top: 20px;
+  }
+  /* line 66, app/assets/stylesheets/users_signup.scss */
+  .row .signup_address {
+    margin-top: 15px;
+  }
+  /* line 70, app/assets/stylesheets/users_signup.scss */
+  .row .signup_password {
+    margin-top: 15px;
+  }
+  /* line 74, app/assets/stylesheets/users_signup.scss */
+  .row .password_confirmation {
+    margin-top: 15px;
+  }
+  /* line 78, app/assets/stylesheets/users_signup.scss */
+  .row .btn-primary {
+    margin-top: 30px;
+    margin-bottom: 20px;
+  }
+  /* line 84, app/assets/stylesheets/users_signup.scss */
+  p.mail {
+    margin-top: 20px;
+    font-size: 25px;
+    text-align: center;
+    color: white;
+  }
+}
+
+@media (max-width: 670px) {
+  background-image: url("soccer_image.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  /* line 97, app/assets/stylesheets/users_signup.scss */
+  .signup {
+    text-align: center;
+    margin-top: 30px;
+  }
+  /* line 102, app/assets/stylesheets/users_signup.scss */
+  .row {
+    height: 420px;
+  }
+  /* line 105, app/assets/stylesheets/users_signup.scss */
+  .row .signup_name {
+    margin-top: 20px;
+  }
+  /* line 109, app/assets/stylesheets/users_signup.scss */
+  .row .signup_address {
+    margin-top: 15px;
+  }
+  /* line 113, app/assets/stylesheets/users_signup.scss */
+  .row .signup_password {
+    margin-top: 15px;
+  }
+  /* line 117, app/assets/stylesheets/users_signup.scss */
+  .row .password_confirmation {
+    margin-top: 15px;
+  }
+  /* line 121, app/assets/stylesheets/users_signup.scss */
+  .row .btn-primary {
+    margin-top: 30px;
+    margin-bottom: 20px;
+  }
+  /* line 127, app/assets/stylesheets/users_signup.scss */
+  p.mail {
+    font-size: 14px;
+    text-align: center;
+    color: white;
+  }
+}

@@ -1,0 +1,107 @@
+/* line 2, app/assets/stylesheets/league_one_new.scss */
+body {
+  background-image: url("league_one.png");
+  background-repeat: no-repeat;
+  background-size: 35%;
+  min-height: 100vh;
+  position: relative;
+}
+
+/* line 8, app/assets/stylesheets/league_one_new.scss */
+body .posts {
+  margin-top: 30px;
+  text-align: center;
+}
+
+/* line 12, app/assets/stylesheets/league_one_new.scss */
+body .row {
+  height: 550px;
+}
+
+/* line 14, app/assets/stylesheets/league_one_new.scss */
+body .row .post_name {
+  margin-top: 30px;
+}
+
+/* line 17, app/assets/stylesheets/league_one_new.scss */
+body .row .post_comment {
+  margin-top: 30px;
+}
+
+/* line 20, app/assets/stylesheets/league_one_new.scss */
+body .row .post_image {
+  margin-top: 30px;
+}
+
+/* line 23, app/assets/stylesheets/league_one_new.scss */
+body .row .btn-primary {
+  margin-top: 30px;
+}
+
+@media (max-width: 1000px) {
+  /* line 2, app/assets/stylesheets/league_one_new.scss */
+  body {
+    background-image: url("league_one.png");
+    background-repeat: no-repeat;
+    background-size: 50%;
+  }
+  /* line 31, app/assets/stylesheets/league_one_new.scss */
+  body .posts {
+    margin-top: 150px;
+    text-align: center;
+  }
+  /* line 35, app/assets/stylesheets/league_one_new.scss */
+  body .row {
+    height: 550px;
+  }
+  /* line 37, app/assets/stylesheets/league_one_new.scss */
+  body .row .post_name {
+    margin-top: 30px;
+  }
+  /* line 40, app/assets/stylesheets/league_one_new.scss */
+  body .row .post_comment {
+    margin-top: 30px;
+  }
+  /* line 43, app/assets/stylesheets/league_one_new.scss */
+  body .row .post_image {
+    margin-top: 30px;
+  }
+  /* line 46, app/assets/stylesheets/league_one_new.scss */
+  body .row .btn-primary {
+    margin-top: 30px;
+  }
+}
+
+@media (max-width: 670px) {
+  /* line 2, app/assets/stylesheets/league_one_new.scss */
+  body {
+    background-image: url("league_one.png");
+    background-repeat: no-repeat;
+    background-size: 55%;
+  }
+  /* line 55, app/assets/stylesheets/league_one_new.scss */
+  body .posts {
+    margin-top: 100px;
+    text-align: center;
+  }
+  /* line 59, app/assets/stylesheets/league_one_new.scss */
+  body .row {
+    height: 550px;
+  }
+  /* line 61, app/assets/stylesheets/league_one_new.scss */
+  body .row .post_name {
+    margin-top: 30px;
+  }
+  /* line 64, app/assets/stylesheets/league_one_new.scss */
+  body .row .post_comment {
+    margin-top: 30px;
+  }
+  /* line 67, app/assets/stylesheets/league_one_new.scss */
+  body .row .post_image {
+    margin-top: 30px;
+  }
+  /* line 70, app/assets/stylesheets/league_one_new.scss */
+  body .row .btn-primary {
+    margin-top: 30px;
+  }
+}

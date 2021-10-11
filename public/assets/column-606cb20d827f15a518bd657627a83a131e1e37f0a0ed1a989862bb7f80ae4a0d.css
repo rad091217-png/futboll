@@ -1,0 +1,93 @@
+/* line 2, app/assets/stylesheets/column.scss */
+div.table table {
+  width: 100%;
+  font-size: 42px;
+  background-color: #f7f7f8;
+  overflow: hidden;
+  border-collapse: collapse;
+  min-height: 100vh;
+  position: relative;
+}
+
+/* line 11, app/assets/stylesheets/column.scss */
+div.table table :hover {
+  color: orange;
+}
+
+/* line 15, app/assets/stylesheets/column.scss */
+div.table table .tbl {
+  text-decoration: none;
+}
+
+/* line 20, app/assets/stylesheets/column.scss */
+div.table table.row th,
+div.table table.row td {
+  float: left;
+}
+
+/* line 25, app/assets/stylesheets/column.scss */
+div.table tr {
+  border-bottom: 1px #ababbb solid;
+}
+
+@media (max-width: 1000px) {
+  /* line 30, app/assets/stylesheets/column.scss */
+  div.table table {
+    width: 100%;
+    font-size: 54px;
+    background-color: #f7f7f8;
+    float: left;
+    overflow: hidden;
+    border-collapse: collapse;
+    min-height: 100vh;
+    position: relative;
+  }
+  /* line 40, app/assets/stylesheets/column.scss */
+  div.table table :hover {
+    color: orange;
+  }
+  /* line 44, app/assets/stylesheets/column.scss */
+  div.table table .tbl {
+    text-decoration: none;
+  }
+  /* line 49, app/assets/stylesheets/column.scss */
+  div.table table.row th,
+div.table table.row td {
+    float: left;
+  }
+  /* line 54, app/assets/stylesheets/column.scss */
+  div.table tr {
+    border-bottom: 1px #ababbb solid;
+  }
+}
+
+@media (max-width: 1000px) and (max-width: 670px) {
+  /* line 59, app/assets/stylesheets/column.scss */
+  div.table table {
+    width: 100%;
+    font-size: 35px;
+    background-color: #f7f7f8;
+    float: left;
+    overflow: hidden;
+    border-collapse: collapse;
+    min-height: 100vh;
+    position: relative;
+  }
+  /* line 69, app/assets/stylesheets/column.scss */
+  div.table table :hover {
+    color: orange;
+  }
+  /* line 73, app/assets/stylesheets/column.scss */
+  div.table table .tbl {
+    text-decoration: none;
+  }
+  /* line 78, app/assets/stylesheets/column.scss */
+  div.table table.row th,
+div.table table.row td {
+    float: left;
+  }
+  /* line 83, app/assets/stylesheets/column.scss */
+  div.table tr {
+    border-bottom: 1px #ababbb solid;
+  }
+}

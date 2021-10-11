@@ -1,0 +1,38 @@
+/* line 1, app/assets/stylesheets/contact_new.scss */
+body {
+  min-height: 100vh;
+  position: relative;
+}
+
+/* line 5, app/assets/stylesheets/contact_new.scss */
+body div.inquiry {
+  width: 100vw;
+  height: 100vh;
+}
+
+/* line 9, app/assets/stylesheets/contact_new.scss */
+body div.inquiry h1.inquiry {
+  margin-top: 70px;
+  text-align: center;
+}
+
+/* line 14, app/assets/stylesheets/contact_new.scss */
+body div.inquiry .row {
+  margin-top: 45px;
+}
+
+/* line 17, app/assets/stylesheets/contact_new.scss */
+body div.inquiry .row .response {
+  margin-top: 15px;
+}
+
+/* line 21, app/assets/stylesheets/contact_new.scss */
+body div.inquiry .row .detail_contact {
+  margin-top: 30px;
+}
+
+/* line 25, app/assets/stylesheets/contact_new.scss */
+body div.inquiry .row .btn-primary {
+  margin-top: 30px;
+  margin-bottom: 20px;
+}

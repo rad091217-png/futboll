@@ -1,0 +1,111 @@
+/* line 2, app/assets/stylesheets/scotish_new.scss */
+body {
+  background-image: url("scotish.png");
+  background-repeat: no-repeat;
+  background-size: 26%;
+  min-height: 100vh;
+  position: relative;
+}
+
+/* line 8, app/assets/stylesheets/scotish_new.scss */
+body .posts {
+  margin-top: 30px;
+  text-align: center;
+}
+
+/* line 12, app/assets/stylesheets/scotish_new.scss */
+body .row {
+  height: 550px;
+}
+
+/* line 14, app/assets/stylesheets/scotish_new.scss */
+body .row .post_name {
+  margin-top: 30px;
+}
+
+/* line 17, app/assets/stylesheets/scotish_new.scss */
+body .row .post_comment {
+  margin-top: 30px;
+}
+
+/* line 20, app/assets/stylesheets/scotish_new.scss */
+body .row .post_image {
+  margin-top: 30px;
+}
+
+/* line 23, app/assets/stylesheets/scotish_new.scss */
+body .row .btn-primary {
+  margin-top: 30px;
+}
+
+@media (max-width: 1000px) {
+  /* line 2, app/assets/stylesheets/scotish_new.scss */
+  body {
+    background-image: url("scotish.png");
+    background-repeat: no-repeat;
+    background-size: 45%;
+    min-height: 100vh;
+    position: relative;
+  }
+  /* line 33, app/assets/stylesheets/scotish_new.scss */
+  body .posts {
+    margin-top: 170px;
+    text-align: center;
+  }
+  /* line 37, app/assets/stylesheets/scotish_new.scss */
+  body .row {
+    height: 550px;
+  }
+  /* line 39, app/assets/stylesheets/scotish_new.scss */
+  body .row .post_name {
+    margin-top: 30px;
+  }
+  /* line 42, app/assets/stylesheets/scotish_new.scss */
+  body .row .post_comment {
+    margin-top: 30px;
+  }
+  /* line 45, app/assets/stylesheets/scotish_new.scss */
+  body .row .post_image {
+    margin-top: 30px;
+  }
+  /* line 48, app/assets/stylesheets/scotish_new.scss */
+  body .row .btn-primary {
+    margin-top: 30px;
+  }
+}
+
+@media (max-width: 670px) {
+  /* line 2, app/assets/stylesheets/scotish_new.scss */
+  body {
+    background-image: url("scotish.png");
+    background-repeat: no-repeat;
+    background-size: 50%;
+    min-height: 100vh;
+    position: relative;
+  }
+  /* line 59, app/assets/stylesheets/scotish_new.scss */
+  body .posts {
+    margin-top: 100px;
+    text-align: center;
+  }
+  /* line 63, app/assets/stylesheets/scotish_new.scss */
+  body .row {
+    height: 550px;
+  }
+  /* line 65, app/assets/stylesheets/scotish_new.scss */
+  body .row .post_name {
+    margin-top: 30px;
+  }
+  /* line 68, app/assets/stylesheets/scotish_new.scss */
+  body .row .post_comment {
+    margin-top: 30px;
+  }
+  /* line 71, app/assets/stylesheets/scotish_new.scss */
+  body .row .post_image {
+    margin-top: 30px;
+  }
+  /* line 74, app/assets/stylesheets/scotish_new.scss */
+  body .row .btn-primary {
+    margin-top: 30px;
+  }
+}

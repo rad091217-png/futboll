@@ -1,0 +1,235 @@
+/* line 3, app/assets/stylesheets/users_show.scss */
+body {
+  min-height: 100vh;
+  position: relative;
+}
+
+/* line 8, app/assets/stylesheets/users_show.scss */
+body div.users div.profile {
+  text-align: center;
+}
+
+/* line 11, app/assets/stylesheets/users_show.scss */
+body div.users div.profile section.avatar img {
+  margin-top: 10px;
+  height: 110px;
+  width: 110px;
+  border-radius: 100%;
+}
+
+/* line 18, app/assets/stylesheets/users_show.scss */
+body div.users div.profile .user_name {
+  font-size: 20px;
+}
+
+/* line 21, app/assets/stylesheets/users_show.scss */
+body div.users div.profile .user_name :hover {
+  text-decoration: none;
+}
+
+/* line 26, app/assets/stylesheets/users_show.scss */
+body div.users div.profile p.introduction {
+  margin-top: 30px;
+  font-size: 20px;
+}
+
+/* line 31, app/assets/stylesheets/users_show.scss */
+body div.users div.profile .edit_profile {
+  margin-top: 20px;
+}
+
+/* line 35, app/assets/stylesheets/users_show.scss */
+body div.users div.profile .stats {
+  margin-top: 20px;
+}
+
+/* line 39, app/assets/stylesheets/users_show.scss */
+body div.users div.profile .follow_info {
+  overflow: hidden;
+}
+
+/* line 42, app/assets/stylesheets/users_show.scss */
+body div.users div.profile .follow_info :hover {
+  color: #c1c1f1;
+  text-decoration: none;
+}
+
+/* line 47, app/assets/stylesheets/users_show.scss */
+body div.users div.profile .follow_info .my_follower,
+body div.users div.profile .follow_info .follow {
+  margin-right: 10px;
+  list-style: none;
+  float: right;
+}
+
+/* line 55, app/assets/stylesheets/users_show.scss */
+body div.users div.profile .follow_botton {
+  margin-top: 15px;
+}
+
+/* line 59, app/assets/stylesheets/users_show.scss */
+body div.users div.profile p.message {
+  margin-top: 15px;
+  font-size: 15px;
+}
+
+/* line 63, app/assets/stylesheets/users_show.scss */
+body div.users div.profile p.message a.message {
+  color: white;
+}
+
+/* line 68, app/assets/stylesheets/users_show.scss */
+body div.users div.profile .btn-primary {
+  margin-top: 15px;
+}
+
+/* line 72, app/assets/stylesheets/users_show.scss */
+body div.users div.profile div.my_post {
+  background-color: white;
+}
+
+@media (max-width: 1000px) {
+  /* line 81, app/assets/stylesheets/users_show.scss */
+  body div.users div.profile {
+    text-align: center;
+  }
+  /* line 84, app/assets/stylesheets/users_show.scss */
+  body div.users div.profile section.avatar img {
+    margin-top: 10px;
+    height: 110px;
+    width: 110px;
+    border-radius: 100%;
+  }
+  /* line 91, app/assets/stylesheets/users_show.scss */
+  body div.users div.profile .user_name {
+    font-size: 20px;
+  }
+  /* line 94, app/assets/stylesheets/users_show.scss */
+  body div.users div.profile .user_name :hover {
+    text-decoration: none;
+  }
+  /* line 99, app/assets/stylesheets/users_show.scss */
+  body div.users div.profile p.introduction {
+    margin-top: 30px;
+    font-size: 20px;
+  }
+  /* line 104, app/assets/stylesheets/users_show.scss */
+  body div.users div.profile .edit_profile {
+    margin-top: 20px;
+  }
+  /* line 108, app/assets/stylesheets/users_show.scss */
+  body div.users div.profile .stats {
+    margin-top: 20px;
+  }
+  /* line 112, app/assets/stylesheets/users_show.scss */
+  body div.users div.profile .follow_info {
+    overflow: hidden;
+  }
+  /* line 115, app/assets/stylesheets/users_show.scss */
+  body div.users div.profile .follow_info :hover {
+    color: #c1c1f1;
+    text-decoration: none;
+  }
+  /* line 120, app/assets/stylesheets/users_show.scss */
+  body div.users div.profile .follow_info .my_follower,
+body div.users div.profile .follow_info .follow {
+    margin-right: 10px;
+    list-style: none;
+    float: right;
+  }
+  /* line 128, app/assets/stylesheets/users_show.scss */
+  body div.users div.profile .follow_botton {
+    margin-top: 15px;
+  }
+  /* line 132, app/assets/stylesheets/users_show.scss */
+  body div.users div.profile p.message {
+    margin-top: 15px;
+    font-size: 15px;
+  }
+  /* line 136, app/assets/stylesheets/users_show.scss */
+  body div.users div.profile p.message a.message {
+    color: white;
+  }
+  /* line 141, app/assets/stylesheets/users_show.scss */
+  body div.users div.profile .btn-primary {
+    margin-top: 15px;
+  }
+  /* line 145, app/assets/stylesheets/users_show.scss */
+  body div.users div.profile div.my_post {
+    background-color: white;
+    width: 1000px;
+  }
+}
+
+@media (max-width: 1000px) and (max-width: 670px) {
+  /* line 156, app/assets/stylesheets/users_show.scss */
+  body div.users div.profile {
+    text-align: center;
+  }
+  /* line 159, app/assets/stylesheets/users_show.scss */
+  body div.users div.profile section.avatar img {
+    margin-top: 10px;
+    height: 110px;
+    width: 110px;
+    border-radius: 100%;
+  }
+  /* line 166, app/assets/stylesheets/users_show.scss */
+  body div.users div.profile .user_name {
+    font-size: 20px;
+  }
+  /* line 169, app/assets/stylesheets/users_show.scss */
+  body div.users div.profile .user_name :hover {
+    text-decoration: none;
+  }
+  /* line 174, app/assets/stylesheets/users_show.scss */
+  body div.users div.profile p.introduction {
+    margin-top: 30px;
+    font-size: 20px;
+  }
+  /* line 179, app/assets/stylesheets/users_show.scss */
+  body div.users div.profile .edit_profile {
+    margin-top: 20px;
+  }
+  /* line 183, app/assets/stylesheets/users_show.scss */
+  body div.users div.profile .stats {
+    margin-top: 20px;
+  }
+  /* line 187, app/assets/stylesheets/users_show.scss */
+  body div.users div.profile .follow_info {
+    overflow: hidden;
+  }
+  /* line 190, app/assets/stylesheets/users_show.scss */
+  body div.users div.profile .follow_info :hover {
+    color: #c1c1f1;
+    text-decoration: none;
+  }
+  /* line 195, app/assets/stylesheets/users_show.scss */
+  body div.users div.profile .follow_info .my_follower,
+body div.users div.profile .follow_info .follow {
+    margin-right: 10px;
+    list-style: none;
+    float: right;
+  }
+  /* line 203, app/assets/stylesheets/users_show.scss */
+  body div.users div.profile .follow_botton {
+    margin-top: 15px;
+  }
+  /* line 207, app/assets/stylesheets/users_show.scss */
+  body div.users div.profile p.message {
+    margin-top: 15px;
+    font-size: 15px;
+  }
+  /* line 211, app/assets/stylesheets/users_show.scss */
+  body div.users div.profile p.message a.message {
+    color: white;
+  }
+  /* line 216, app/assets/stylesheets/users_show.scss */
+  body div.users div.profile .btn-primary {
+    margin-top: 15px;
+  }
+  /* line 220, app/assets/stylesheets/users_show.scss */
+  body div.users div.profile div.my_post {
+    background-color: white;
+    width: 670px;
+  }
+}

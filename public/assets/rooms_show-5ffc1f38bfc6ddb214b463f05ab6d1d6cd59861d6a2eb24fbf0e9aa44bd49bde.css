@@ -1,0 +1,71 @@
+/* line 1, app/assets/stylesheets/rooms_show.scss */
+body {
+  min-height: 100vh;
+  position: relative;
+}
+
+/* line 5, app/assets/stylesheets/rooms_show.scss */
+body div.message {
+  width: 100vw;
+  height: 100vh;
+}
+
+/* line 9, app/assets/stylesheets/rooms_show.scss */
+body div.message p.message {
+  font-size: 18px;
+  background-color: black;
+  border-top: solid white 3px;
+  color: white;
+  text-align: center;
+}
+
+/* line 17, app/assets/stylesheets/rooms_show.scss */
+body div.message h4.participant {
+  margin-top: 40px;
+  text-align: center;
+  font-size: 15px;
+}
+
+/* line 23, app/assets/stylesheets/rooms_show.scss */
+body div.message a.participant {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 15px;
+}
+
+/* line 29, app/assets/stylesheets/rooms_show.scss */
+body div.message h5.participant_detail {
+  border-bottom: solid #ffccff 1px;
+  font-size: 20px;
+  text-align: center;
+}
+
+/* line 35, app/assets/stylesheets/rooms_show.scss */
+body div.message .message_user_name {
+  margin-top: 50px;
+  border-top: solid black 1px;
+  border-bottom: solid black 1px;
+  background-color: #f7f7f8;
+}
+
+/* line 41, app/assets/stylesheets/rooms_show.scss */
+body div.message .message_user_name p.comment {
+  margin-bottom: 30px;
+  font-size: 20px;
+}
+
+/* line 46, app/assets/stylesheets/rooms_show.scss */
+body div.message .message_user_name a.user_name {
+  font-size: 18px;
+}
+
+/* line 51, app/assets/stylesheets/rooms_show.scss */
+body div.message section.message {
+  margin-top: 280px;
+  margin-bottom: 20px;
+}
+
+/* line 56, app/assets/stylesheets/rooms_show.scss */
+body div.message .btn-primary {
+  height: 28px;
+}
