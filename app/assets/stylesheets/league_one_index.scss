@@ -1,119 +1,76 @@
-
 body {
+    min-height: 100vh;
+    position: relative;
+
     .league_one_post_page {
         font-size: 20px;
+
         .new {
             margin-left: 15px;
         }
     }
+
     div.post {
         background-color: rgb(247, 247, 248);
+        width: 100%;
+
         div.title {
             margin-top: 40px;
+
             p.title {
                 border-top: double 1px black;
                 margin-top: 20px;
                 font-size: 20px;
             }
+
             section.title {
                 margin-top: 20px;
                 font-size: 15px;
             }
         }
+
         div.comments {
             margin-top: 25px;
+
             p.comments {
                 margin-top: 20px;
                 font-size: 20px;
             }
+
             section.comments {
                 margin-top: 20px;
                 font-size: 15px;
             }
         }
+
         div.post_destroy {
             margin-top: 20px;
         }
+
         .image {
             margin-top: 30px;
+
             section.image img {
                 width: 250px;
                 height: 200px;
             }
         }
+
         .user_name {
             margin-top: 40px;
         }
     }
 }
+
 @media (max-width: 1000px) {
-    .index_page {
+    body {
+        min-height: 100vh;
+        position: relative;
 
-        .league_one_post_page  {
-            font-size: 18px;
-
-            .new {
-                margin-left: 15px;
-            }
-        }
-
-        div.post {
-            background-color: rgb(247, 247, 248);
-            width: 1000px;
-
-            div.title {
-                margin-top: 80px;
-
-                p.title {
-                    border-top: double 1px black;
-                    margin-top: 20px;
-                    font-size: 20px;
-                }
-
-                section.title {
-                    margin-top: 20px;
-                    font-size: 15px;
-                }
-            }
-
-            div.comments {
-                margin-top: 20px;
-
-                p.comments {
-                    margin-top: 20px;
-                    font-size: 20px;
-                }
-
-                section.comments {
-                    margin-top: 20px;
-                    font-size: 15px;
-                }
-            }
-
-            div.post_destroy {
-                margin-top: 20px;
-            }
-
-            .image {
-                margin-top: 30px;
-
-                section.image img {
-                    width: 250px;
-                    height: 200px;
-                }
-            }
-
-            .user_name {
-                margin-top: 40px;
-            }
-        }
-    }
-
-    @media (max-width: 670px) {
         .index_page {
 
-            .league_one_post_page{
-                font-size: 14px;
+            .league_one_post_page {
+                font-size: 18px;
 
                 .new {
                     margin-left: 15px;
@@ -122,10 +79,10 @@ body {
 
             div.post {
                 background-color: rgb(247, 247, 248);
-                width: 670px;
+                width: 100%;
 
                 div.title {
-                    margin-top: 60px;
+                    margin-top: 80px;
 
                     p.title {
                         border-top: double 1px black;
@@ -153,6 +110,10 @@ body {
                     }
                 }
 
+                div.post_destroy {
+                    margin-top: 20px;
+                }
+
                 .image {
                     margin-top: 30px;
 
@@ -164,6 +125,71 @@ body {
 
                 .user_name {
                     margin-top: 40px;
+                }
+            }
+        }
+    }
+
+    @media (max-width: 670px) {
+        body {
+            min-height: 100vh;
+            position: relative;
+
+            .index_page {
+
+                .league_one_post_page {
+                    font-size: 14px;
+
+                    .new {
+                        margin-left: 15px;
+                    }
+                }
+
+                div.post {
+                    background-color: rgb(247, 247, 248);
+                    width: 100%;
+
+                    div.title {
+                        margin-top: 60px;
+
+                        p.title {
+                            border-top: double 1px black;
+                            margin-top: 20px;
+                            font-size: 20px;
+                        }
+
+                        section.title {
+                            margin-top: 20px;
+                            font-size: 15px;
+                        }
+                    }
+
+                    div.comments {
+                        margin-top: 20px;
+
+                        p.comments {
+                            margin-top: 20px;
+                            font-size: 20px;
+                        }
+
+                        section.comments {
+                            margin-top: 20px;
+                            font-size: 15px;
+                        }
+                    }
+
+                    .image {
+                        margin-top: 30px;
+
+                        section.image img {
+                            width: 250px;
+                            height: 200px;
+                        }
+                    }
+
+                    .user_name {
+                        margin-top: 40px;
+                    }
                 }
             }
         }

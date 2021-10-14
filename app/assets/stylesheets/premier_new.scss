@@ -28,6 +28,8 @@ body {
         background-image: url("premier.png");
         background-repeat: no-repeat;
         background-size: 17%;
+            min-height: 100vh;
+            position: relative;
         .posts {
             margin-top: 150px;
             text-align: center;
@@ -52,6 +54,8 @@ body {
         background-image: url("premier.png");
         background-repeat: no-repeat;
         background-size: 25%;
+            min-height: 100vh;
+            position: relative;
         .posts {
             margin-top: 100px;
             text-align: center;
