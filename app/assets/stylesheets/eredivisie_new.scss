@@ -1,4 +1,3 @@
-
 body {
     background-image: url("eredivisie.png");
     background-repeat: no-repeat;
@@ -10,68 +9,93 @@ body {
         margin-top: 30px;
         text-align: center;
     }
+
     .row {
         height: 550px;
+
         .post_name {
             margin-top: 30px;
         }
+
         .post_comment {
             margin-top: 30px;
         }
+
         .post_image {
             margin-top: 30px;
         }
+
         .btn-primary {
             margin-top: 30px;
         }
     }
-    @media (max-width: 1000px) {
+}
+
+@media (max-width: 1000px) {
+    body {
         background-image: url("eredivisie.png");
         background-repeat: no-repeat;
         background-size: 40%;
+        min-height: 100vh;
+        position: relative;
 
         .posts {
             margin-top: 150px;
             text-align: center;
         }
+
         .row {
             height: 550px;
+
             .post_name {
                 margin-top: 30px;
             }
+
             .post_comment {
                 margin-top: 30px;
             }
+
             .post_image {
                 margin-top: 30px;
             }
+
             .btn-primary {
                 margin-top: 30px;
             }
         }
-        @media (max-width: 670px) {
-            background-image: url("eredivisie.png");
-            background-repeat: no-repeat;
-            background-size: 45%;
+    }
+}
 
-            .posts {
-                margin-top: 100px;
-                text-align: center;
+@media (max-width: 670px) {
+    body {
+        background-image: url("eredivisie.png");
+        background-repeat: no-repeat;
+        background-size: 45%;
+        min-height: 100vh;
+        position: relative;
+
+        .posts {
+            margin-top: 100px;
+            text-align: center;
+        }
+
+        .row {
+            height: 550px;
+
+            .post_name {
+                margin-top: 30px;
             }
-            .row {
-                height: 550px;
-                .post_name {
-                    margin-top: 30px;
-                }
-                .post_comment {
-                    margin-top: 30px;
-                }
-                .post_image {
-                    margin-top: 30px;
-                }
-                .btn-primary {
-                    margin-top: 30px;
-                }
+
+            .post_comment {
+                margin-top: 30px;
+            }
+
+            .post_image {
+                margin-top: 30px;
+            }
+
+            .btn-primary {
+                margin-top: 30px;
             }
         }
     }

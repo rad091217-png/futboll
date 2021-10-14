@@ -129,67 +129,67 @@ body {
             }
         }
     }
+}
 
-    @media (max-width: 670px) {
-        body {
-            min-height: 100vh;
-            position: relative;
+@media (max-width: 670px) {
+    body {
+        min-height: 100vh;
+        position: relative;
 
-            .index_page {
+        .index_page {
 
-                .europe_post_page {
-                    font-size: 14px;
+            .europe_post_page {
+                font-size: 14px;
 
-                    .new {
-                        margin-left: 15px;
+                .new {
+                    margin-left: 15px;
+                }
+            }
+
+            div.post {
+                background-color: rgb(247, 247, 248);
+                width: 100%;
+
+                div.title {
+                    margin-top: 60px;
+
+                    p.title {
+                        border-top: double 1px black;
+                        margin-top: 20px;
+                        font-size: 20px;
+                    }
+
+                    section.title {
+                        margin-top: 20px;
+                        font-size: 15px;
                     }
                 }
 
-                div.post {
-                    background-color: rgb(247, 247, 248);
-                    width: 100%;
+                div.comments {
+                    margin-top: 20px;
 
-                    div.title {
-                        margin-top: 60px;
-
-                        p.title {
-                            border-top: double 1px black;
-                            margin-top: 20px;
-                            font-size: 20px;
-                        }
-
-                        section.title {
-                            margin-top: 20px;
-                            font-size: 15px;
-                        }
-                    }
-
-                    div.comments {
+                    p.comments {
                         margin-top: 20px;
-
-                        p.comments {
-                            margin-top: 20px;
-                            font-size: 20px;
-                        }
-
-                        section.comments {
-                            margin-top: 20px;
-                            font-size: 15px;
-                        }
+                        font-size: 20px;
                     }
 
-                    .image {
-                        margin-top: 30px;
-
-                        section.image img {
-                            width: 250px;
-                            height: 200px;
-                        }
+                    section.comments {
+                        margin-top: 20px;
+                        font-size: 15px;
                     }
+                }
 
-                    .user_name {
-                        margin-top: 40px;
+                .image {
+                    margin-top: 30px;
+
+                    section.image img {
+                        width: 250px;
+                        height: 200px;
                     }
+                }
+
+                .user_name {
+                    margin-top: 40px;
                 }
             }
         }

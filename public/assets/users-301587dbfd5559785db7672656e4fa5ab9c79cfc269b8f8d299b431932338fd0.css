@@ -1,0 +1,17 @@
+/* line 1, app/assets/stylesheets/users.scss */
+li.users {
+  font-size: 35px;
+  width: 100%;
+  border-bottom: 1px black solid;
+  list-style: none;
+  padding: 5px;
+}
+
+/* line 8, app/assets/stylesheets/users.scss */
+li.users section.avatar img {
+  margin-right: 5px;
+  float: left;
+  height: 53px;
+  width: 53px;
+  border-radius: 50%;
+}

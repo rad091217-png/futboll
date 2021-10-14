@@ -1,0 +1,91 @@
+/* line 1, app/assets/stylesheets/column.scss */
+table {
+  width: 100%;
+  font-size: 46px;
+  background-color: #f7f7f8;
+  overflow: hidden;
+  border-collapse: collapse;
+  min-height: 100vh;
+  position: relative;
+}
+
+/* line 10, app/assets/stylesheets/column.scss */
+table :hover {
+  color: orange;
+}
+
+/* line 14, app/assets/stylesheets/column.scss */
+table .tbl {
+  text-decoration: none;
+}
+
+/* line 18, app/assets/stylesheets/column.scss */
+table table.row th,
+table table.row td {
+  float: left;
+}
+
+/* line 23, app/assets/stylesheets/column.scss */
+table tr {
+  border-bottom: 1px #ababbb solid;
+}
+
+@media (max-width: 1000px) {
+  /* line 29, app/assets/stylesheets/column.scss */
+  table {
+    width: 100%;
+    font-size: 54px;
+    background-color: #f7f7f8;
+    overflow: hidden;
+    border-collapse: collapse;
+    min-height: 100vh;
+    position: relative;
+  }
+  /* line 38, app/assets/stylesheets/column.scss */
+  table :hover {
+    color: orange;
+  }
+  /* line 42, app/assets/stylesheets/column.scss */
+  table .tbl {
+    text-decoration: none;
+  }
+  /* line 46, app/assets/stylesheets/column.scss */
+  table table.row th,
+table table.row td {
+    float: left;
+  }
+  /* line 51, app/assets/stylesheets/column.scss */
+  table tr {
+    border-bottom: 1px #ababbb solid;
+  }
+}
+
+@media (max-width: 670px) {
+  /* line 59, app/assets/stylesheets/column.scss */
+  table {
+    width: 100%;
+    font-size: 35px;
+    background-color: #f7f7f8;
+    overflow: hidden;
+    border-collapse: collapse;
+    min-height: 100vh;
+    position: relative;
+  }
+  /* line 68, app/assets/stylesheets/column.scss */
+  table :hover {
+    color: orange;
+  }
+  /* line 72, app/assets/stylesheets/column.scss */
+  table .tbl {
+    text-decoration: none;
+  }
+  /* line 76, app/assets/stylesheets/column.scss */
+  table table.row th,
+table table.row td {
+    float: left;
+  }
+  /* line 81, app/assets/stylesheets/column.scss */
+  table tr {
+    border-bottom: 1px #ababbb solid;
+  }
+}

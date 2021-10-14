@@ -1,0 +1,207 @@
+/* line 1, app/assets/stylesheets/serie_index.scss */
+body {
+  min-height: 100vh;
+  position: relative;
+}
+
+/* line 5, app/assets/stylesheets/serie_index.scss */
+body .serie_post_page {
+  font-size: 20px;
+}
+
+/* line 8, app/assets/stylesheets/serie_index.scss */
+body .serie_post_page .new {
+  margin-left: 15px;
+}
+
+/* line 13, app/assets/stylesheets/serie_index.scss */
+body div.post {
+  background-color: #f7f7f8;
+  width: 100%;
+}
+
+/* line 16, app/assets/stylesheets/serie_index.scss */
+body div.post div.title {
+  margin-top: 40px;
+}
+
+/* line 19, app/assets/stylesheets/serie_index.scss */
+body div.post div.title p.title {
+  border-top: double 1px black;
+  margin-top: 20px;
+  font-size: 20px;
+}
+
+/* line 25, app/assets/stylesheets/serie_index.scss */
+body div.post div.title section.title {
+  margin-top: 20px;
+  font-size: 15px;
+}
+
+/* line 31, app/assets/stylesheets/serie_index.scss */
+body div.post div.comments {
+  margin-top: 25px;
+}
+
+/* line 34, app/assets/stylesheets/serie_index.scss */
+body div.post div.comments p.comments {
+  margin-top: 20px;
+  font-size: 20px;
+}
+
+/* line 39, app/assets/stylesheets/serie_index.scss */
+body div.post div.comments section.comments {
+  margin-top: 20px;
+  font-size: 15px;
+}
+
+/* line 45, app/assets/stylesheets/serie_index.scss */
+body div.post div.post_destroy {
+  margin-top: 20px;
+}
+
+/* line 49, app/assets/stylesheets/serie_index.scss */
+body div.post .image {
+  margin-top: 30px;
+}
+
+/* line 52, app/assets/stylesheets/serie_index.scss */
+body div.post .image section.image img {
+  width: 250px;
+  height: 200px;
+}
+
+/* line 58, app/assets/stylesheets/serie_index.scss */
+body div.post .user_name {
+  margin-top: 40px;
+}
+
+@media (max-width: 1000px) {
+  /* line 65, app/assets/stylesheets/serie_index.scss */
+  body {
+    min-height: 100vh;
+    position: relative;
+  }
+  /* line 71, app/assets/stylesheets/serie_index.scss */
+  body .index_page .serie_post_page {
+    font-size: 18px;
+  }
+  /* line 74, app/assets/stylesheets/serie_index.scss */
+  body .index_page .serie_post_page .new {
+    margin-left: 15px;
+  }
+  /* line 79, app/assets/stylesheets/serie_index.scss */
+  body .index_page div.post {
+    background-color: #f7f7f8;
+    width: 100%;
+  }
+  /* line 83, app/assets/stylesheets/serie_index.scss */
+  body .index_page div.post div.title {
+    margin-top: 80px;
+  }
+  /* line 86, app/assets/stylesheets/serie_index.scss */
+  body .index_page div.post div.title p.title {
+    border-top: double 1px black;
+    margin-top: 20px;
+    font-size: 20px;
+  }
+  /* line 92, app/assets/stylesheets/serie_index.scss */
+  body .index_page div.post div.title section.title {
+    margin-top: 20px;
+    font-size: 15px;
+  }
+  /* line 98, app/assets/stylesheets/serie_index.scss */
+  body .index_page div.post div.comments {
+    margin-top: 20px;
+  }
+  /* line 101, app/assets/stylesheets/serie_index.scss */
+  body .index_page div.post div.comments p.comments {
+    margin-top: 20px;
+    font-size: 20px;
+  }
+  /* line 106, app/assets/stylesheets/serie_index.scss */
+  body .index_page div.post div.comments section.comments {
+    margin-top: 20px;
+    font-size: 15px;
+  }
+  /* line 112, app/assets/stylesheets/serie_index.scss */
+  body .index_page div.post div.post_destroy {
+    margin-top: 20px;
+  }
+  /* line 116, app/assets/stylesheets/serie_index.scss */
+  body .index_page div.post .image {
+    margin-top: 30px;
+  }
+  /* line 119, app/assets/stylesheets/serie_index.scss */
+  body .index_page div.post .image section.image img {
+    width: 250px;
+    height: 200px;
+  }
+  /* line 125, app/assets/stylesheets/serie_index.scss */
+  body .index_page div.post .user_name {
+    margin-top: 40px;
+  }
+}
+
+@media (max-width: 1000px) and (max-width: 670px) {
+  /* line 133, app/assets/stylesheets/serie_index.scss */
+  body {
+    min-height: 100vh;
+    position: relative;
+  }
+  /* line 139, app/assets/stylesheets/serie_index.scss */
+  body .index_page .serie_post_page {
+    font-size: 14px;
+  }
+  /* line 142, app/assets/stylesheets/serie_index.scss */
+  body .index_page .serie_post_page .new {
+    margin-left: 15px;
+  }
+  /* line 147, app/assets/stylesheets/serie_index.scss */
+  body .index_page div.post {
+    background-color: #f7f7f8;
+    width: 100%;
+  }
+  /* line 150, app/assets/stylesheets/serie_index.scss */
+  body .index_page div.post div.title {
+    margin-top: 60px;
+  }
+  /* line 153, app/assets/stylesheets/serie_index.scss */
+  body .index_page div.post div.title p.title {
+    border-top: double 1px black;
+    margin-top: 20px;
+    font-size: 20px;
+  }
+  /* line 159, app/assets/stylesheets/serie_index.scss */
+  body .index_page div.post div.title section.title {
+    margin-top: 20px;
+    font-size: 15px;
+  }
+  /* line 165, app/assets/stylesheets/serie_index.scss */
+  body .index_page div.post div.comments {
+    margin-top: 20px;
+  }
+  /* line 168, app/assets/stylesheets/serie_index.scss */
+  body .index_page div.post div.comments p.comments {
+    margin-top: 20px;
+    font-size: 20px;
+  }
+  /* line 173, app/assets/stylesheets/serie_index.scss */
+  body .index_page div.post div.comments section.comments {
+    margin-top: 20px;
+    font-size: 15px;
+  }
+  /* line 179, app/assets/stylesheets/serie_index.scss */
+  body .index_page div.post .image {
+    margin-top: 30px;
+  }
+  /* line 182, app/assets/stylesheets/serie_index.scss */
+  body .index_page div.post .image section.image img {
+    width: 250px;
+    height: 200px;
+  }
+  /* line 188, app/assets/stylesheets/serie_index.scss */
+  body .index_page div.post .user_name {
+    margin-top: 40px;
+  }
+}

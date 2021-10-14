@@ -1,22 +1,51 @@
-
-
 body {
     background-image: url("bundesu.png");
     background-repeat: no-repeat;
     background-size: 25%;
     min-height: 100vh;
     position: relative;
-    .post_page {
-        width: 100vw;
-        height: 100vh;
+
+    .posts {
+        margin-top: 30px;
+        text-align: center;
+    }
+
+    .row {
+        height: 550px;
+
+        .post_name {
+            margin-top: 30px;
+        }
+
+        .post_comment {
+            margin-top: 30px;
+        }
+
+        .post_image {
+            margin-top: 30px;
+        }
+
+        .btn-primary {
+            margin-top: 30px;
+        }
+    }
+}
+
+@media (max-width: 1000px) {
+    body {
+        background-image: url("bundesu.png");
+        background-repeat: no-repeat;
+        background-size: 30%;
+        min-height: 100vh;
+        position: relative;
 
         .posts {
-            margin-top: 30px;
+            margin-top: 150px;
             text-align: center;
         }
 
         .row {
-            height: 550px;
+            height: 300px;
 
             .post_name {
                 margin-top: 30px;
@@ -35,75 +64,38 @@ body {
             }
         }
     }
+}
 
-    @media (max-width: 1000px) {
-        background-image: url("bundesu.png");
-        background-repeat: no-repeat;
-        background-size: 30%;
-
-        .post_page {
-            width: 100vw;
-            height: 100vh;
-
-            .posts {
-                margin-top: 150px;
-                text-align: center;
-            }
-
-            .row {
-                height: 300px;
-
-                .post_name {
-                    margin-top: 30px;
-                }
-
-                .post_comment {
-                    margin-top: 30px;
-                }
-
-                .post_image {
-                    margin-top: 30px;
-                }
-
-                .btn-primary {
-                    margin-top: 30px;
-                }
-            }
-        }
-    }
-
-    @media (max-width: 670px) {
+@media (max-width: 670px) {
+    body {
         background-image: url("bundesu.png");
         background-repeat: no-repeat;
         background-size: 32%;
+        min-height: 100vh;
+        position: relative;
 
-        .post_page {
-            width: 100vw;
-            height: 100vh;
+        .posts {
+            margin-top: 100px;
+            text-align: center;
+        }
 
-            .posts {
-                margin-top: 100px;
-                text-align: center;
+        .row {
+            height: 300px;
+
+            .post_name {
+                margin-top: 30px;
             }
 
-            .row {
-                height: 300px;
+            .post_comment {
+                margin-top: 30px;
+            }
 
-                .post_name {
-                    margin-top: 30px;
-                }
+            .post_image {
+                margin-top: 30px;
+            }
 
-                .post_comment {
-                    margin-top: 30px;
-                }
-
-                .post_image {
-                    margin-top: 30px;
-                }
-
-                .btn-primary {
-                    margin-top: 30px;
-                }
+            .btn-primary {
+                margin-top: 30px;
             }
         }
     }

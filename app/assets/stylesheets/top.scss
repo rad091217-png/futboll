@@ -22,8 +22,10 @@ body {
             color: white;
         }
     }
+}
 
-    @media (max-width: 1000px) {
+@media (max-width: 1000px) {
+    body {
         background-image: url("top.png");
         background-repeat: no-repeat;
         background-color: rgba(255, 255, 255, 0.3);
@@ -47,33 +49,33 @@ body {
                 color: white;
             }
         }
+    }
+}
 
-        @media (max-width: 670px) {
-            background-image: url("top.png");
-            background-repeat: no-repeat;
-            background-color: rgba(255, 255, 255, 0.3);
-            background-blend-mode: soft-light;
-            background-size: 430%;
-            min-height: 100vh;
-            position: relative;
+@media (max-width: 670px) {
+    body {
+        background-image: url("top.png");
+        background-repeat: no-repeat;
+        background-color: rgba(255, 255, 255, 0.3);
+        background-blend-mode: soft-light;
+        background-size: 430%;
+        min-height: 100vh;
+        position: relative;
 
-            .main {
-                margin-left: 80px;
-                margin-top: 200px;
+        .main {
+            margin-left: 80px;
+            margin-top: 200px;
 
-                .welcome {
-                    font-size: 40px;
-                    color: white;
-                }
+            .welcome {
+                font-size: 40px;
+                color: white;
+            }
 
-                .myfavorite {
-                    margin-top: 30px;
-                    font-size: 20px;
-                    color: white;
-                }
+            .myfavorite {
+                margin-top: 30px;
+                font-size: 20px;
+                color: white;
             }
         }
-
-
     }
 }
