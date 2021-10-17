@@ -1,0 +1,59 @@
+/* line 1, app/assets/stylesheets/users_index.scss */
+body {
+  min-height: 100vh;
+  position: relative;
+}
+
+/* line 5, app/assets/stylesheets/users_index.scss */
+body .users {
+  width: 100%;
+  list-style: none;
+}
+
+/* line 9, app/assets/stylesheets/users_index.scss */
+body .users section.users {
+  padding: 5px;
+  border-bottom: 1px solid black;
+}
+
+/* line 15, app/assets/stylesheets/users_index.scss */
+body .paginate {
+  text-align: left;
+  padding-bottom: 35px;
+}
+
+@media (max-width: 1000px) {
+  /* line 22, app/assets/stylesheets/users_index.scss */
+  .users {
+    width: 120%;
+    list-style: none;
+  }
+  /* line 26, app/assets/stylesheets/users_index.scss */
+  .users section.users {
+    padding: 5px;
+    border-bottom: 1px solid black;
+  }
+  /* line 32, app/assets/stylesheets/users_index.scss */
+  .paginate {
+    text-align: left;
+    padding-bottom: 35px;
+  }
+}
+
+@media (max-width: 670px) {
+  /* line 39, app/assets/stylesheets/users_index.scss */
+  .users {
+    width: 100%;
+    list-style: none;
+  }
+  /* line 43, app/assets/stylesheets/users_index.scss */
+  .users section.users {
+    padding: 5px;
+    border-bottom: 1px solid black;
+  }
+  /* line 49, app/assets/stylesheets/users_index.scss */
+  .paginate {
+    text-align: left;
+    padding-bottom: 35px;
+  }
+}

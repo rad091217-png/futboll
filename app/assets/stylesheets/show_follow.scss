@@ -3,7 +3,7 @@ body {
     position: relative;
 
     div.show_follow {
-        width: 100vw;
+        width: 100%;
         height: 100vh;
 
         .my_profile {
@@ -12,6 +12,44 @@ body {
 
         .stats {
             margin-top: 10px;
+        }
+    }
+}
+@media (max-width: 1000px) {
+    body {
+        min-height: 100vh;
+        position: relative;
+    
+        div.show_follow {
+            width: 120%;
+            height: 100vh;
+    
+            .my_profile {
+                margin-top: 15px;
+            }
+    
+            .stats {
+                margin-top: 10px;
+            }
+        }
+    }
+}
+@media (max-width: 670px) {
+    body {
+        min-height: 100vh;
+        position: relative;
+    
+        div.show_follow {
+            width: 120%;
+            height: 100vh;
+    
+            .my_profile {
+                margin-top: 15px;
+            }
+    
+            .stats {
+                margin-top: 10px;
+            }
         }
     }
 }
