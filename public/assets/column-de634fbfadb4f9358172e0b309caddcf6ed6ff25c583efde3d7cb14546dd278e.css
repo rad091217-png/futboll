@@ -1,0 +1,90 @@
+/* line 1, app/assets/stylesheets/column.scss */
+table {
+  width: 100%;
+  font-size: 32px;
+  background-color: #f7f7f8;
+  overflow: hidden;
+  border-collapse: collapse;
+  position: relative;
+}
+
+/* line 9, app/assets/stylesheets/column.scss */
+table :hover {
+  color: orange;
+}
+
+/* line 13, app/assets/stylesheets/column.scss */
+table .tbl {
+  text-decoration: none;
+}
+
+/* line 17, app/assets/stylesheets/column.scss */
+table table.row th,
+table table.row td {
+  float: left;
+}
+
+/* line 22, app/assets/stylesheets/column.scss */
+table tr {
+  border-bottom: 1px #ababbb solid;
+}
+
+@media (max-width: 1000px) {
+  /* line 28, app/assets/stylesheets/column.scss */
+  table {
+    width: 120%;
+    font-size: 40px;
+    background-color: #f7f7f8;
+    overflow: hidden;
+    border-collapse: collapse;
+    min-height: 100vh;
+    position: relative;
+  }
+  /* line 37, app/assets/stylesheets/column.scss */
+  table :hover {
+    color: orange;
+  }
+  /* line 41, app/assets/stylesheets/column.scss */
+  table .tbl {
+    text-decoration: none;
+  }
+  /* line 45, app/assets/stylesheets/column.scss */
+  table table.row th,
+table table.row td {
+    float: left;
+  }
+  /* line 50, app/assets/stylesheets/column.scss */
+  table tr {
+    border-bottom: 1px #ababbb solid;
+  }
+}
+
+@media (max-width: 670px) {
+  /* line 58, app/assets/stylesheets/column.scss */
+  table {
+    width: 150%;
+    font-size: 25px;
+    background-color: #f7f7f8;
+    overflow: hidden;
+    border-collapse: collapse;
+    min-height: 100vh;
+    position: relative;
+  }
+  /* line 67, app/assets/stylesheets/column.scss */
+  table :hover {
+    color: orange;
+  }
+  /* line 71, app/assets/stylesheets/column.scss */
+  table .tbl {
+    text-decoration: none;
+  }
+  /* line 75, app/assets/stylesheets/column.scss */
+  table table.row th,
+table table.row td {
+    float: left;
+  }
+  /* line 80, app/assets/stylesheets/column.scss */
+  table tr {
+    border-bottom: 1px #ababbb solid;
+  }
+}
