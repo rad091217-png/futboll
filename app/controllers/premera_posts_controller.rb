@@ -1,5 +1,5 @@
 class PremeraPostsController < ApplicationController
-  before_action :logged_in_user
+  before_action :logged_in_user, except: [:index]
   before_action :correct_user, only: [:destroy]
   # 投稿一覧
   def index

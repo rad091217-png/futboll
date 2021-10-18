@@ -7,16 +7,19 @@
     <% @euro_posts.each do |euro_post| %>
     <div class="post">
         <div class="title">
-            <p class="title">リーガタイトル</p>
+            <p class="title">ユーロタイトル</p>
             <section class="title"><%= euro_post.title %></section>
         </div>
         <div class="comments">
-            <p class="comments">リーガコメント</p>
+            <p class="comments">ユーロコメント</p>
             <section class="comments"><%= euro_post.text %></section>
         </div>
         <div class="image">
             <section class="image">
+                <% if logged_in? %>
                 <% if euro_post.user_id == @current_user.id %><%= image_tag euro_post.display_image if euro_post.image.attached? %>
+                <% else %>
+                <% end %>
             </section>
             <div class="post_destroy">
                 <%= button_to("投稿削除", euro_post_path(euro_post), {method: :delete, class: "btn-danger"}) %>

@@ -7,17 +7,20 @@
         <% @eredivisie_posts.each do |eredivisie_post| %>
         <div class="post">
             <div class="title">
-                <p class="title">リーグアンタイトル</p>
+                <p class="title">エールディビジタイトル</p>
                 <section class="title"><%= eredivisie_post.title %></section>
             </div>
             <div class="comments">
-                <p class="comments">リーグアンコメント</p>
+                <p class="comments">エールディビジコメント</p>
                 <section class="comments"><%= eredivisie_post.text %></section>
             </div>
             <div class="image">
-                <section class="image"><%= image_tag eredivisie_post.display_image if eredivisie_post.image.attached? %>
+                <section class="image">
+                    <% if logged_in? %>
+                    <% if eredivisie_post.user_id == @current_user.id %><%= image_tag eredivisie_post.display_image if eredivisie_post.image.attached? %>
+                    <% else %>
+                    <% end %>
                 </section>
-                <% if eredivisie_post.user_id == @current_user.id %>
                 <div class="post_destroy">
                     <%= button_to("投稿削除", eredivisie_post_path(eredivisie_post), {method: :delete, class: "btn-danger"}) %>
                     <% end %>

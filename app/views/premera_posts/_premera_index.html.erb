@@ -13,8 +13,7 @@
             <section class="comments"><%= premera_post.text %></section>
         </div>
         <div class="image">
-            <section class="image"><%= image_tag premera_post.display_image if premera_post.image.attached? %></section>
-            <% if premera_post.user_id == @current_user.id %>
+            <section class="image"><% if premera_post.user_id == @current_user.id %><%= image_tag premera_post.display_image if premera_post.image.attached? %></section>
             <div class="post_destroy">
             <%= button_to("投稿削除", premera_post_path(premera_post), {method: :delete, class: "btn-danger"}) %>
             <% end %>

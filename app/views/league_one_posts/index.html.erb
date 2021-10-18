@@ -15,9 +15,12 @@
             <section class="comments"><%= league_one_post.text %></section>
         </div>
         <div class="image">
-            <section class="image"><%= image_tag league_one_post.display_image if league_one_post.image.attached? %>
+            <section class="image">
+                <% if logged_in? %>
+                <% if league_one_post.user_id == @current_user.id %><%= image_tag league_one_post.display_image if league_one_post.image.attached? %>
+                <% else %>
+                <% end %>
             </section>
-            <% if league_one_post.user_id == @current_user.id %>
             <div class="post_destroy">
                 <%= button_to("投稿削除", league_one_post_path(league_one_post), {method: :delete, class: "btn-danger"}) %>
                 <% end %>

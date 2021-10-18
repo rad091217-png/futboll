@@ -13,8 +13,7 @@
             <section class="comments"><%= eredivisie_post.text %></section>
         </div>
         <div class="image">
-            <section class="image"><%= image_tag eredivisie_post.display_image if eredivisie_post.image.attached? %></section>
-            <% if eredivisie_post.user_id == @current_user.id %>
+            <section class="image"><% if eredivisie_post.user_id == @current_user.id %><%= image_tag eredivisie_post.display_image if eredivisie_post.image.attached? %></section>
             <div class="post_destroy">
             <%= button_to("投稿削除", eredivisie_post_path(eredivisie_post), {method: :delete, class: "	btn-danger"}) %>
              <% end %>

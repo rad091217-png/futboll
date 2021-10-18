@@ -13,8 +13,7 @@
             <section class="comments"><%= premier_post.text %></section>
         </div>
         <div class="image">
-        <section class="image"><%= image_tag premier_post.display_image if premier_post.image.attached? %></section>
-             <% if premier_post.user_id == @current_user.id %>
+        <section class="image"> <% if premier_post.user_id == @current_user.id %><%= image_tag premier_post.display_image if premier_post.image.attached? %></section>
             <div class="post_destroy">
             <%= button_to("投稿削除", premier_post_path(premier_post), {method: :delete, class: "btn-danger"}) %>
             <% end %>

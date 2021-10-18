@@ -5,18 +5,20 @@
     </div>
     <div class="post">
         <div class="title">
-            <p class="title">タイトル</p>
+            <p class="title">ジュピラーリーグタイトル</p>
             <section class="title"><%= jupiler_post.title %></section>
         </div>
         <div class="comments">
-            <p class="comments">コメント</p>
+            <p class="comments">ジュピラーリーグコメント</p>
             <section class="comments"><%= jupiler_post.text %></section>
         </div>
         <div class="image">
             <section class="image">
-                <%= image_tag jupiler_post.display_image if jupiler_post.image.attached? %>
+                <% if logged_in? %>
+                <% if jupiler_post.user_id == @current_user.id %><%= image_tag jupiler_post.display_image if jupiler_post.image.attached? %>
+                <% else %>
+                <% end %>
             </section>
-            <% if jupiler_post.user_id == @current_user.id %>
             <div class="post_destroy">
                  <%= button_to("投稿削除", jupiler_post_path(jupiler_post), {method: :delete, class: "btn-danger"}) %>
             <% end %>
