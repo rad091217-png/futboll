@@ -14,10 +14,7 @@
         </div>
         <div class="image">
             <section class="image">
-                <% if logged_in? %>
                 <% if jupiler_post.user_id == @current_user.id %><%= image_tag jupiler_post.display_image if jupiler_post.image.attached? %>
-                <% else %>
-                <% end %>
             </section>
             <div class="post_destroy">
                  <%= button_to("投稿削除", jupiler_post_path(jupiler_post), {method: :delete, class: "btn-danger"}) %>
