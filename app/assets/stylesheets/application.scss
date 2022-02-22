@@ -1,102 +1,38 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
-header {
-    background-color: gray;
-    height: 55px;
+
+.wrap_original {
     overflow: hidden;
-    width: 100%;
-    .link {
-        color: white;
-    }
-    .header_title {
-        float: left;
-        font-size: 25px;
-        padding-top: 8px;
-        :hover {
-            color: rgb(193, 193, 241);
-            text-decoration: none;
-        }
-    }
-    li {
-        color: white;
-        list-style: none;
-        float: right;
-        font-size: 17px;
-        padding-bottom: 10px;
-        padding-right: 30px;
-        :hover {
-            color: rgb(193, 193, 241);
-            text-decoration: none;
-        }
-    }
-}
 
-.footer_fixed{
-    //min-height: 100vh;
-    //position: relative;
-   //padding-bottom: 60px;
-    //box-sizing: border-box;
-    
-}
-footer {
-    background-color: gray;
-    width: 100%;
-    height: 30px;
-    position:fixed;
-    bottom: 0;
-    .link {
-        color: white;
-        text-decoration: none;
-    }
-    .footer_title {
-        padding-top: 10px;
-        font-size: 25px;
-        :hover {
-            color: rgb(193, 193, 241);
-            text-decoration: none;
-        }
-    }
-}
-
-div.flash.time-limit-success {
-    background-color: blanchedalmond;
-    height: 50px;
-    color: red;
-    font-size: 20px;
-}
-
-div.flash.time-limit-danger {
-    background-color: blanchedalmond;
-    font-size: 20px;
-    height: 50px;
-    color: red;
-}
-
-@media (max-width: 1000px) {
     header {
         background-color: gray;
-        height: 50px;
-        width: 120%;
+        height: 55px;
         overflow: hidden;
+        width: 100%;
+
         .link {
             color: white;
         }
+
         .header_title {
             float: left;
-            font-size: 20px;
+            font-size: 25px;
             padding-top: 8px;
+
             :hover {
                 color: rgb(193, 193, 241);
                 text-decoration: none;
             }
         }
+
         li {
             color: white;
             list-style: none;
             float: right;
-            font-size: 15px;
+            font-size: 17px;
             padding-bottom: 10px;
-            padding-right: 12px;
+            padding-right: 30px;
+
             :hover {
                 color: rgb(193, 193, 241);
                 text-decoration: none;
@@ -104,26 +40,30 @@ div.flash.time-limit-danger {
         }
     }
 
-    .footer_fixed{
-        // min-height: 100vh;
-       // position: relative;
-        // padding-bottom: 60px;
-       // box-sizing: border-box;
+    .footer_fixed {
+        //min-height: 100vh;
+        //position: relative;
+        //padding-bottom: 60px;
+        //box-sizing: border-box;
+
     }
 
     footer {
         background-color: gray;
-        width: 120%;
-        height: 35px;
-        position:fixed;
+        width: 100%;
+        height: 30px;
+        position: fixed;
         bottom: 0;
+
         .link {
             color: white;
             text-decoration: none;
         }
+
         .footer_title {
             padding-top: 10px;
-            font-size: 18px;
+            font-size: 25px;
+
             :hover {
                 color: rgb(193, 193, 241);
                 text-decoration: none;
@@ -144,80 +84,168 @@ div.flash.time-limit-danger {
         height: 50px;
         color: red;
     }
-}
 
-@media (max-width: 670px) {
-    header {
-        background-color: gray;
-        height: 35px;
-        width: 150%;
-        overflow: hidden;
-        .link {
-            color: white;
-        }
-        .header_title {
-            float: left;
-            font-size: 13px;
-            padding-top: 8px;
-            :hover {
-                color: rgb(193, 193, 241);
-                text-decoration: none;
+    @media (max-width: 1000px) {
+        header {
+            background-color: gray;
+            height: 50px;
+            width: 120%;
+            overflow: hidden;
+
+            .link {
+                color: white;
+            }
+
+            .header_title {
+                float: left;
+                font-size: 20px;
+                padding-top: 8px;
+
+                :hover {
+                    color: rgb(193, 193, 241);
+                    text-decoration: none;
+                }
+            }
+
+            li {
+                color: white;
+                list-style: none;
+                float: right;
+                font-size: 15px;
+                padding-bottom: 10px;
+                padding-right: 12px;
+
+                :hover {
+                    color: rgb(193, 193, 241);
+                    text-decoration: none;
+                }
             }
         }
-        li {
-            color: white;
-            list-style: none;
-            float: right;
-            font-size: 8px;
-            padding-bottom: 10px;
-            padding-right: 13px;
-            :hover {
-                color: rgb(193, 193, 241);
-                text-decoration: none;
-            }
+
+        .footer_fixed {
+            // min-height: 100vh;
+            // position: relative;
+            // padding-bottom: 60px;
+            // box-sizing: border-box;
         }
-    }
 
-    .footer_fixed{
-        // min-height: 100vh;
-        // position: relative;
-        // padding-bottom: 60px;
-        // box-sizing: border-box;
-    }
-
-    footer {
-        background-color: gray;
-        width: 150%;
-        height: 25px;
-            position:fixed;
+        footer {
+            background-color: gray;
+            width: 120%;
+            height: 35px;
+            position: fixed;
             bottom: 0;
-        .link {
-            color: white;
-            text-decoration: none;
-        }
-        .footer_title {
-            padding-top: 7px;
-            font-size: 15px;
-            :hover {
-                color: rgb(193, 193, 241);
+
+            .link {
+                color: white;
                 text-decoration: none;
             }
+
+            .footer_title {
+                padding-top: 10px;
+                font-size: 18px;
+
+                :hover {
+                    color: rgb(193, 193, 241);
+                    text-decoration: none;
+                }
+            }
+        }
+
+        div.flash.time-limit-success {
+            background-color: blanchedalmond;
+            height: 50px;
+            color: red;
+            font-size: 20px;
+        }
+
+        div.flash.time-limit-danger {
+            background-color: blanchedalmond;
+            font-size: 20px;
+            height: 50px;
+            color: red;
         }
     }
 
-    div.flash.time-limit-success {
-        background-color: blanchedalmond;
-        height: 50px;
-        color: red;
-        font-size: 20px;
-    }
+    @media (max-width: 670px) {
+        header {
+            background-color: gray;
+            height: 35px;
+            width: 150%;
+            overflow: hidden;
 
-    div.flash.time-limit-danger {
-        background-color: blanchedalmond;
-        font-size: 20px;
-        height: 50px;
-        color: red;
+            .link {
+                color: white;
+            }
+
+            .header_title {
+                float: left;
+                font-size: 13px;
+                padding-top: 8px;
+
+                :hover {
+                    color: rgb(193, 193, 241);
+                    text-decoration: none;
+                }
+            }
+
+            li {
+                color: white;
+                list-style: none;
+                float: right;
+                font-size: 8px;
+                padding-bottom: 10px;
+                padding-right: 13px;
+
+                :hover {
+                    color: rgb(193, 193, 241);
+                    text-decoration: none;
+                }
+            }
+        }
+
+        .footer_fixed {
+            // min-height: 100vh;
+            // position: relative;
+            // padding-bottom: 60px;
+            // box-sizing: border-box;
+        }
+
+        footer {
+            background-color: gray;
+            width: 150%;
+            height: 25px;
+            position: fixed;
+            bottom: 0;
+
+            .link {
+                color: white;
+                text-decoration: none;
+            }
+
+            .footer_title {
+                padding-top: 7px;
+                font-size: 15px;
+
+                :hover {
+                    color: rgb(193, 193, 241);
+                    text-decoration: none;
+                }
+            }
+        }
+
+        div.flash.time-limit-success {
+            background-color: blanchedalmond;
+            height: 50px;
+            color: red;
+            font-size: 20px;
+        }
+
+        div.flash.time-limit-danger {
+            background-color: blanchedalmond;
+            font-size: 20px;
+            height: 50px;
+            color: red;
+        }
     }
 }
-
-
