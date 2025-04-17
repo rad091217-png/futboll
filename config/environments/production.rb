@@ -115,7 +115,7 @@ Rails.application.configure do
   host = "radiant-earth-97617.herokuapp.com"
   config.action_mailer.default_url_options = { host: host }
   ActionMailer::Base.smtp_settings = {
-    :port => ENV["MAILGUN_SMTP_PORT"],
+    :port => 587,
     :address => ENV["MAILGUN_SMTP_SERVER"],
     :user_name => ENV["MAILGUN_SMTP_LOGIN"],
     :password => ENV["MAILGUN_SMTP_PASSWORD"],
